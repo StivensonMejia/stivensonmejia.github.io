@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     height: 60px;
-    background-color: #242424;
+    background-color: #242424ad;
 }
 /* Logo */
 #header-index nav .nav_logo-container {
@@ -23,11 +23,6 @@
     width: 150px;
 }
 /* Menu */
-#header-index nav .nav_menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 #header-index nav .header_menu {
     width: auto;
     height: 60px;
@@ -43,7 +38,7 @@
     display: flex;
     justify-content: center;
     list-style: none;
-    width: 300px;
+    width: 33%;
     height: 60px;
 }
 #header-index nav .header_menu .menu_list li a {
@@ -78,7 +73,7 @@
     height: 35px;
     display: grid;
     min-width: 320px;
-    background-color: #242424b9;
+    background-color: #2424244b;
 }
 #header-index .header_icons-container .icons {
     width: 300px;
@@ -91,6 +86,7 @@
 #header-index .header_icons-container .icons a img {
     width: 25px;
     margin-top: 5px;
+    transition: transform 250ms;
 }
 #header-index .header_icons-container .icons a img:hover {
     transform: scale(1.5);

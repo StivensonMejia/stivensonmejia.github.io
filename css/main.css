@@ -44,7 +44,7 @@ a {
 .home-main .home-sec {
     height: 100vh;
     /* scroll-snap-align: start; */
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -53,18 +53,58 @@ a {
 .home-main .home-sec1 {
     display: flex;
     justify-content: center;
-    background-image: url('/assets/img/finn.jpg');  
+    background-image: url('/assets/img/Image1.webp');  
+    background-position: bottom;
 }
 .home-main .home-sec1 div {
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    align-items: center;
+}
+.home-main .home-main_title {
+    padding-top: 30%;
+    margin: 0;
+    font-family: 'Roboto mono', monospace;
+    font-size: 5rem;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+}
+.home-main .home-main_text {
+    margin: 0;
+    font-family: 'Roboto mono', monospace;
+    font-size: 3rem;
+    letter-spacing: 8px;
+    color: white;
+    text-align: center;
+}
+.home-main .home-main_button {
+    display: inline;
+}
+.home-main .home-main_button a {
+    width: 200px;
+    height: 30px;
+    margin-top: 40px;
+    padding-top: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    font-family: 'Roboto mono', monospace;
+    background-color: #e8a90b;
+    color: white;
+    transition: transform 300ms;
+}
+.home-main .home-main_button a:hover {
+    background-color: #e8280b;
+    transform: scale(1.2);
 }
 
 /* SECCION 2 */
 .home-main .home-sec2 {
-    background-image: url('/assets/img/1140828.jpg');
+    background-image: url('/assets/img/Image2.webp');
+    background-position: top;
 }
 .home-main .home-sec2 .home-sec2_grid {
     width: 100%;
@@ -100,39 +140,7 @@ a {
 .home-main .home-sec3 {
     background-image: url('/assets/img/1143221.jpg');
 }
-.home-main .home-main_title {
-    padding-top: 30%;
-    margin: 0;
-    font-family: 'Roboto mono', monospace;
-    font-size: 5.5rem;
-    font-weight: 500px;
-    letter-spacing: 10px;
-    color: white;
-    text-align: center;
-}
-.home-main .home-main_text {
-    margin: 0;
-    font-family: 'Roboto mono', monospace;
-    font-size: 3.5rem;
-    font-weight: 700px;
-    letter-spacing: 10px;
-    color: white;
-    text-align: center;
-}
-.home-main .home-main_button {
-    margin-top: 80px;
-    width: 150px;
-    height: 50px;
-    background-color: #cf5547;
-    border: none;
-    border-radius: 2px;
-    align-self: center;
-}
-.home-main .home-main_button a {
-    font-weight: 600;
-    font-size: 14px;
-    color: whitesmoke;
-}
+
 /* BLOG PRINCIPAL (BLOGS) */
 .blogs-main {
     display: grid;
