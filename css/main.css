@@ -144,31 +144,156 @@ a {
 }
 
 /* ILUTRATION */
-.ilustration_container {
-    width: 80%;
-    margin: 0 auto;
+.ilustration-main {
+    background-color: #242424;
+}
+/* PRESENTATION */
+.ilustration_container-presentation {
     display: grid;
-    grid-template: repeat(7, 1fr) / repeat(4 , 1fr);
+    justify-items: center;
+    grid-template: repeat(2, auto) / repeat(2 , 1fr);
+    background-color: #cf5547;
 }
-.container_img img {
-    width: 100%;
-    object-fit: contain;
-}
-.gio {
+.ilustration_container-presentation h1 {
+    text-align: center;
+    margin: 20px 0;
     grid-row: 1 / 2;
+    grid-column: 1 / 3;
+}
+.presentation {
+    display: flex;
+    place-items: center;
+    width: 65%;
+    height: 200px;
+}
+.presentation img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.presentation p {
+    margin-left: 20px;
+}
+.presentation_instagram {
+    grid-row: 2 / 3;
     grid-column: 1 / 2;
 }
-.aplox {
-    grid-row: 1 / 2;
+.presentation_facebook {
+    grid-row: 2 / 3;
     grid-column: 2 / 3;
+}
+/* GALERIA */
+.ilustration_container-galery {
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    margin: 50px auto;
+    gap: 8px;
+    grid-template: repeat(2, 300px) / repeat(4 , 300px);
+}
+.container_img {
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 250ms;
+}
+.container_img:hover {
+    transform: scale(1.1);
+    transition: transform 250ms;
+    transition-delay: 250ms;
+}
+.container_img .vertical {
+    height: 100%;
+}
+.container_img .horizontal {
+    width: 100%;
+}
+.container_img img {
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* TEXTO ENTRE GALERIAS */
+.ilustration_container-text {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    place-items: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: #242424;
+}
+.ilustration_container-text p {
+    margin: 0 50px;
+    color: #ffffff;
+}
+/* GALERIA 1 */
+.gio {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
 }
 .ferchan {
     grid-row: 1 / 3;
     grid-column: 3 / 5;
 }
 .ojos {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+.isabella {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3; 
+}
+/* GALERIA 2 */
+.aplox {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+}
+.akshan {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+.anye {
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+}
+/* GALERIA 3 */
+.alucardcueva {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+.viego {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+}
+.vampiro2 {
+    grid-row: 1 / 3;
+    grid-column: 3 / 4;
+}
+.alucard {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+}
+.sasuke {
+    grid-row: 1 / 3;
+    grid-column: 4 / 5;
+}
+/* GALERIA FINAL */
+.ilustration_container-galery-final {
+    width: 90%;
+    height: 70vh;
+    margin: 0 auto;
+    position: relative;
+    background-image: url('/assets/img/ilustraciones/fiddlestick.webp');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.ilustration_container-text-final {
+    width: 100%;
+    height: 60px;
+    background-color: #242424;
+    position: absolute;
+    bottom: 0;
 }
 /* VIDEOS */
 .blogs-main {
