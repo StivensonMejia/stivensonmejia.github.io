@@ -53,20 +53,6 @@
     color: black;
 }
 /* boton */
-#header-index nav .nav_profile-link {
-    width: 80px;
-    height: 40px;
-    border-radius: 15px;
-    display: flex;
-    place-self: center;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-}
-#header-index nav .nav_profile-link a {
-    font-size: 1.3rem;
-    color: black;
-}
 /* REDES SOCIALES INDEX*/
 #header-index .header_icons-container { 
     width: 100%;
@@ -94,11 +80,12 @@
     
 }
 
-/* HEADER FIJO*/
+/* HEADER OTRAS HOJAS*/
 #header-fijo {
+    z-index: 2;
     width: 100%;
     height: auto;
-    position: relative;
+    position: fixed;
     display: grid;
     grid-template-rows: 1fr;
 }
@@ -107,7 +94,7 @@
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     height: 50px;
-    background-color: #0e0e0e;
+    background-color: #0e0e0eee;
 }
 /* Logo */
 #header-fijo nav .nav_logo-container {

@@ -151,23 +151,28 @@ a {
     width: 100%;
     height: 100vh;
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fit,minmax(70rem ,2fr));
-    background-color: #cf5547;
+    position: relative;
+    grid-template-columns: 1fr 2fr;
+    background-color: #0e0e0e;
 }
-.presentation {
-    display: flex;
-    place-items: center;
-    width: 65%;
-    height: 200px;
+.ilustration_container-presentation .presentation_text {
+    z-index: 2;
+    width: 60%;
+    color: #fff;
+    text-align: center;
+    place-self: center ;
 }
-.presentation img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.ilustration_container-presentation .presentation_image {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
 }
-.presentation p {
-    margin-left: 20px;
+.ilustration_container-presentation img {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: -5%;
 }
 /* GALERIA */
 .ilustration_container-galery {
@@ -176,8 +181,7 @@ a {
     justify-content: center;
     margin: 50px auto;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill,minmax(30rem ,1fr));
-    grid-template-rows: repeat(auto-fill,minmax(30rem ,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(20rem ,1fr));
     grid-auto-flow: dense;
 }
 .container_img {
@@ -186,7 +190,7 @@ a {
     justify-content: center;
     border-radius: 8px;
     overflow: hidden;
-    filter: grayscale(80%);
+    filter: grayscale(100%);
     transition: transform 250ms;
     cursor: pointer;
 }
@@ -201,12 +205,11 @@ a {
 }
 /* TEXTO ENTRE GALERIAS */
 .ilustration_container-text {
-    width: 80%;
+    width: 100%;
     height: 200px;
     display: flex;
     place-items: center;
-    margin: 0 auto;
-    border-radius: 8px;
+    margin: 50px auto;
     background-color: #242424;
 }
 .ilustration_container-text p {
@@ -266,19 +269,19 @@ a {
 }
 /* GALERIA FINAL */
 .ilustration_container-galery-final {
-    width: 90%;
+    width: 100%;
     height: 70vh;
     margin: 0 auto;
     position: relative;
     background-image: url('/assets/img/ilustraciones/fiddlestick.webp');
     background-size: cover;
-    background-position:center top ;
+    background-position:center top;
     background-attachment: fixed;
 }
 .ilustration_container-text-final {
     width: 100%;
     height: 60px;
-    background-color: #242424;
+    background-color: white;
     position: absolute;
     bottom: 0;
 }
@@ -289,17 +292,18 @@ a {
 /* VIDEOS SECCION 1 */
 .Main_container {
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 2fr;
-    justify-content: center;
-    background-color: #cf5547;
+    grid-template-rows: 1fr 1fr;
+    background-image: url('/assets/img/Image2.webp');
+    background-position: bottom;
 }
 .Container_portada {
     width: 100%;
     height: 100%;
-    background-image: url('/assets/img/minefondo.webp');
+    background-image: url('/assets/img/miniatura.webp');
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 .Container_felx-main {
@@ -316,7 +320,7 @@ a {
 }
 .felx-main_ifo {
     padding: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .felx-main_ifo h2 {
     margin: 5px 0 30px 0;
@@ -373,7 +377,7 @@ footer {
     width: 100%;
     height: 80px;
     background-color: #2d2222;
-    border-top: 35px solid #cf5547;
+    border-top: 35px solid #ffffff;
 }
 footer p {
     color: white;
