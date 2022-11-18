@@ -20,7 +20,7 @@
     place-items: center;
 }
 #header-index nav .nav_logo-container img {
-    width: 150px;
+    width: 120px;
 }
 /* Menu */
 #header-index nav .header_menu {
@@ -103,7 +103,7 @@
     place-items: center;
 }
 #header-fijo nav .nav_logo-container img {
-    width: 150px;
+    width: 120px;
 }
 /* Menu */
 #header-fijo nav .header_menu {
