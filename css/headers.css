@@ -1,5 +1,6 @@
 /* HEADER INDEX */
 #header-index {
+    z-index: 10;
     width: 100%;
     height: auto;
     position: fixed;
@@ -82,7 +83,7 @@
 
 /* HEADER OTRAS HOJAS*/
 #header-fijo {
-    z-index: 2;
+    z-index: 10;
     width: 100%;
     height: auto;
     position: fixed;

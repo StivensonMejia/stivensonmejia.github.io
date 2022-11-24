@@ -83,6 +83,7 @@ a {
     text-align: center;
 }
 .home-main_img {
+    margin-left: 30px;
     width: 70%;
 }
 .home-main .home-main_text {
@@ -158,12 +159,13 @@ a {
 
 /* ILUTRATION */
 .ilustration-main {
-    background-color: #0e0e0e;
-    background-image: url('/assets/img/calaveras_negro.webp');
-
+    background-image: url('/assets/img/calaveras_blanco.webp');
+    background-color: #fff;
 }
 /* PRESENTATION */
 .ilustration_container-presentation {
+    background-color: #0e0e0e;
+    background-image: url('/assets/img/calaveras_negro.webp');
     width: 100%;
     height: 100vh;
     display: grid;
@@ -192,113 +194,46 @@ a {
 /* GALERIA */
 .ilustration_container-galery {
     width: 90%;
-    display: grid;
+    height: 500px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     margin: 50px auto;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fill,minmax(20rem ,1fr));
-    grid-auto-flow: dense;
+    gap: 10px;
+    
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 .container_img {
-    min-width: none;
+    min-width: 200px;
+    min-height: 400px;
     display: flex;
     justify-content: center;
     border-radius: 8px;
     overflow: hidden;
-    filter: grayscale(100%);
-    transition: transform 250ms;
-    cursor: pointer;
 }
-.container_img:hover {
+.container_img img:hover {
+    z-index: 9;
     filter: grayscale(0%);
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
 .container_img img {
+    filter: grayscale(70%);
+    transition: transform 250ms;
+    cursor: pointer;
+    scroll-snap-align: center;
     width: 100%;
     object-fit: cover;
-    border-radius: 8px;
 }
-/* TEXTO ENTRE GALERIAS */
-.ilustration_container-text {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    place-items: center;
-    margin: 50px auto;
-    background-color: #242424;
-}
-.ilustration_container-text p {
-    margin: 0 50px;
-    color: #ffffff;
-}
-/* GALERIA 1 */
-.gio {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.ferchan {
-    grid-row: span 2;
-    grid-column: span 2;
-}
-.ojos {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.isabella {
-    grid-row: span 2;
-    grid-column: span 1; 
-}
-/* GALERIA 2 */
-.aplox {
-    grid-row: span 2;
-    grid-column: span 2;
-}
-.akshan {
-    grid-row: span 2;
-    grid-column: span 1;
-}
-.anye {
-    grid-row: span 2;
-    grid-column: span 1;
-}
-/* GALERIA 3 */
-.alucardcueva {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-.viego {
-    grid-row: span 2;
-    grid-column: span 1;
-}
-.vampiro2 {
-    grid-row: span 2;
-    grid-column: span 1;
-}
-.alucard {
-    grid-row: span 2;
-    grid-column: span 2;
-}
-.sasuke {
-    grid-row: span 1;
-    grid-column: span 1;
-}
+
 /* GALERIA FINAL */
 .ilustration_container-galery-final {
     width: 100%;
-    height: 70vh;
-    margin: 0 auto;
-    position: relative;
+    height: 100vh;
     background-image: url('/assets/img/ilustraciones/fiddlestick.webp');
     background-size: cover;
-    background-position:center top;
+    background-position:top;
     background-attachment: fixed;
-}
-.ilustration_container-text-final {
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    position: absolute;
-    bottom: 0;
 }
 /* VIDEOS */
 .blogs-main {
