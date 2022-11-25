@@ -17,11 +17,15 @@ body {
     font-family: 'Roboto mono', monospace;
     
 }
-body::-webkit-scrollbar {
+body::-webkit-scrollbar, 
+.ilustration_container-galery::-webkit-scrollbar {
     width: 7px;
-    background-color: #242424;
+    height: 7px;
+    background-color: #0e0e0e;
 }
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+.ilustration_container-galery::-webkit-scrollbar-thumb
+{
     background-color:#a8321f;
     border-radius: 5px;
 }
@@ -199,29 +203,34 @@ a {
     align-items: center;
     justify-content: center;
     margin: 50px auto;
+    padding: 0 20px;
     gap: 10px;
     
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    overflow: auto;
+    overscroll-behavior: initial;
+    scroll-snap-type: proximity;
 }
 .container_img {
-    min-width: 200px;
-    min-height: 400px;
+    max-width: 120px;
+    min-width: 120px;
+    height: 400px;
+    line-height: 200px;
     display: flex;
     justify-content: center;
     border-radius: 8px;
+    scroll-snap-align: center;
+
     overflow: hidden;
+    filter: grayscale(70%);
+    transition: transform 250ms;
+    cursor: pointer;
 }
-.container_img img:hover {
+.container_img:hover {
     z-index: 9;
     filter: grayscale(0%);
     transform: scale(1.15);
 }
 .container_img img {
-    filter: grayscale(70%);
-    transition: transform 250ms;
-    cursor: pointer;
-    scroll-snap-align: center;
     width: 100%;
     object-fit: cover;
 }
