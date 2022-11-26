@@ -18,13 +18,13 @@ body {
     
 }
 body::-webkit-scrollbar, 
-.ilustration_container-galery::-webkit-scrollbar {
+.container_galery::-webkit-scrollbar {
     width: 7px;
     height: 7px;
     background-color: #0e0e0e;
 }
 body::-webkit-scrollbar-thumb,
-.ilustration_container-galery::-webkit-scrollbar-thumb
+.container_galery::-webkit-scrollbar-thumb
 {
     background-color:#a8321f;
     border-radius: 5px;
@@ -158,8 +158,8 @@ a {
     background-color: white;
 }
 /* INDEX SECCION 3 */
-.home-main .home-sec3 {
-}
+/* .home-main .home-sec3 {
+} */
 
 /* ILUTRATION */
 .ilustration-main {
@@ -167,7 +167,7 @@ a {
     background-color: #fff;
 }
 /* PRESENTATION */
-.ilustration_container-presentation {
+#ilustration_container-presentation {
     background-color: #0e0e0e;
     background-image: url('/assets/img/calaveras_negro.webp');
     width: 100%;
@@ -176,45 +176,52 @@ a {
     position: relative;
     grid-template-columns: 1fr 2fr;
 }
-.ilustration_container-presentation .presentation_text {
+#ilustration_container-presentation .presentation_text {
     z-index: 2;
     width: 60%;
     color: #fff;
     text-align: center;
     place-self: center ;
 }
-.ilustration_container-presentation .presentation_image {
+#ilustration_container-presentation .presentation_image {
     z-index: 1;
     position: relative;
     overflow: hidden;
     object-fit: cover;
 }
-.ilustration_container-presentation img {
+#ilustration_container-presentation img {
     height: 100%;
     position: absolute;
     bottom: 0;
     right: -5%;
 }
-/* GALERIA */
-.ilustration_container-galery {
+/* GALERIA 1 */
+#lustration_container-one {
+    text-align: center;
+}
+#lustration_container-one h1 {
+    margin: 20px 10rem 10px;
+}
+#lustration_container-one p,
+#lustration_container-one h3 {
+    margin: 10px 10rem 20px;
+}
+.container_galery {
     width: 90%;
     height: 500px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 50px auto;
+    justify-content: space-between;
+    margin: 0 auto;
     padding: 0 20px;
     gap: 10px;
-    
     overflow: auto;
-    overscroll-behavior: initial;
-    scroll-snap-type: proximity;
 }
 .container_img {
     max-width: 120px;
     min-width: 120px;
     height: 400px;
-    line-height: 200px;
+    position: relative;
     display: flex;
     justify-content: center;
     border-radius: 8px;
@@ -226,20 +233,80 @@ a {
     cursor: pointer;
 }
 .container_img:hover {
-    z-index: 9;
+    z-index: 8;
     filter: grayscale(0%);
     transform: scale(1.15);
+}
+.container_img a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 .container_img img {
     width: 100%;
     object-fit: cover;
+}
+/* GALERIA COMPLETAS */
+.lustration_container-all { 
+    width: 100%;
+    height: 100vh;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.lustration_container-all .section_all {
+    width: auto;
+    height: 80%;
+}
+.lustration_container-all .section_all img {
+    height: 100%;
+    object-fit: cover;
+}
+/* GALERIA COMPLETAS SEPARADAS*/
+#lustration_container-gio {
+    background-image: url('/assets/img/ilustraciones/Fondos/gioFondo.webp');
+}
+#lustration_container-aplox {
+    background-image: url('/assets/img/ilustraciones/Fondos/fondoAplox.webp');
+    background-position: center;
+}
+#lustration_container-ferchan {
+    background-image: url('/assets/img/ilustraciones/Con fondo/FerChanJPG.webp');
+    background-position: center;
+}
+#lustration_container-akshan {
+    background-image: url('/assets/img/ilustraciones/Con fondo/AkshanJPG.webp');
+}
+#lustration_container-anye {
+    background-image: url('/assets/img/ilustraciones/Fondos/fondoAnye.webp');
+}
+#lustration_container-alucardcueva {
+    background-image: url('/assets/img/ilustraciones/Fondos/alucardcuevaFondo.webp');
+}
+#lustration_container-viego {
+}
+#lustration_container-isabella {
+}
+#lustration_container-alucard {
+    background-image: url('/assets/img/ilustraciones/Fondos/alucardFondo.webp');
+}
+#lustration_container-vampiro2 {
+    background-image: url('/assets/img/ilustraciones/Gotic.webp');
+}
+#lustration_container-sasuke {
+    background-image: url('/assets/img/ilustraciones/Fondos/sasukeFondo.webp');
+    background-position: center;
 }
 
 /* GALERIA FINAL */
 .ilustration_container-galery-final {
     width: 100%;
     height: 100vh;
-    background-image: url('/assets/img/ilustraciones/fiddlestick.webp');
+    background-image: url('/assets/img/ilustraciones/Con fondo/fiddlestick.webp');
     background-size: cover;
     background-position:top;
     background-attachment: fixed;
