@@ -163,8 +163,32 @@ a {
 
 /* ILUTRATION */
 .ilustration-main {
-    background-image: url('/assets/img/calaveras_blanco.webp');
-    background-color: #fff;
+    background-image: url('/assets/img/calaveras_negro.webp');
+    background-color:#0e0e0e;
+}
+.ilustration-main .return-button {
+    z-index: 9;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    overflow: hidden;
+    background-color: #a8311fa0;
+    transition: transform 250ms;
+}
+.ilustration-main .return-button:hover {
+    background-color:#2d2222;
+    transform: scale(1.15);
+}
+.ilustration-main .return-button a {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 /* PRESENTATION */
 #ilustration_container-presentation {
@@ -198,13 +222,15 @@ a {
 /* GALERIA 1 */
 #lustration_container-one {
     text-align: center;
+    background-color: #ffffff;
+    background-image: url('/assets/img/calaveras_blanco.webp');
 }
 #lustration_container-one h1 {
-    margin: 20px 10rem 10px;
+    padding: 20px 10rem 10px;
 }
 #lustration_container-one p,
 #lustration_container-one h3 {
-    margin: 10px 10rem 20px;
+    padding: 10px 10rem 20px;
 }
 .container_galery {
     width: 90%;
@@ -225,8 +251,6 @@ a {
     display: flex;
     justify-content: center;
     border-radius: 8px;
-    scroll-snap-align: center;
-
     overflow: hidden;
     filter: grayscale(70%);
     transition: transform 250ms;
@@ -250,7 +274,13 @@ a {
 .lustration_container-all { 
     width: 100%;
     height: 100vh;
-    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lustration_container-all .container-all-ex {
+    width: 100%;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -260,44 +290,47 @@ a {
 }
 .lustration_container-all .section_all {
     width: auto;
-    height: 80%;
+    height: 100%;
 }
 .lustration_container-all .section_all img {
     height: 100%;
     object-fit: cover;
 }
 /* GALERIA COMPLETAS SEPARADAS*/
-#lustration_container-gio {
-    background-image: url('/assets/img/ilustraciones/Fondos/gioFondo.webp');
-}
-#lustration_container-aplox {
+.aplox {
     background-image: url('/assets/img/ilustraciones/Fondos/fondoAplox.webp');
     background-position: center;
 }
-#lustration_container-ferchan {
+.ferchan {
     background-image: url('/assets/img/ilustraciones/Con fondo/FerChanJPG.webp');
     background-position: center;
 }
-#lustration_container-akshan {
+.akshan {
     background-image: url('/assets/img/ilustraciones/Con fondo/AkshanJPG.webp');
 }
-#lustration_container-anye {
+.anye {
     background-image: url('/assets/img/ilustraciones/Fondos/fondoAnye.webp');
 }
-#lustration_container-alucardcueva {
+.gio {
+    background-image: url('/assets/img/ilustraciones/Fondos/gioFondo.webp');
+}
+.alucardcueva {
     background-image: url('/assets/img/ilustraciones/Fondos/alucardcuevaFondo.webp');
 }
-#lustration_container-viego {
+.viego {
+    background-image: url('/assets/img/ilustraciones/Con fondo/Viego.webp');
 }
-#lustration_container-isabella {
+.isabella {
+    background-image: url('/assets/img/ilustraciones/Con fondo/isabella.webp');
 }
-#lustration_container-alucard {
+.alucard {
     background-image: url('/assets/img/ilustraciones/Fondos/alucardFondo.webp');
 }
-#lustration_container-vampiro2 {
-    background-image: url('/assets/img/ilustraciones/Gotic.webp');
+.vampiro2 {
+    background-image: url('/assets/img/ilustraciones/Fondos/fondoGotic.webp');
+    background-position:bottom;
 }
-#lustration_container-sasuke {
+.sasuke {
     background-image: url('/assets/img/ilustraciones/Fondos/sasukeFondo.webp');
     background-position: center;
 }
@@ -306,7 +339,7 @@ a {
 .ilustration_container-galery-final {
     width: 100%;
     height: 100vh;
-    background-image: url('/assets/img/ilustraciones/Con fondo/fiddlestick.webp');
+    background-image: url('/assets/img/ilustraciones/Con fondo/FiddlesticksPNG.webp');
     background-size: cover;
     background-position:top;
     background-attachment: fixed;
