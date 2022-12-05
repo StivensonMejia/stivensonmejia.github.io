@@ -26,7 +26,7 @@ body::-webkit-scrollbar,
 body::-webkit-scrollbar-thumb,
 .container_galery::-webkit-scrollbar-thumb
 {
-    background-color:#a8321f;
+    background-color:#804141;
     border-radius: 5px;
 }
 a {
@@ -37,7 +37,7 @@ a {
 
 /* INDEX */
 .home-main {
-    background-color: #fff;
+    background-color: #ffffff;
     background-image: url('/assets/img/calaveras_blanco.webp');
     display: flex;
     flex-direction: column;
@@ -51,7 +51,6 @@ a {
 } */
 .home-main .home-sec {
     height: 100vh;
-    /* scroll-snap-align: start; */
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,8 +60,8 @@ a {
 .home-main .home-sec1 {
     display: flex;
     justify-content: center;
-    background-image: url('/assets/img/Image1.webp');  
-    background-position: bottom;
+    background-image: url('/assets/img/2.webp');  
+    background-position: center;
 }
 .home-main .home-sec1 .sec1_container {
     width: 60%;
@@ -88,7 +87,7 @@ a {
 }
 .home-main_img {
     margin-left: 30px;
-    width: 70%;
+    width: 900px;
 }
 .home-main .home-main_text {
     margin: 0;
@@ -104,67 +103,92 @@ a {
     display: inline;
 }
 .home-main .home-main_button a {
-    width: 200px;
-    height: 30px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    place-content: center;
+    place-items: center;
     margin-top: 40px;
-    padding-top: 6px;
     border-radius: 10px;
-    text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     letter-spacing: 3px;
     font-family: 'Roboto mono', monospace;
-    background-color: #e8a90b;
+    background-color: #6d3232;
     color: white;
     transition: transform 300ms;
 }
 .home-main .home-main_button a:hover {
-    background-color: #e8280b;
+    background-color: #a22929;
     transform: scale(1.2);
 }
 
 /* INDEX SECCION 2 */
 .home-main .home-sec2 {
-    background-image: url('/assets/img/Image2.webp');
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-image: url('/assets/img/telaraña2.webp');
     background-position: top;
 }
 .home-main .home-sec2 .home-sec2_grid {
     width: 100%;
-    height: 100%;
-    display: grid;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
     align-items: center;
-    grid-template: repeat(3, 1fr) / repeat(6 , 1fr);
 }
 .sec2_container-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    justify-self: end;
-    margin-right: 10%;
-    overflow: hidden;
-    grid-row: 2 / 3;
-    grid-column: 2 / 4;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('/assets/img/1.webp');
+    background-position: top;
 }
 .sec2_container-img img {
-    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    width: 300px;
+    border: groove 10px #6d3232;
+    border-radius: 50%;
+}
+.sec2_container-name {
+    text-align: center;
+    padding: 150px 50px 50px;;
 }
 .sec2_container-text {
-    height: 400px;
-    width: 300px;
-    margin-left: 10%;
-    padding: 10px;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 50px 50px 100px;
+}
+.sec2_container-text div {
     border-radius: 10px;
-    grid-row: 2 / 3;
-    grid-column: 4  / 6;
-    background-color: white;
+    border: double 10px #0e0e0e;
+    padding: 20px;
+    color: #0e0e0e;
 }
 /* INDEX SECCION 3 */
-/* .home-main .home-sec3 {
-} */
+.home-main .home-sec3 {  
+}
+.sec3_container-onda {
+    width: 100%;
+    height: auto;
+}
+.sec3_container {
+    width: 100%;
+    height: 100%;
+    background-color: #0e0e0e;
+}
 
 /* ILUTRATION */
 .ilustration-main {
-    background-image: url('/assets/img/calaveras_negro.webp');
     background-color:#0e0e0e;
+    /* background-image: url('/assets/img/calaveras_blanco.webp'); */
 }
 .ilustration-main .return-button {
     z-index: 9;
@@ -219,17 +243,18 @@ a {
     bottom: 0;
     right: -5%;
 }
-/* GALERIA 1 */
+/* SELECCION DE PERSONAJE */
 #lustration_container-one {
+    background-color: #0e0e0e;
     text-align: center;
-    background-color: #ffffff;
-    background-image: url('/assets/img/calaveras_blanco.webp');
 }
 #lustration_container-one h1 {
+    color: #fff;
     padding: 20px 10rem 10px;
 }
 #lustration_container-one p,
 #lustration_container-one h3 {
+    color: #fff;
     padding: 10px 10rem 20px;
 }
 .container_galery {
@@ -252,13 +277,11 @@ a {
     justify-content: center;
     border-radius: 8px;
     overflow: hidden;
-    filter: grayscale(70%);
     transition: transform 250ms;
     cursor: pointer;
 }
 .container_img:hover {
     z-index: 8;
-    filter: grayscale(0%);
     transform: scale(1.15);
 }
 .container_img a {
@@ -270,25 +293,34 @@ a {
     width: 100%;
     object-fit: cover;
 }
+/* TITULO */
+.ilustration-title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0;
+}
 /* GALERIA COMPLETAS */
-.lustration_container-all { 
+.lustration_container-all {
     width: 100%;
     height: 100vh;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 .lustration_container-all .container-all-ex {
     width: 100%;
-    height: 70%;
+    height: 75%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: no-repeat;/* 
+    background-attachment: fixed; */
 }
 .lustration_container-all .section_all {
+    z-index: 2;
     width: auto;
     height: 100%;
 }
@@ -296,6 +328,22 @@ a {
     height: 100%;
     object-fit: cover;
 }
+.degrad-top {
+    z-index: 1;
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    background: linear-gradient(to top, transparent, #0e0e0e 80%);
+    top: 0;
+}
+/* .degrad-bottom {
+    z-index: 1;
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    background: linear-gradient(to bottom, transparent, #0e0e0e 80%);
+    bottom: 0;
+} */
 /* GALERIA COMPLETAS SEPARADAS*/
 .aplox {
     background-image: url('/assets/img/ilustraciones/Fondos/fondoAplox.webp');

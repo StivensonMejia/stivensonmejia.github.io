@@ -12,7 +12,8 @@
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     height: 50px;
-    background-color: #0e0e0ec0;
+    backdrop-filter: blur(5px);
+    background-color: #131313d8;
 }
 /* Logo */
 #header-index nav .nav_logo-container {
@@ -60,7 +61,8 @@
     height: 35px;
     display: grid;
     min-width: 320px;
-    background-color: #0e0e0e77;
+    backdrop-filter: blur(5px);
+    background-color: #131313d8;
 }
 #header-index .header_icons-container .icons {
     width: 300px;
@@ -81,12 +83,12 @@
     
 }
 
-/* HEADER OTRAS HOJAS*/
+/* HEADER FIJO*/
 #header-fijo {
     z-index: 10;
     width: 100%;
     height: auto;
-    position: fixed;
+    position: absolute;
     display: grid;
     grid-template-rows: 1fr;
 }
@@ -134,20 +136,5 @@
 }
 #header-fijo nav .header_menu .menu_list li a:hover {
     background-color: white;
-    color: black;
-}
-/* boton */
-#header-fijo nav .nav_profile-link {
-    width: 80px;
-    height: 40px;
-    border-radius: 15px;
-    display: flex;
-    place-self: center;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-}
-#header-fijo nav .nav_profile-link a {
-    font-size: 1.3rem;
     color: black;
 }
