@@ -394,8 +394,8 @@ a {
 }
 /* VIDEOS */
 .blogs-main {
-    background-image: url('/assets/img/calaveras_negro.webp');
-    background-color: #0e0e0e;
+    /* background-image: url('/assets/img/calaveras_negro.webp'); */
+    background-color: #ffffff;
 }
 /* VIDEOS SECCION 1 */
 .Main_container {
@@ -416,18 +416,21 @@ a {
     background-attachment: fixed;
 }
 .Container_felx-main {
-    max-width: 80%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    margin: 0 auto
+    flex-wrap: wrap;
+    place-items: center;
+    place-content: center;
+}
+.felx-main_video {
+    margin: 10px 0;
 }
 .felx-main_video iframe {
     width: 560px;
     height: 315px;
-    border-radius: 20px;
-    margin: 30px 0;
 }
 .felx-main_ifo {
+    width: 500px;
     padding: 30px;
     color: rgb(0, 0, 0);
 }
@@ -435,12 +438,20 @@ a {
     margin: 5px 0 30px 0;
 }
 /* VIDEOS SECCION 2 */
+.video_sectionDetails {
+    width: 100%;
+    height: 50vh;
+    background-color: #a4a4a4;
+}
+/* VIDEOS SECCION 3 */
 .grid-container {
-    max-width: 80%;
+    max-width: 100%;
+    padding: 50px 0;
     margin: auto;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fill,minmax(40rem ,1fr));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    place-content: center;
 }
 .blogs_post-container h3 {
     border-bottom:  2px solid #ffffff;
@@ -448,26 +459,24 @@ a {
     color: white;
     text-align: center;
 }
-.blogs_post-container .post_container {
-    padding: 0 5px;
-    margin-top: 60px;
-}
-.blogs_post-container .post_container p {
-    color: white;
-    padding: 20px 10px 40px 10px;
-}
-.blogs_post-container .post_container .container_iframe {
+.blogs_post-container .container_iframe {
+    width: 445px;
+    height: 250px;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
-    padding-top: 56.25%;
 }
-.blogs_post-container .post_container .container_iframe iframe {
+.blogs_post-container .container_iframe iframe {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+}
+/* VIDEOS SECCION 4 */
+.videos-sectionFinal {
+    width: 100%;
+    height: 100vh;
+    background-color: #2d2222;
 }
 
 /* WEB */
