@@ -394,7 +394,7 @@ a {
 }
 /* VIDEOS */
 .blogs-main {
-    /* background-image: url('/assets/img/calaveras_negro.webp'); */
+    background-image: url('/assets/img/fondo\ crepers.webp');
     background-color: #ffffff;
 }
 /* VIDEOS SECCION 1 */
@@ -403,8 +403,6 @@ a {
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color:#fff;
-    background-image: url('/assets/img/calaveras_blanco.webp');
     background-position: bottom;
 }
 .Container_portada {
@@ -438,11 +436,61 @@ a {
     margin: 5px 0 30px 0;
 }
 /* VIDEOS SECCION 2 */
-.video_sectionDetails {
+#video_section2 {
     width: 100%;
-    height: 50vh;
-    background-color: #a4a4a4;
+    height: auto;
+    background-color: #fff;
 }
+.section2_description {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 100px 0 30px;
+}
+.description_imageContainer {
+    background-image: url('/assets/img/FotoTricby.png');
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+.section2_description img {
+    width: 300px;
+    border-radius: 20px;
+}
+.section2_description img:hover {
+    opacity: 0;
+}
+.section2_description p {
+    max-width: 700px;
+    min-width: 300px;
+    margin: 10px;
+}
+/* Cards (VIDEOS SECCION 2)*/
+#video_section2 h2 {
+    text-align: center;
+    font-size: 4rem;
+}
+.section2_extrasContainer {
+    /* background-image: url('/assets/img/2023-01-12_11.59.38.png'); */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    padding: 30px 10px;
+    gap: 20px;
+}
+.card-sec2 {
+    width: 150px;
+    height: 150px;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
 /* VIDEOS SECCION 3 */
 .grid-container {
     max-width: 100%;

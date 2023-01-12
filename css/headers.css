@@ -22,7 +22,7 @@
     place-items: center;
 }
 #header-index nav .nav_logo-container img {
-    width: 120px;
+    width: 35px;
 }
 /* Menu */
 #header-index nav .header_menu {
@@ -106,7 +106,7 @@
     place-items: center;
 }
 #header-fijo nav .nav_logo-container img {
-    width: 120px;
+    width: 35px;
     margin: 0 auto;
 }
 /* Menu */
@@ -153,7 +153,7 @@
     #header-fijo nav .nav_logo-container a {
         background-color: #0e0e0eee;
         display: flex;
-        width: 150px;
+        width: 100px;
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
     }
