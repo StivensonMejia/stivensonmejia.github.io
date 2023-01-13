@@ -1,4 +1,18 @@
-@media (max-width: 650px) {
+/* media unico */
+@media (max-width: 410px) {
+    #video_section2 .section2_extrasContainer {
+        padding: 30px 5px 200px;
+        gap: 10px;
+    }
+    #video_section2  .card-sec2 {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+
+@media (max-width: 680px) {
     /* VIDEOS */
     .Container_felx-main .felx-main_video {
         position: relative;
@@ -25,4 +39,9 @@
         width: 100%;
         padding-top: 56.25%;
     }
+    .card-sec2 {
+        width: 175px;
+        height: 175px;
+    }
 }
+
