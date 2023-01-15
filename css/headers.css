@@ -92,7 +92,6 @@
     display: grid;
     grid-template-rows: 1fr;
 }
-/* REDES SOCIALES FIJO*/
 #header-fijo nav {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;

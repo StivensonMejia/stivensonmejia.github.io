@@ -4,7 +4,7 @@
         padding: 30px 5px 200px;
         gap: 10px;
     }
-    #video_section2  .card-sec2 {
+    #video_section2 .card-sec2 {
         width: 140px;
         height: 140px;
     }
@@ -33,15 +33,17 @@
         width: 100%;
         height: auto;
     }
-    .blogs_post-container .container_iframe {
+    /* sec2 */
+    #video_section2 .card-sec2 {
+        width: 175px;
+        height: 175px;
+    }
+    /* sec3 */
+    #video_section3 .container_iframe {
         position: relative;
         overflow: hidden;
         width: 100%;
         padding-top: 56.25%;
-    }
-    .card-sec2 {
-        width: 175px;
-        height: 175px;
     }
 }
 
