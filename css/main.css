@@ -475,7 +475,7 @@ a {
 }
 .section2_description img {
     width: 300px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .section2_description img:hover {
     opacity: 0;
@@ -484,6 +484,11 @@ a {
     max-width: 700px;
     min-width: 300px;
     margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background: #fdc964;
+    font-size: 2rem;
+    padding: 20px;
 }
 /* Cards (VIDEOS SECCION 2)*/
 #video_section2 h2 {
@@ -503,14 +508,36 @@ a {
 .card-sec2 {
     width: 200px;
     height: 200px;
-    background-color: #f2a04a;
     border-radius: 10px;
-    object-fit: contain;
+}
+.witherM {
+    background-image: url('/assets/img/whiterMinecraft.webp');
+    background-size: cover;
+}
+.abejaM {
+    background-image: url('/assets/img/abejaMinecraft.webp');
+    background-size: cover;
+}
+.tricbyM {
+    background-image: url('/assets/img/tricbycabeza2.webp');
+    background-size: cover;
+}
+.cerdoM {
+    background-image: url('/assets/img/cerdoMinecraft.webp');
+    background-size: cover;
+}
+.esqueletoM {
+    background-image: url('/assets/img/esqueletoMinecraft.webp');
+    background-size: cover;
 }
 .card-sec2 img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    font-display: none;
+}
+.card-sec2 img:hover {
+    opacity: 0;
 }
 
 /* VIDEOS SECCION 3 */
@@ -528,6 +555,7 @@ a {
     height: 250px;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 #video_section3 .container_iframe iframe {
     width: 100%;

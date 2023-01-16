@@ -4,7 +4,7 @@
         padding: 30px 5px 200px;
         gap: 10px;
     }
-    #video_section2 .card-sec2 {
+    #video_section2 .section2_extrasContainer .card-sec2 {
         width: 140px;
         height: 140px;
     }
@@ -14,13 +14,13 @@
 
 @media (max-width: 680px) {
     /* VIDEOS */
-    .Container_felx-main .felx-main_video {
+    .section1_containerFlex .containerFlex_video {
         position: relative;
         overflow: hidden;
         width: 100%;
         padding-top: 56.25%;
     }
-    .Container_felx-main .felx-main_video iframe {
+    .section1_containerFlex .containerFlex_video iframe {
         position: absolute;
         top: 0;
         left: 0;
@@ -28,8 +28,9 @@
         right: 0;
         width: 100%;
         height: 100%;
+        border-radius: 0px;
     }
-    .Container_felx-main .felx-main_ifo {
+    .section1_containerFlex .containerFlex_info {
         width: 100%;
         height: auto;
     }
