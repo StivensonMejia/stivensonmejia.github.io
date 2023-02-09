@@ -395,57 +395,52 @@ a {
 /* VIDEOS */
 .main-videos {
     background-image: url('/assets/img/fondo\ crepers.webp');
-    background-attachment: fixed;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 /* VIDEOS SECCION 1 */
 #video_section1 {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr;
     background-position: bottom;
 }
 .section1_containerPortada {
     width: 100%;
-    height: 100%;
+    height:50vh;
     background-image: url('/assets/img/miniatura.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 .section1_containerFlex {
-    background-color: #804141;
-    background-image: url('/assets/img/portadaVideos.webp');
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    place-items: center;
-    justify-content: space-evenly;
+    height: 100%;
+    position: relative;
 }
-.containerFlex_video {
-    margin: 10px 0;
+.section1_containerFlex video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
-.containerFlex_video iframe {
-    width: 560px;
-    height: 315px;
-}
-.containerFlex_info {
-    width: 500px;
-    padding: 30px;
-    color: rgb(0, 0, 0);
-}
-.containerFlex_info h2 {
-    margin: 5px 0 30px 0;
+.section1_containerFlex .capa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #eeab70;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
 }
 /* Div de relleno */
 .main-videos .tablones {
     width: 100%;
-    height:65px;
-    background-image: url('/assets/img/2023-01-12_11.59.38.png');
+    height:35px;
+    background-image: url('/assets/img/tablones.webp');
     background-position: top;
 }
 /* VIDEOS SECCION 2 */
@@ -455,118 +450,131 @@ a {
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
-    background-color: rgba(255, 249, 234, 0.259);
 }
 .section2_description {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    padding: 100px 10px 80px;
     gap: 20px;
-    padding: 100px 0 30px;
 }
 .description_imageContainer {
     background-image: url('/assets/img/FotoTricby.png');
     background-size: cover;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 80px;
+    border-radius: 10px;
 }
 .section2_description img {
-    width: 300px;
+    width: 100%;
     border-radius: 10px;
 }
 .section2_description img:hover {
     opacity: 0;
 }
 .section2_description p {
-    max-width: 700px;
+    max-width: 1300px;
     min-width: 300px;
     margin: 10px;
     text-align: center;
-    border-radius: 10px;
-    background: #fdc964;
     font-size: 2rem;
-    padding: 20px;
+    color: rgb(0, 0, 0);
 }
 /* Cards (VIDEOS SECCION 2)*/
-#video_section2 h2 {
-    padding: 50px 0 10px;
-    text-align: center;
-    font-size: 4rem;
-}
 .section2_extrasContainer {
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
     place-content: center;
-    padding: 30px 20px 100px;
+    padding: 30px 20px 200px;
     gap: 20px;
 }
 .card-sec2 {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
+    max-width: 500px;
+    min-width: 150px;
+    height: auto;
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    
 }
 .witherM {
-    background-image: url('/assets/img/whiterMinecraft.webp');
-    background-size: cover;
-}
-.abejaM {
-    background-image: url('/assets/img/abejaMinecraft.webp');
-    background-size: cover;
+    text-align: right;
 }
 .tricbyM {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
     background-image: url('/assets/img/tricbycabeza2.webp');
     background-size: cover;
+    align-self: center;
 }
-.cerdoM {
-    background-image: url('/assets/img/cerdoMinecraft.webp');
-    background-size: cover;
-}
-.esqueletoM {
-    background-image: url('/assets/img/esqueletoMinecraft.webp');
-    background-size: cover;
-}
-.card-sec2 img {
+.tricbyM img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    font-display: none;
 }
-.card-sec2 img:hover {
+.tricbyM img:hover {
     opacity: 0;
 }
 
 /* VIDEOS SECCION 3 */
-#video_section3 .section3_videoList {
+#video_section3 .section3_container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+#video_section3 .section3_container div {
+    width: 180px;
+    height: 180px;
+    background-image: url('/assets/img/abejaMinecraft.webp');
+    background-size: cover;
+    position: absolute;
+    left: calc(50% - 90px); 
+    bottom: -60px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+/* FONDO SECION Y FINAL */
+.paisaje-container {
+    background-image: url('/assets/img/fondoVideosSecFinal.webp');
+    background-size: cover;
+    background-attachment: fixed;
+} 
+.paisaje-container h2 {
+    padding: 80px 0 30px;
+    text-align: center;
+    font-size: 6rem;
+    color: white;
+}
+
+/* VIDEOS SECCION 4 */
+#video_section4 .section4_videoList {
     max-width: 100%;
-    padding: 50px 0;
-    margin: auto;
+    padding: 50px 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     place-content: center;
 }
-#video_section3 .container_iframe {
+#video_section4 .container_iframe {
     width: 445px;
     height: 250px;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
 }
-#video_section3 .container_iframe iframe {
+#video_section4 .container_iframe iframe {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
-/* VIDEOS SECCION 4 */
-
-
 /* VIDEOS SECCION FINAL */
 .videos-sectionFinal {
     width: 100%;

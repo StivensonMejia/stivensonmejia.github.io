@@ -8,6 +8,7 @@
         width: 140px;
         height: 140px;
     }
+    
 }
 
 
@@ -40,7 +41,11 @@
         height: 175px;
     }
     /* sec3 */
-    #video_section3 .container_iframe {
+    #video_section4 .section4_videoList {
+        padding: 50px 0;
+    }
+
+    #video_section4 .container_iframe {
         position: relative;
         overflow: hidden;
         width: 100%;
