@@ -173,8 +173,6 @@ a {
     color: #0e0e0e;
 }
 /* INDEX SECCION 3 */
-.home-main .home-sec3 {  
-}
 .sec3_container-onda {
     width: 100%;
     height: auto;
@@ -392,17 +390,10 @@ a {
     background-attachment: fixed;
 }
 /* VIDEOS */
-.main-videos {
-    background-image: url('/assets/img/fondo\ crepers.webp');
-    background-color: #ffffff;
-}
 /* VIDEOS SECCION 1 */
 #video_section1 {
     width: 100%;
     height: 50vh;
-    display: grid;
-    grid-template-rows: 1fr;
-    background-position: bottom;
 }
 .section1_containerFlex {
     width: 100%;
@@ -459,10 +450,10 @@ a {
     height: 280px;
     border-radius: 10px;
 }
-.section2_description img {
+.section2_description .description_imageContainer img {
     width: 100%;
     border-radius: 10px;
-    transition: opacity 0.1s linear;
+    transition: opacity .5s linear;
 }
 .section2_description img:hover {
     opacity: 0;
@@ -492,14 +483,23 @@ a {
 .description_textContainer p {
     max-width: 1200px;
     min-width: 300px;
-    margin: 20px;
+    margin: 20px 10px 70px;
     text-align: center;
+    font-size: 1.8rem;
+    color: rgb(225, 177, 128);
+}
+.description_textContainer p a {
+    padding: 5px 10px;
+    border-radius: 5px;
     font-size: 2rem;
-    color: rgb(255, 199, 139);
+    color: rgb(104, 168, 64);
+}
+.description_textContainer p a:hover {
+    border: 2px solid rgb(104, 168, 64);
 }
 .description_textContainer .tricbyM {
     position: absolute;
-    bottom: -60px;
+    bottom: 5px;
     left: calc(50% - 25px); 
     width: 50px;
     height: 50px;
@@ -515,16 +515,8 @@ a {
 .description_textContainer .tricbyM img:hover {
     opacity: 0;
 }
+
 /* VIDEOS SECCION 3 */
-#video_section3 {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    position: relative;
-    padding: 300px 0 50px;
-}
 .section3_pixeles {
     width: 100%;
     height: 150px;
@@ -534,29 +526,77 @@ a {
     background-position: bottom;
     background-repeat: no-repeat;
 }
-.section3_titleContainer {
-    position: absolute;
-    top: 200px;
-    text-align: center;
-    font-size: 2.5rem;
+#video_section3 .section3_videoList {
+    position: relative;
+    max-width: 100%;
+    padding: 50px 30px;
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    place-content: center;
 }
-/* VIDEOS SECCION 3 texturas y links */
-.section3_textures-Container {
-    max-width: 620px;
+#video_section3 .vSec3-container_iframe {
+    width: 445px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+#video_section3 .vSec3-container_iframe iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#video_section3 .section3_videoList .vSec3-abeja {
+    width: 130px;
+    height: 130px;
+    background-image: url('/assets/img/abejaMinecraft.webp');
+    background-size: cover;
+    position: absolute;
+    left: calc(50% - 65px); 
+    bottom: -120px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* VIDEOS SECCION 4 */
+#video_section4 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    padding: 150px 0 50px;
+}
+
+.section4_titleContainer {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+/* VIDEOS SECCION 3 (texturas y links) */
+.section4_textures-container {
+    max-width: 720px;
     min-width: 280px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
 }
-.section3_textures-Container .sec3-textures {
-    width: 600px;
-    height: auto;
+.section4_textures-container .vSec4-textures {
+    margin: 0 15px;
+    width: 700px;
+    height: 100px;
     display: flex;
     overflow: hidden;
     border-radius: 5px;
 }
-.section3_textures-Container .sec3-textures img {
+.section4_textures-container .vSec4-textures img {
     width: 0px;
     height: 120px;
     flex-grow: 3;
@@ -564,114 +604,94 @@ a {
     filter: grayscale(0);
     transition: .5s ease;
 }
-.section3_textures-Container .sec3-textures .texturesText {
+.section4_textures-container .vSec4-textures .texturesText {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background-color: #000000cd;
+    background-color: #000000ec;
     width: 0;
     height: auto;
     flex-grow: 1;
     object-fit: cover;
     transition: .5s ease;
-    transition-delay: 1s;
+    transition-delay: .7s;
     color: white;
     font-size: 1.3rem;
     text-align: center;
 }
-.section3_textures-Container .sec3-textures .texturesText .sec3_textures-button {
+.section4_textures-container .vSec4-textures .texturesText .vSec4_textures-button {
     width: auto;
     height: auto;
     border-radius: 3px;
     margin-top: 10px;
     padding: 5px 5px;
-    background-color: #ffffff;
+    border: 2px solid white;
 }
-.section3_textures-Container .sec3-textures img:hover {
+.section4_textures-container .vSec4-textures .texturesText .vSec4_textures-button a {
+    color: white;
+}
+.section4_textures-container .vSec4-textures img:hover {
     width: 100%;
-    height: 300px;
+    height: 180px;
 }
-.section3_textures-Container .sec3-textures .texturesText:hover {
+.section4_textures-container .vSec4-textures .texturesText:hover {
     width: 100%;
     background-color: #0000001e;
 }
-.section3_textures-Container .stayTrue-texture {
+.section4_textures-container .stayTrue-texture {
     background-image: url('/assets/img/stayTrueF.webp');
     background-size: cover;
     background-position: center;
 }   
-.section3_textures-Container .betterVanilla-texture {
+.section4_textures-container .betterVanilla-texture {
     background-image: url('/assets/img/betterVanillaF.webp');
     background-size: cover;
     background-position: center;
 }  
-.section3_textures-Container .dramaticSky-texture {
+.section4_textures-container .dramaticSky-texture {
     background-image: url('/assets/img/dramaticSkyF.webp');
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    margin-bottom: 15px;
 }
-.section3_textures-Container .sildursEnhanced-texture {
+.section4_textures-container .sildursEnhanced-texture {
     background-image: url('/assets/img/SildursEnchantedF.webp');
     background-size: cover;
     background-position: center;
 }  
-.section3_textures-Container .sildursVibrant-texture {
+.section4_textures-container .sildursVibrant-texture {
     background-image: url('/assets/img/sildursVibrantF.webp');
     background-size: cover;
     background-position: center;
 }  
-.section3_textures-Container .bsl-texture {
+.section4_textures-container .bsl-texture {
     background-image: url('/assets/img/bslF.webp');
     background-size: cover;
     background-position: center;
 }
-#video_section3 .abeja {
-    width: 130px;
-    height: 130px;
-    background-image: url('/assets/img/abejaMinecraft.webp');
-    background-size: cover;
-    position: absolute;
-    left: calc(50% - 65px); 
-    bottom: -60px;
-    border-radius: 50%;
+#video_section4 #vSec4-textFinal {
+    max-width: 1200px;
+    font-size: 1.8rem;
+    padding: 150px 15px 0;
+    color: white;
+    text-align: center;
 }
+
 /* FONDO SECION Y FINAL */
 .paisaje-container {
+    position: relative;
     background-image: url('/assets/img/fondoVideosSecFinal.webp');
     background-size: cover;
     background-attachment: fixed;
 } 
 .paisaje-container h2 {
-    padding: 100px 0 30px;
+    padding: 220px 0 60px;
     text-align: center;
     font-size: 5rem;
     color: white;
 }
 
-/* VIDEOS SECCION 4 */
-#video_section4 .section4_videoList {
-    max-width: 100%;
-    padding: 50px 30px;
-    margin-bottom: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    place-content: center;
-}
-#video_section4 .container_iframe {
-    width: 445px;
-    height: 250px;
-    position: relative;
-    overflow: hidden;
-}
-#video_section4 .container_iframe iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 /* VIDEOS SECCION FINAL */
 .videos-sectionFinal {
     width: 100%;
@@ -680,8 +700,57 @@ a {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-
 }
+.vSectionFinal_container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.vSectionFinal_container .vFinal-spamYoutube, .vSectionFinal_container .vFinal-spamRedes {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+.vSectionFinal_container .vFinal-spamYoutube p {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bolder;
+}
+.vSectionFinal_container .vFinal-spamYoutube img {
+    width: 100px;
+    height: 100px;
+    transition: ease 1s;
+}
+.vSectionFinal_container .vFinal-spamYoutube img:hover {
+    transform: rotate(360deg);
+    filter: invert(0.4) sepia(1) hue-rotate(-50deg) saturate(1000%);
+}
+.vSectionFinal_container .vFinal-spamRedes img {
+    width: 50px;
+    height: 50px;
+    transition: ease .5s;
+}
+.vSectionFinal_container .vFinal-spamRedes .instagram:hover {
+    transform: scale(2);
+    filter: invert(0.4) sepia(1) hue-rotate(250deg) saturate(1000%);
+}
+.vSectionFinal_container .vFinal-spamRedes .facebook:hover {
+    transform: scale(2);
+    filter: invert(0.4) sepia(1) hue-rotate(180deg) saturate(1000%);
+}
+.vSectionFinal_container .vFinal-spamRedes .facebook:hover {
+    transform: scale(2);
+    filter: invert(0.4) sepia(1) hue-rotate(180deg) saturate(1000%);
+}
+.vSectionFinal_container .vFinal-spamRedes .tikTok:hover {
+    transform: scale(2);
+    filter: invert(1);
+}
+
 /* WEB */
 .web-main_container {
     width: 100%;
@@ -695,16 +764,18 @@ a {
 }
 /* FOOTER */
 footer {
-    display: none;
-    z-index: 10;
     width: 100%;
-    height: auto;
+    height: 100px;
     position: absolute;
     display: grid;
     grid-template-rows: 1fr;
+    background-color: #0e0e0e
+    ;
 }
 footer div {
-    display: none;
-    
+    display: flex;
+    place-content: center;
+    place-items: center;
+    color: white;
 }
 

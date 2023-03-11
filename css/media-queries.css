@@ -1,24 +1,10 @@
-/* media unico */
-@media (max-width: 410px) {
-    #video_section2 .section2_extrasContainer {
-        padding: 30px 5px 200px;
-        gap: 10px;
-    }
-    #video_section2 .section2_extrasContainer .card-sec2 {
-        width: 140px;
-        height: 140px;
-    }
-    
-}
-
-
 
 @media (max-width: 680px) {
     /* VIDEOS */
     /* sec2 */
     
     /* sec3 */
-    #video_section4 .section4_videoList {
+    #video_section3 .section3_videoList {
         padding: 50px 0;
     }
     .section2_description {
@@ -30,7 +16,7 @@
         place-self: center;
         margin-bottom: 40px;
     }
-    #video_section4 .container_iframe, .section2_description .subcontainer-iframe {
+    #video_section3 .vSec3-container_iframe, .section2_description .subcontainer-iframe {
         position: relative;
         overflow: hidden;
         width: 100%;
