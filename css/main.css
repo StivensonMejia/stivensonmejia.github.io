@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Bigelow Rules', cursive;
+    font-family: 'Grenze Gotisch', cursive;
 }
 .ytp-impression-link {
     display: none;
@@ -60,7 +61,7 @@ a {
 .home-main .home-sec1 {
     display: flex;
     justify-content: center;
-    background-image: url('/assets/img/2.webp');  
+    background-image: url('/assets/img/fondoIndex.webp');  
     background-position: center;
 }
 .home-main .home-sec1 .sec1_container {
@@ -145,7 +146,8 @@ a {
     position: relative;
     width: 100%;
     height: 500px;
-    background-image: url('/assets/img/1.webp');
+    background-image: url('/assets/img/llamasNegras.webp');
+    background-repeat: no-repeat;
     background-position: top;
 }
 .sec2_container-img img {
@@ -185,209 +187,305 @@ a {
 
 /* ILUTRATION */
 .ilustration-main {
-    background-color:#0e0e0e;
-    /* background-image: url('/assets/img/calaveras_blanco.webp'); */
+    width: 80%;
+    float: right;
 }
 .ilustration-main .return-button {
     z-index: 9;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     position: fixed;
-    bottom: 5%;
-    right: 5%;
+    bottom: 3%;
+    right: 2%;
     overflow: hidden;
-    background-color: #a8311fa0;
-    transition: transform 250ms;
+    background-color: #9011d4;
+    transition: ease 250ms;
 }
 .ilustration-main .return-button:hover {
-    background-color:#2d2222;
+    background-color:#996bd2;
     transform: scale(1.15);
 }
 .ilustration-main .return-button a {
     display: flex;
     color: #fff;
+    font-size: 3rem;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
+
+/* PORTADA */
+.ilustration-main {
+    position: relative;
+}
+.ilustration_portadaContainer {
+    width: 100%;
+    height: 80vh;
+    background-image: url('/assets/img/ilustraciones/fiddlestick.webp');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 /* PRESENTATION */
-#ilustration_container-presentation {
-    background-color: #0e0e0e;
-    background-image: url('/assets/img/calaveras_negro.webp');
+#ilustration_section1 {
     width: 100%;
-    height: 100vh;
-    display: grid;
-    position: relative;
-    grid-template-columns: 1fr 2fr;
-}
-#ilustration_container-presentation .presentation_text {
-    z-index: 2;
-    width: 60%;
-    color: #fff;
-    text-align: center;
-    place-self: center ;
-}
-#ilustration_container-presentation .presentation_image {
-    z-index: 1;
-    position: relative;
-    overflow: hidden;
-    object-fit: cover;
-}
-#ilustration_container-presentation img {
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    right: -5%;
-}
-/* SELECCION DE PERSONAJE */
-#lustration_container-one {
-    background-color: #0e0e0e;
-    text-align: center;
-}
-#lustration_container-one h1 {
-    color: #fff;
-    padding: 20px 10rem 10px;
-}
-#lustration_container-one p,
-#lustration_container-one h3 {
-    color: #fff;
-    padding: 10px 10rem 20px;
-}
-.container_galery {
-    width: 90%;
-    height: 500px;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 20px;
-    gap: 10px;
-    overflow: auto;
+    padding: 40px 10%;
+    background-color: #851f1f;
 }
-.container_img {
-    max-width: 120px;
-    min-width: 120px;
-    height: 400px;
-    position: relative;
+#ilustration_section1 .iSec1-imageContainer {
+    width: 500px;
     display: flex;
-    justify-content: center;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 250ms;
+    place-content: center;
+}
+#ilustration_section1 .iSec1-imageContainer img {
+    width: 100%;
+}
+#ilustration_section1 .iSec1-textContainer {
+    max-width: 700px;
+    min-width: auto;
+    font-size: 2rem;
+}
+
+/* ILUSTRACIONES SECION 2 */
+#ilustration_section2 .llamas_presentationContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}  
+#ilustration_section2 {
+    position: relative;
+    background-image: url('/assets/img/calaveras_blanco.webp');
+    background-color: #f9f9f9;
+    text-align: center;
+    padding-bottom: 60px;
+}
+#ilustration_section2 .iSec2-textContainer {
+    padding: 200px 10% 50px;
+}
+#ilustration_section2 .iSec2-textContainer h1 {
+    font-size: 7rem;
+    font-family: 'Bigelow Rules', cursive;
+    letter-spacing: 2px;
+}
+#ilustration_section2 .iSec2-textContainer p {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.ilustration_iSec2y3 .iSec2y3-gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(250px, 1fr);
+    grid-auto-flow: dense;
+    padding: 30px 10% 20px;
+    gap: 20px;
+}
+.ilustration_iSec2y3 .iSec2y3-gridContainer .iSec2y3-container_img {
+    transition: ease .5s;
     cursor: pointer;
 }
-.container_img:hover {
+.ilustration_iSec2y3 .iSec2y3-gridContainer .iSec2y3-container_img:hover {
     z-index: 8;
-    transform: scale(1.15);
+    transform: scale(1.03);
 }
-.container_img a {
+.ilustration_iSec2y3 .iSec2y3-gridContainer .iSec2y3-container_img a {
     width: 100%;
     height: 100%;
-    position: absolute;
 }
-.container_img img {
-    width: 100%;
-    object-fit: cover;
-}
-/* TITULO */
-.ilustration-title {
-    font-size: 3rem;
-    text-align: center;
-    margin: 40px 0;
-}
-/* GALERIA COMPLETAS */
-.lustration_container-all {
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-.lustration_container-all .container-all-ex {
-    width: 100%;
-    height: 75%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ferchanGuitarra {
+    background-image: url('/assets/img/ilustraciones/ferchanGuitarra.webp');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
 }
-.lustration_container-all .section_all {
-    z-index: 2;
-    width: auto;
-    height: 100%;
-}
-.lustration_container-all .section_all img {
-    height: 100%;
-    object-fit: cover;
-}
-.degrad-top {
-    z-index: 1;
-    width: 100%;
-    height: 60%;
-    position: absolute;
-    background: linear-gradient(to top, transparent, #0e0e0e 80%);
-    top: 0;
-}
-/* .degrad-bottom {
-    z-index: 1;
-    width: 100%;
-    height: 45%;
-    position: absolute;
-    background: linear-gradient(to bottom, transparent, #0e0e0e 80%);
-    bottom: 0;
-} */
-/* GALERIA COMPLETAS SEPARADAS*/
 .aplox {
-    background-image: url('/assets/img/ilustraciones/Fondos/fondoAplox.webp');
+    background-image: url('/assets/img/ilustraciones/AploxJPG.webp');
+    background-size: cover;
     background-position: center;
 }
 .ferchan {
-    background-image: url('/assets/img/ilustraciones/Con fondo/FerChanJPG.webp');
+    background-image: url('/assets/img/ilustraciones/FerChanJPG.webp');
+    background-size: cover;
     background-position: center;
 }
 .akshan {
-    background-image: url('/assets/img/ilustraciones/Con fondo/AkshanJPG.webp');
+    background-image: url('/assets/img/ilustraciones/AkshanJPG.webp');
+    background-size: cover;
 }
 .anye {
-    background-image: url('/assets/img/ilustraciones/Fondos/fondoAnye.webp');
+    background-image: url('/assets/img/ilustraciones/AnyeJPG.webp');
+    background-size: cover;
 }
 .gio {
-    background-image: url('/assets/img/ilustraciones/Fondos/gioFondo.webp');
+    background-image: url('/assets/img/ilustraciones/Gio.webp');
+    background-size: cover;
+}
+.fidlesticks {
+    background-image: url('/assets/img/ilustraciones/fiddlestick.webp');
+    background-size: cover;
 }
 .alucardcueva {
-    background-image: url('/assets/img/ilustraciones/Fondos/alucardcuevaFondo.webp');
+    background-image: url('/assets/img/ilustraciones/alucardcueva2.webp');
+    background-size: cover;
 }
 .viego {
-    background-image: url('/assets/img/ilustraciones/Con fondo/Viego.webp');
+    background-image: url('/assets/img/ilustraciones/Viego.webp');
+    background-size: cover;
+    background-position: center;
 }
 .isabella {
-    background-image: url('/assets/img/ilustraciones/Con fondo/isabella.webp');
+    background-image: url('/assets/img/ilustraciones/isabella.webp');
+    background-size: cover;
+    background-position: center;
 }
 .alucard {
-    background-image: url('/assets/img/ilustraciones/Fondos/alucardFondo.webp');
+    background-image: url('/assets/img/ilustraciones/Alucard\ Stardew\ Valey.webp');
+    background-size: cover;
 }
 .vampiro2 {
-    background-image: url('/assets/img/ilustraciones/Fondos/fondoGotic.webp');
-    background-position:bottom;
+    background-image: url('/assets/img/ilustraciones/Gotic.webp');
+    background-size: cover;
+    background-position: center;
 }
 .sasuke {
-    background-image: url('/assets/img/ilustraciones/Fondos/sasukeFondo.webp');
+    background-image: url('/assets/img/ilustraciones/sasuke.webp');
+    background-size: cover;
     background-position: center;
 }
 
-/* GALERIA FINAL */
-.ilustration_container-galery-final {
-    width: 100%;
-    height: 100vh;
-    background-image: url('/assets/img/ilustraciones/Con fondo/FiddlesticksPNG.webp');
+/* ILUSTRACIONES SECION 3 */
+#ilustration_section3 {
+    background-color:  #eee;
+    padding-bottom: 60px;
+}
+#ilustration_section3 .iSec3-textContainer {
+    padding: 60px 10% 0;
+}
+#ilustration_section3 .iSec3-textContainer h1 {
+    font-size: 5rem;
+    font-family: 'Bigelow Rules', cursive;
+    letter-spacing: 2px;
+    
+}
+#ilustration_section3 .iSec3-textContainer p {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+.itachiTrad {
+    background-image: url('/assets/img/ilustraciones/itachiTradicional.webp');
     background-size: cover;
-    background-position:top;
-    background-attachment: fixed;
+    background-position: center;
+}
+.minatoTrad {
+    background-image: url('/assets/img/ilustraciones/minatoTradicional.webp');
+    background-size: cover;
+    background-position: center;
+}
+.sasukeTrad {
+    background-image: url('/assets/img/ilustraciones/sasukeTradicional.webp');
+    background-size: cover;
+    background-position: center;
+}
+.semirealTrad {
+    background-image: url('/assets/img/ilustraciones/tradicionalSemiReal.webp');
+    background-size: cover;
+    background-position: center;
+}
+.calaveraTrad {
+    background-image: url('/assets/img/ilustraciones/calaveraTradicional.webp');
+    background-size: cover;
+    background-position: center;
+}
+.kaynTrad {
+    background-image: url('/assets/img/ilustraciones/kaynTradicional.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ILUSTRACIONES SECION 4 */
+#ilustration_section4 {
+    position: relative;
+    background-color: #0e0e0e;
+    padding: 100px 10% 0;
+}
+#ilustration_section4 .iSec4-textContainer h1 {
+    color: white;
+    font-size: 5rem;
+    font-family: 'Bigelow Rules', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 70px 0 180px;
+}
+#ilustration_section4 .iSec4-flexContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#ilustration_section4 .iSec4-flexContainer .iSec4-container_img {
+    width: 180px;
+    height: 180px;
+    transition: ease .5s;
+}
+#ilustration_section4 .iSec4-flexContainer .iSec4-container_img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#ilustration_section4 .iSec4-flexContainer .iSec4-container_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#ilustration_section4 .llamas_presentationContainer {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: -0.13px;
+    transform: rotate(180deg);
+}
+
+/* ILUSTRACIONES SECION 5 */
+#ilustration_section5 {
+    width: 100%;
+    min-height: 60vh;
+    max-height: auto;
+    padding: 0 10% ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+    background-color: #851f1f;
+}
+#ilustration_section5 h2 {
+    color: white;
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-family: 'Bigelow Rules', cursive;
+}
+#ilustration_section5 .iSec5-redesContainer img {
+    width: 150px;
+    transition: ease .5s;
+    transition-delay: .3s;
+}
+#ilustration_section5 .iSec5-redesContainer img:hover {
+    transform: rotate(360deg);
+}
+#ilustration_section5 .iSec5-redesContainer p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
 }
 /* VIDEOS */
 /* VIDEOS SECCION 1 */
@@ -444,7 +542,7 @@ a {
     gap: 50px;
 }
 .description_imageContainer {
-    background-image: url('/assets/img/FotoTricby.png');
+    background-image: url('/assets/img/fotoAntiguaTricby.png');
     background-size: cover;
     width: 280px;
     height: 280px;
@@ -486,16 +584,17 @@ a {
     margin: 20px 10px 70px;
     text-align: center;
     font-size: 1.8rem;
-    color: rgb(225, 177, 128);
+    color: #fff;
 }
 .description_textContainer p a {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 2rem;
-    color: rgb(104, 168, 64);
+    font-weight: bolder;
+    color: rgb(64, 168, 83);
 }
 .description_textContainer p a:hover {
-    border: 2px solid rgb(104, 168, 64);
+    border: 2px solid rgb(64, 168, 83);
 }
 .description_textContainer .tricbyM {
     position: absolute;
@@ -504,7 +603,7 @@ a {
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    background-image: url('/assets/img/tricbycabeza2.webp');
+    background-image: url('/assets/img/cabezaTricby2.webp');
     background-size: cover;
 }
 .description_textContainer .tricbyM img {
@@ -541,6 +640,11 @@ a {
     height: 250px;
     position: relative;
     overflow: hidden;
+    transition: linear .2s;
+}
+#video_section3 .vSec3-container_iframe:hover {
+    transform: scale(1.05);
+    z-index: 10;
 }
 #video_section3 .vSec3-container_iframe iframe {
     width: 100%;
@@ -579,7 +683,7 @@ a {
     font-size: 2rem;
     color: white;
 }
-/* VIDEOS SECCION 3 (texturas y links) */
+/* VIDEOS SECCION 4 (texturas y links) */
 .section4_textures-container {
     max-width: 720px;
     min-width: 280px;
@@ -656,7 +760,7 @@ a {
     margin-bottom: 15px;
 }
 .section4_textures-container .sildursEnhanced-texture {
-    background-image: url('/assets/img/SildursEnchantedF.webp');
+    background-image: url('/assets/img/sildursEnchantedF.webp');
     background-size: cover;
     background-position: center;
 }  
@@ -708,47 +812,25 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.vSectionFinal_container .vFinal-spamYoutube, .vSectionFinal_container .vFinal-spamRedes {
-    margin-top: 100px;
+.vSectionFinal_container .vFinal-spamYoutube {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 35px;
 }
 .vSectionFinal_container .vFinal-spamYoutube p {
     font-size: 2.5rem;
+    margin-bottom: 10px;
     color: white;
     font-weight: bolder;
 }
-.vSectionFinal_container .vFinal-spamYoutube img {
+.vSectionFinal_container .vFinal-spamYoutube a img {
     width: 100px;
     height: 100px;
-    transition: ease 1s;
-}
-.vSectionFinal_container .vFinal-spamYoutube img:hover {
-    transform: rotate(360deg);
-    filter: invert(0.4) sepia(1) hue-rotate(-50deg) saturate(1000%);
-}
-.vSectionFinal_container .vFinal-spamRedes img {
-    width: 50px;
-    height: 50px;
     transition: ease .5s;
 }
-.vSectionFinal_container .vFinal-spamRedes .instagram:hover {
-    transform: scale(2);
-    filter: invert(0.4) sepia(1) hue-rotate(250deg) saturate(1000%);
-}
-.vSectionFinal_container .vFinal-spamRedes .facebook:hover {
-    transform: scale(2);
-    filter: invert(0.4) sepia(1) hue-rotate(180deg) saturate(1000%);
-}
-.vSectionFinal_container .vFinal-spamRedes .facebook:hover {
-    transform: scale(2);
-    filter: invert(0.4) sepia(1) hue-rotate(180deg) saturate(1000%);
-}
-.vSectionFinal_container .vFinal-spamRedes .tikTok:hover {
-    transform: scale(2);
-    filter: invert(1);
+.vSectionFinal_container .vFinal-spamYoutube a img:hover {
+    transform: rotate(360deg);
+    filter: invert(0.4) sepia(1) hue-rotate(-50deg) saturate(1000%);
 }
 
 /* WEB */
@@ -766,7 +848,6 @@ a {
 footer {
     width: 100%;
     height: 100px;
-    position: absolute;
     display: grid;
     grid-template-rows: 1fr;
     background-color: #0e0e0e

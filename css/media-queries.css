@@ -24,3 +24,23 @@
     }
 }
 
+@media (min-width: 980px) {
+    
+    .ilustration_iSec2y3 .iSec2y3-gridContainer .wide {
+        grid-column: span 2;
+    }
+    .ilustration_iSec2y3 .iSec2y3-gridContainer .tall {
+        grid-row: span 2;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .ilustration-main {
+        width: 100%;
+        float: right;
+    }
+    .ilustration_portadaContainer {
+        background-position: center;
+    }
+}
