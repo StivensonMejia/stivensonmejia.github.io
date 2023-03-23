@@ -84,70 +84,6 @@
     
 }
 
-/* HEADER VIDEOS*/
-#header-videos {
-    z-index: 12;
-    width: 100%;
-    height: auto;
-    position: fixed;
-}
-#header-videos nav {
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-}
-/* Logo */
-#header-videos nav .nav_logo-container {
-    margin-left: 3%;
-    display: flex;
-    place-content: center;
-    place-items: center;
-    padding: 0 15px;
-    border-radius: 0 0 30px 30px;
-    background-color: #851f1f9f;
-    backdrop-filter: blur(5px);
-}
-#header-videos nav .nav_logo-container img {
-    width: 50px;
-    margin: 0 auto;
-    transition: ease .5s;
-}
-#header-videos nav .nav_logo-container img:hover {
-    transform: scale(1.2);
-}
-/* Menu */
-#header-videos nav .header_menu {
-    width: 420px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-right: 3%;
-    padding-left: 3%;
-    background-color: #0e0e0eee;
-    backdrop-filter: blur(5px);
-    border-bottom-left-radius: 50px;
-}
-#header-videos nav .header_menu .menu_list {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-#header-videos nav .header_menu .menu_list li {
-    width: auto;
-    height: auto;
-    list-style: none;
-}
-#header-videos nav .header_menu .menu_list li a {
-    width: 100%;
-    padding: 10px 10px 1px;
-    color: white;
-    font-size: 1.6rem;
-    text-align: center;
-}
-#header-videos nav .header_menu .menu_list li a:hover {
-    border-bottom: 2px solid white;
-}
-
 /* HEADER Ilustraciones*/
 #header-ilustraciones {
     z-index: 10;
@@ -198,7 +134,7 @@
 #header-ilustraciones nav .header_menu .menu_list li a {
     padding: 10px 5px 1px;
     color: white;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 300;
     text-align: center;
 }
@@ -216,65 +152,148 @@
 #header-ilustraciones .header_subMenu a {
     padding: 15px 0 1px 10px;
     color: white;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 300;
 }
 #header-ilustraciones .header_subMenu a:hover {
     border-bottom: 2px solid white;
 }
 
+/* HEADER VIDEOS*/
+#header-videos {
+    z-index: 12;
+    width: 100%;
+    height: auto;
+    position: fixed;
+}
+#header-videos nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+/* Logo */
+#header-videos nav .nav_logo-container {
+    margin-left: 3%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    padding: 0 15px;
+    border-radius: 0 0 10px 10px;
+    background-color: #e98c2f;
+}
+#header-videos nav .nav_logo-container img {
+    width: 40px;
+    transition: ease .5s;
+}
+#header-videos nav .nav_logo-container img:hover {
+    transform: scale(1.2);
+}
+/* Menu */
+#header-videos nav .header_menu {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 3%;
+    padding-left: 3%;
+    background-color: #0e0e0e;
+    border-bottom-left-radius: 10px;
+}
+#header-videos nav .header_menu .menu_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#header-videos nav .header_menu .menu_list li {
+    width: auto;
+    height: auto;
+    list-style: none;
+}
+#header-videos nav .header_menu .menu_list li a {
+    width: 100%;
+    padding: 15px 5px 1px;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+#header-videos nav .header_menu .menu_list li a:hover {
+    border-bottom: 2px solid white;
+}
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     #header-videos {
-        background-color: #0e0e0eee;
+        width: 100%;
+        height: 120px;
+    }
+    #header-videos nav {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+        height: 100%;
     }
     #header-videos nav .nav_logo-container {
-        padding: 0 15px;
-        margin: 0;
-        border-radius: 0;
+        width: 70px;
+        height: 50px;
+        margin: 0 auto;
+        grid-area: 2/1;
     }
     #header-videos nav .header_menu .menu_list li a {
         font-size: 1.5rem;
-        padding: 15px 5px;
+        padding: 10px 5px 1px;
     }
-
+    #header-videos nav .header_menu {
+        width: 100vw;
+        border-radius: 0;
+        height: auto;
+        border-bottom: 5px solid #e98c2f;
+    }
+    #header-videos nav .header_menu .menu_list {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-items: center;
+        align-content: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media (max-width: 1200px) {
     #header-ilustraciones {
         width: 100%;
-        height: 70px;
-        background-color: rgba(255, 0, 0, 0);
+        height: 120px;
+        background-color: rgba(0, 0, 0, 0);
     }
     #header-ilustraciones nav {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
         height: 100%;
     }   
     #header-ilustraciones nav .nav_logo-container {
-        width: 15%;
-        height: 100%;
-        background-color: #0e0e0eda;
-        backdrop-filter: blur(5px);
+        width: 70px;
+        height: 50px;
+        margin: 0 auto;
+        border-radius: 0 0 30px 30px;
+        grid-area: 2/1;
+        background-color: #851f1f;
     }
     #header-ilustraciones nav .nav_logo-container a {
         width: 40px;
         height: 40px;
     }
     #header-ilustraciones nav .header_menu {
-        width: 85%;
+        width: 100%;
         height: auto;
+        border-bottom: 5px solid #851f1f;
     }
     #header-ilustraciones nav .header_menu .menu_list {
         width: 100%;
         height: 100%;
-        display: flex;
-        justify-content:end;
-        align-items: center;
-        padding-right: 5%;
-        gap: 5%;
-        background-color: #851f1fc2;
-        backdrop-filter: blur(5px);
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #0e0e0e;
     }
     #header-ilustraciones .header_subMenu {
         display: none;
