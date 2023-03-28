@@ -27,7 +27,7 @@ body::-webkit-scrollbar,
 body::-webkit-scrollbar-thumb,
 .container_galery::-webkit-scrollbar-thumb
 {
-    background-color:#fbfbfb;
+    background-color:#fefefe;
     border-radius: 1px;
 }
 a {
@@ -37,154 +37,168 @@ a {
 }
 
 /* INDEX */
-.home-main {
-    background-color: #ffffff;
+.main-index {
+    background-color: white;
     background-image: url('/assets/img/calaveras_blanco.webp');
     display: flex;
+    background-attachment: fixed;
     flex-direction: column;
     height: 100%;
 }
-/* PAGINA PRINCIPAL (INDEX) */
-/* .home-main_container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+/* INDEX SECCION 1 */
+#index_section1 {
     height: 100vh;
-} */
-.home-main .home-sec {
-    height: 100vh;
+    display: flex;
+    justify-content: center;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* INDEX SECCION 1 */
-.home-main .home-sec1 {
-    display: flex;
-    justify-content: center;
-    background-image: url('/assets/img/fondoIndex.webp');  
+    background-image: url('/assets/img/fondoIndex.gif');  
     background-position: center;
 }
-.home-main .home-sec1 .sec1_container {
-    width: 60%;
+#index_section1 .section1_container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.home-main .home-sec1 .sec1_container div {
+#index_section1 .section1_container .inSec1-containerImg {
     display: flex;
+    width: 50%;
     position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.home-main .home-main_title {
-    margin: 0;
-    font-family: 'Roboto mono', monospace;
-    font-size: 5rem;
-    letter-spacing: 8px;
-    color: white;
-    text-align: center;
+#index_section1 .section1_container .inSec1-containerImg img {
+    margin-left: 20px;
+    width: 100%;
 }
-.home-main_img {
-    margin-left: 30px;
-    width: 900px;
-}
-.home-main .home-main_text {
+#index_section1 .section1_container .inSec1-containerImg P {
     margin: 0;
     position: absolute;
-    bottom: 0;
-    font-family: 'Roboto mono', monospace;
-    font-size: 3rem;
-    letter-spacing: 8px;
+    bottom: 30%;
+    left: 6%;
+    font-size: 2rem;
     color: white;
     text-align: center;
+    letter-spacing: 3px;
 }
-.home-main .home-main_button {
-    display: inline;
-}
-.home-main .home-main_button a {
+#index_section1 .section1_container .inSec1-containerButom a {
     width: 300px;
     height: 50px;
-    display: flex;
-    place-content: center;
-    place-items: center;
-    margin-top: 40px;
-    border-radius: 10px;
-    font-size: 1.5rem;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 5rem;
+    font-family: 'Bigelow Rules', cursive;
     letter-spacing: 3px;
-    font-family: 'Roboto mono', monospace;
-    background-color: #6d3232;
     color: white;
+    text-align: center;
     transition: transform 300ms;
 }
-.home-main .home-main_button a:hover {
-    background-color: #a22929;
+#index_section1 .section1_container .inSec1-containerButom a:hover {
     transform: scale(1.2);
+    color: rgb(177, 21, 21)
 }
 
 /* INDEX SECCION 2 */
-.home-main .home-sec2 {
+#index_section2 {
     width: 100%;
     height: auto;
-    display: flex;
+    position: relative;
     background-image: url('/assets/img/telaraña2.webp');
-    background-position: top;
-}
-.home-main .home-sec2 .home-sec2_grid {
-    width: 100%;
-    height: auto;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-}
-.sec2_container-img {
-    z-index: 2;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-image: url('/assets/img/llamasNegras.webp');
     background-repeat: no-repeat;
     background-position: top;
-}
-.sec2_container-img img {
-    position: absolute;
-    bottom: -100px;
-    width: 300px;
-    border: groove 10px #6d3232;
-    border-radius: 50%;
-}
-.sec2_container-name {
     text-align: center;
-    padding: 150px 50px 50px;;
 }
-.sec2_container-text {
+#index_section2 .inSec2-llamas {
     z-index: 2;
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    padding: 50px 50px 100px;
-}
-.sec2_container-text div {
-    border-radius: 10px;
-    border: double 10px #0e0e0e;
-    padding: 20px;
-    color: #0e0e0e;
-}
-/* INDEX SECCION 3 */
-.sec3_container-onda {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
 }
-.sec3_container {
+#index_section2 .inSec2-containerPerfil {
     width: 100%;
-    height: 100%;
-    background-color: #0e0e0e;
+    height: auto;
+    margin-top: 15%;
 }
+#index_section2 .inSec2-containerPerfil .inSec2-fotoPerfil {
+    width: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+#index_section2 .inSec2-containerPerfil h1 {
+    font-size: 5rem;
+    height: auto;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Bigelow Rules', cursive;
+    border-bottom: 8px double black;
+    border-top: 8px double black;
+    background-color: white;
+    margin-bottom: 15%;
+}
+#index_section2 .inSec2-llamas2 {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+}
+/* INDEX SECCION 3 */
+#index_section3 {
+    width: 100%;
+    height: auto;
+    background-color: #060606;
+}
+#index_section3 .inSec3_containerTextSobreMi {
+    display: flex;
+    padding: 50px 10%;
+    gap: 10%;
+}
+#index_section3 .inSec3_containerTextSobreMi p {
+    font-size: 2.2rem;
+    color: white;
+}
+#index_section3 .inSec3_containerTextSobreMi .inSec3-textLeft{
+    text-align: left;
+}
+#index_section3 .inSec3_containerTextSobreMi .inSec3-textRight {
+    text-align: right;
+}
+#index_section3 .inSec3_containerCards {
+    z-index: 2;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 10%;
+}
+#index_section3 .inSec3_containerCards .inSec3-cards {
+    width: 30%;
+    height: 30%;
+    color: #ffffff;
+}
+#index_section3 .inSec3_containerCards .inSec3-cards img {
+    width: 100%;
+}
+#index_section3 .inSec3_containerCards .inSec3-cards h3 {
+    font-size: 4rem;
+    font-family: 'Bigelow Rules', cursive;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    text-align: center;
 
+}
 /* ILUTRATION */
 .ilustration-main {
     width: 80%;
