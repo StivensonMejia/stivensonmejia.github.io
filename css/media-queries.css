@@ -1,5 +1,9 @@
 
 @media (max-width: 680px) {
+    /* INDEX sec3 */
+    #index_section3 .inSec3_containerCards .inSec3-cards h3 {
+        font-size: 2rem;
+    }
     /* ILUESTRACIONES sec4 */
     #ilustration_section4 .iSec4-flexContainer .iSec4-container_img {
         width: 100px;
@@ -40,10 +44,22 @@
     .ilustration_iSec2y3 .iSec2y3-gridContainer .tall {
         grid-row: span 2;
     }
+    
 }
 
 @media (max-width: 1200px) {
-
+    /* INDEX sec3 */
+    #index_section3 .inSec3-containerPerfil h1{
+        font-size: 6rem;
+        text-align: center;
+    }
+    #index_section3 .inSec3_containerTextSobreMi {
+        display: block;
+    }
+    #index_section3 .inSec3_containerTextSobreMi .inSec3-textBar {
+        position: relative;
+        width: 100%;
+    }
     .ilustration-main {
         width: 100%;
         float: right;

@@ -38,10 +38,10 @@ a {
 
 /* INDEX */
 .main-index {
-    background-color: white;
+    background-color: #fefefe;
     background-image: url('/assets/img/calaveras_blanco.webp');
     display: flex;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     flex-direction: column;
     height: 100%;
 }
@@ -53,7 +53,7 @@ a {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/assets/img/fondoIndex.gif');  
+    background-image: url('/assets/img/fondoIndex.webp');  
     background-position: center;
 }
 #index_section1 .section1_container {
@@ -65,7 +65,7 @@ a {
 }
 #index_section1 .section1_container .inSec1-containerImg {
     display: flex;
-    width: 50%;
+    width: 100%;
     position: relative;
     flex-direction: column;
     align-items: center;
@@ -73,13 +73,13 @@ a {
 }
 #index_section1 .section1_container .inSec1-containerImg img {
     margin-left: 20px;
-    width: 100%;
+    width: 45%;
 }
 #index_section1 .section1_container .inSec1-containerImg P {
     margin: 0;
     position: absolute;
     bottom: 30%;
-    left: 6%;
+    left: 59%;
     font-size: 2rem;
     color: white;
     text-align: center;
@@ -111,43 +111,34 @@ a {
     height: auto;
     position: relative;
     background-image: url('/assets/img/telaraña2.webp');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: top;
-    text-align: center;
+    background-attachment: fixed;
 }
 #index_section2 .inSec2-llamas {
-    z-index: 2;
+    z-index: 1;
     position: absolute;
-    top: 0;
+    top: -1%;
     left: 0;
     width: 100%;
     height: auto;
 }
 #index_section2 .inSec2-containerPerfil {
+    z-index: 2;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 60px   ;
+    display: flex;
+    flex-wrap: wrap;
     height: auto;
-    margin-top: 15%;
-}
-#index_section2 .inSec2-containerPerfil .inSec2-fotoPerfil {
-    width: 250px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-#index_section2 .inSec2-containerPerfil h1 {
-    font-size: 5rem;
-    height: auto;
-    font-weight: lighter;
-    text-align: center;
-    font-family: 'Bigelow Rules', cursive;
-    border-bottom: 8px double black;
-    border-top: 8px double black;
-    background-color: white;
-    margin-bottom: 15%;
+    margin: 23% 0;
 }
 #index_section2 .inSec2-llamas2 {
-    z-index: 2;
+    z-index: 1;
     position: absolute;
-    bottom: 0;
+    bottom: -1%;
     left: 0;
     width: 100%;
     height: auto;
@@ -155,49 +146,157 @@ a {
 }
 /* INDEX SECCION 3 */
 #index_section3 {
+    position: relative;
     width: 100%;
     height: auto;
     background-color: #060606;
 }
+#index_section3 .inSec3-containerPerfil {
+    z-index: 2;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 60px   ;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 100px 0;
+}
+#index_section3 .inSec3-containerPerfil .inSec3-fotoPerfil {
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 50%;
+}
+#index_section3 .inSec3-containerPerfil h1{
+    z-index: 2;
+    font-size: 10rem;
+    color: white;
+    font-weight: lighter;
+    text-align: start;
+    font-family: 'Bigelow Rules', cursive;
+    
+}
+#index_section3 .inSec3-containerPerfil h1:hover {
+    transition: ease .5s;
+    color: #bd2929;
+}
 #index_section3 .inSec3_containerTextSobreMi {
+    position: relative;
+    width: 100%;
+    height: auto;
     display: flex;
     padding: 50px 10%;
     gap: 10%;
 }
+#index_section3 .inSec3_containerTextSobreMi div {
+    margin-bottom: 30px;
+}
+#index_section3 .inSec3_containerTextSobreMi h2 {
+    font-size: 7rem;
+    font-weight: lighter;
+    color: #bd2929;
+    font-family: 'Bigelow Rules', cursive;
+    transition: ease .5s;
+}
+#index_section3 .inSec3_containerTextSobreMi h2:hover {
+    transform: translate(15px);
+}
 #index_section3 .inSec3_containerTextSobreMi p {
     font-size: 2.2rem;
     color: white;
+    font-weight: 300;
 }
 #index_section3 .inSec3_containerTextSobreMi .inSec3-textLeft{
     text-align: left;
+    margin-bottom: 90px;
 }
-#index_section3 .inSec3_containerTextSobreMi .inSec3-textRight {
+#index_section3 .inSec3_containerTextSobreMi .inSec3-textBar {
+    position: absolute;
+    bottom: 20px;
+    height: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    border-top: 6px double #bd2929;
+    border-bottom: 6px double #bd2929;
+}
+#index_section3 .inSec3_containerTextSobreMi .inSec3-textBar a {
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
+    transition: ease .5s;
+}
+#index_section3 .inSec3_containerTextSobreMi .inSec3-textBar a:hover {
+    background-color: #bd292931;
+}
+#index_section3 .inSec3_containerTextSobreMi .inSec3-textBar a p {
+    color: #bd2929;
+    font-weight: 500;
+}
+#index_section3 .inSec3_containerTextSobreMi .inSec3-textLeft {
     text-align: right;
+    margin-bottom: 90px;
 }
+
+/* INEDEX SECCION 3 cards */
 #index_section3 .inSec3_containerCards {
     z-index: 2;
     width: auto;
     height: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: end;
+    gap: 10px;
     flex-wrap: wrap;
-    padding: 50px 10%;
+    padding: 0px 10% 30%;
 }
 #index_section3 .inSec3_containerCards .inSec3-cards {
-    width: 30%;
-    height: 30%;
+    width: 120px;;
+    height: auto;
     color: #ffffff;
 }
 #index_section3 .inSec3_containerCards .inSec3-cards img {
     width: 100%;
+    transition: linear .2s;
+}
+#index_section3 .inSec3_containerCards .inSec3-cards img:hover {
+    transform: scale(1.1);
 }
 #index_section3 .inSec3_containerCards .inSec3-cards h3 {
-    font-size: 4rem;
+    font-size: 2.3rem;
     font-family: 'Bigelow Rules', cursive;
     letter-spacing: 2px;
     font-weight: lighter;
     text-align: center;
+    padding: 2px 0px;
+}
+#index_section3 .onda {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: -8px;
+}
+#index_section3 .onda img {
+    width: 100%;
+    height: auto;
+}
 
+/* INEDEX SECCION 4 */
+#index_section4 {
+    width: 100%;
+    height: auto;
+    background-color: #fefefe;
+}
+#index_section4  h4 {
+    font-size: 7rem;
+    font-family: 'Bigelow Rules', cursive;
+    text-align: center;
+}
+#index_section4 .inSec4-container {
+    width: 100%;
+    height: 50vh;
 }
 /* ILUTRATION */
 .ilustration-main {
@@ -217,12 +316,12 @@ a {
     transition: ease 250ms;
 }
 .ilustration-main .return-button:hover {
-    background-color:#922548;
+    background-color:#271213;
     transform: scale(1.15);
 }
 .ilustration-main .return-button a {
     display: flex;
-    color: #fff;
+    color: #fefefe;
     font-size: 3rem;
     justify-content: center;
     align-items: center;
@@ -234,25 +333,33 @@ a {
 }
 .ilustration_portadaContainer {
     width: 100%;
-    height: 80vh;
-    background-image: url('/assets/img/ilustraciones/fiddlestick.webp');
+    height: 50vh;
+    background-image: url('/assets/img/ilustraciones/ferchanGuitarra.webp');
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
 }
 
 /* PRESENTATION */
 #ilustration_section1 {
+    z-index: -1;
+    position: relative;
     width: 100%;
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
-    padding: 40px 10%;
+    padding: 200px 10% 100px;
     background-color: #851f1f;
 }
 #ilustration_section1 .iSec1-imageContainer {
-    width: 500px;
+    z-index: 1;
+    position: absolute;
+    left: -15%;
+    top: -100px;
+    width: 50%;
+    min-width: 350px;
     display: flex;
     place-content: center;
 }
@@ -260,6 +367,8 @@ a {
     width: 100%;
 }
 #ilustration_section1 .iSec1-textContainer {
+    z-index: 2;
+    text-align: end;
     max-width: 700px;
     min-width: auto;
 }
@@ -267,17 +376,18 @@ a {
     font-size: 10rem;
     font-family: 'Bigelow Rules', cursive;
     font-weight: 500;
+    color: #fefefe;
 }
 #ilustration_section1 .iSec1-textContainer .iSec1-textPrincipal {
-    font-size: 2.1rem;
-    font-weight: 400;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #fefefe;
 }
 #ilustration_section1 .iSec1-textContainer .iSec1-textPromocion {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     font-weight: 300;
-    color: rgb(214, 214, 214);
+    color: #fefefe;
 }
-
 /* ILUSTRACIONES SECION 2 */
 #ilustration_section2 .llamas_presentationContainer {
     position: absolute;
@@ -289,7 +399,7 @@ a {
 #ilustration_section2 {
     position: relative;
     background-image: url('/assets/img/calaveras_blanco.webp');
-    background-color: #f9f9f9;
+    background-color: #fefefe;
     text-align: center;
     padding-bottom: 60px;
 }
@@ -437,11 +547,10 @@ a {
 /* ILUSTRACIONES SECION 4 */
 #ilustration_section4 {
     position: relative;
-    background-color: #0e0e0e;
+    background-color: rgb(201 194 186);
     padding: 100px 10% 0;
 }
 #ilustration_section4 .iSec4-textContainer h1 {
-    color: white;
     font-size: 5rem;
     font-family: 'Bigelow Rules', cursive;
     letter-spacing: 2px;
@@ -494,7 +603,7 @@ a {
     background-color: #851f1f;
 }
 #ilustration_section5 h2 {
-    color: white;
+    color: #fefefe;
     font-size: 6rem;
     font-weight: 100;
     letter-spacing: 2px;
@@ -509,7 +618,7 @@ a {
     transform: rotate(360deg);
 }
 #ilustration_section5 .iSec5-redesContainer p {
-    color: white;
+    color: #fefefe;
     font-size: 2.5rem;
     font-weight: 300;
     text-align: center;
