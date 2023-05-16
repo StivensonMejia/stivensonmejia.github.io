@@ -20,14 +20,14 @@ body {
 }
 body::-webkit-scrollbar, 
 .container_galery::-webkit-scrollbar {
-    width: 7px;
+    width: 12px;
     height: 7px;
-    background-color: #000000;
+    background-color: #060606;
 }
 body::-webkit-scrollbar-thumb,
 .container_galery::-webkit-scrollbar-thumb
 {
-    background-color:#fefefe;
+    background-color: #bd2929;;
     border-radius: 1px;
 }
 a {
@@ -58,32 +58,40 @@ a {
 }
 #index_section1 .section1_container {
     position: relative;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 10%;
 }
-#index_section1 .section1_container .inSec1-containerImg {
+#index_section1 .section1_container .inSec1-containerlogo {
     display: flex;
     width: 100%;
+    height: auto;
     position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#index_section1 .section1_container .inSec1-containerImg img {
-    margin-left: 20px;
-    width: 45%;
+#index_section1 .section1_container .inSec1-containerlogo .inSec1-containerImg {
+    background-image: url('/assets/img/tricbys.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 320px;
 }
-#index_section1 .section1_container .inSec1-containerImg P {
-    margin: 0;
+#index_section1 .section1_container .inSec1-containerlogo P {
     position: absolute;
-    bottom: 30%;
-    left: 59%;
-    font-size: 2rem;
+    font-family: 'Bigelow Rules', cursive;
+    font-size: 5rem;
     color: white;
-    text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+}
+#index_section1 .section1_container .inSec1-containerlogo .inSec1-text2 {
+    bottom: 20%;
+    right: 370px;
 }
 #index_section1 .section1_container .inSec1-containerButom a {
     width: 300px;
@@ -95,7 +103,7 @@ a {
     margin: auto;
     font-size: 5rem;
     font-family: 'Bigelow Rules', cursive;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: white;
     text-align: center;
     transition: transform 300ms;
@@ -108,13 +116,8 @@ a {
 /* INDEX SECCION 2 */
 #index_section2 {
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: relative;
-    background-image: url('/assets/img/telaraña2.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 #index_section2 .inSec2-llamas {
     z-index: 1;
@@ -127,22 +130,13 @@ a {
 #index_section2 .inSec2-containerPerfil {
     z-index: 2;
     width: 100%;
+    height: 50vh;
     justify-content: center;
     align-items: center;
     gap: 60px   ;
     display: flex;
     flex-wrap: wrap;
     height: auto;
-    margin: 23% 0;
-}
-#index_section2 .inSec2-llamas2 {
-    z-index: 1;
-    position: absolute;
-    bottom: -1%;
-    left: 0;
-    width: 100%;
-    height: auto;
-    transform: rotate(180deg);
 }
 /* INDEX SECCION 3 */
 #index_section3 {
@@ -171,11 +165,16 @@ a {
 #index_section3 .inSec3-containerPerfil h1{
     z-index: 2;
     font-size: 10rem;
-    color: white;
+    color: #fefefe;
     font-weight: lighter;
     text-align: start;
     font-family: 'Bigelow Rules', cursive;
+    cursor: default;
+    letter-spacing: 1px;
     
+}
+#index_section3 .inSec3-containerPerfil .inSec3-profesionText {
+    font-size: 5rem;
 }
 #index_section3 .inSec3-containerPerfil h1:hover {
     transition: ease .5s;
@@ -188,6 +187,16 @@ a {
     display: flex;
     padding: 50px 10%;
     gap: 10%;
+}
+#index_section3 .inSec3_containerTextSobreMi a {
+    color: #bd2929;
+    font-family: 'Bigelow Rules', cursive;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+}
+#index_section3 .inSec3_containerTextSobreMi .inSec3-relevantA {
+    font-size: 6rem;
+    letter-spacing: 0px;
 }
 #index_section3 .inSec3_containerTextSobreMi div {
     margin-bottom: 30px;
@@ -203,13 +212,14 @@ a {
     transform: translate(15px);
 }
 #index_section3 .inSec3_containerTextSobreMi p {
-    font-size: 2.2rem;
-    color: white;
+    font-size: 2.3rem;
+    color: #fefefe;
     font-weight: 300;
 }
 #index_section3 .inSec3_containerTextSobreMi .inSec3-textLeft{
-    text-align: left;
+    text-align: right;
     margin-bottom: 90px;
+    max-width: 45%;
 }
 #index_section3 .inSec3_containerTextSobreMi .inSec3-textBar {
     position: absolute;
@@ -235,9 +245,10 @@ a {
     color: #bd2929;
     font-weight: 500;
 }
-#index_section3 .inSec3_containerTextSobreMi .inSec3-textLeft {
-    text-align: right;
+#index_section3 .inSec3_containerTextSobreMi .inSec3-textRight {
+    text-align: left;
     margin-bottom: 90px;
+    max-width: 45%;
 }
 
 /* INEDEX SECCION 3 cards */
@@ -250,12 +261,13 @@ a {
     align-items: end;
     gap: 10px;
     flex-wrap: wrap;
-    padding: 0px 10% 30%;
+    padding: 0px 10% 25%;
 }
 #index_section3 .inSec3_containerCards .inSec3-cards {
+    z-index: 2;
     width: 120px;;
     height: auto;
-    color: #ffffff;
+    color: #fefefe;
 }
 #index_section3 .inSec3_containerCards .inSec3-cards img {
     width: 100%;
@@ -272,32 +284,215 @@ a {
     text-align: center;
     padding: 2px 0px;
 }
-#index_section3 .onda {
+.onda {
     position: absolute;
-    width: 100%;
-    height: auto;
-    bottom: -8px;
-}
-#index_section3 .onda img {
+    bottom: 0;
     width: 100%;
     height: auto;
 }
-
 /* INEDEX SECCION 4 */
 #index_section4 {
+    position: relative;
     width: 100%;
     height: auto;
     background-color: #fefefe;
 }
 #index_section4  h4 {
     font-size: 7rem;
+    margin: 50px 0 70px;
     font-family: 'Bigelow Rules', cursive;
     text-align: center;
+    padding: 0 10%;
 }
-#index_section4 .inSec4-container {
+#index_section4 .inSec4-containerCards {
+    z-index: 2;
     width: 100%;
-    height: 50vh;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 55px;
+    padding: 0px 10% 70px;
 }
+#index_section4 .inSec4-containerCards .inSec4-imgBackgroundILUSTRACIONES {
+    background-image: url('/assets/img/ilus.webp');
+    background-position: center;
+}
+#index_section4 .inSec4-containerCards .inSec4-imgBackgroundVIDEOS {
+    background-image: url('/assets/img/vid.webp');
+    background-position: center;
+}
+#index_section4 .inSec4-containerCards .inSec4-imgBackgroundWEB {
+    background-image: url('/assets/img/web.webp');
+    background-position: center;
+}
+#index_section4 .inSec4-containerCards article {
+    z-index: 2;
+    width: 400px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#index_section4 .inSec4-containerCards article .inSec4-marco {
+    position: absolute;
+    width: 103%;
+    height: 115%;
+    top: -7.5%;
+    left: -1.5%;
+}
+#index_section4 .inSec4-containerCards article .inSec4-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#index_section4 .inSec4-containerCards article .inSec4-card .inSec4-cardText {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    top: 0;
+    background-color: #060606;
+    transition: ease .5s;
+    transition-delay: .2s;
+}
+#index_section4 .inSec4-containerCards article .inSec4-card .inSec4-cardText:hover {
+    opacity: 0%;
+    cursor: default;
+}
+#index_section4 .inSec4-containerCards article .inSec4-card .inSec4-cardText h2 {
+    color: #fefefe;
+    font-family: 'Bigelow Rules', cursive;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 100;
+    font-size: 3rem;
+}
+#index_section4 .inSec4-containerCards article .inSec4-card .inSec4-cardText p {
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 2.2rem;
+    font-weight: 100;
+    color: #fefefe;
+}
+#index_section4 .inSec4-containerCards article .inSec4-card .inSec4-cardIcons {
+    z-index: 2;
+    width: 85px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px 15px 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #060606;
+}
+#index_section4 .inSec4-containerCards article .inSec4-card .inSec4-cardIcons p {
+    color: #fefefe;
+    font-size: 3rem;
+    font-family: 'Bigelow Rules', cursive;
+    font-weight: 100;
+}
+#index_section4 .inSec4-containerCards article .inSec4-card .inSec4-cardIcons a {
+    width: auto;
+}
+#index_section4 .inSec4-containerCards article .inSec4-card .inSec4-cardIcons a img {
+    width: 100%;
+    transition: ease .5s;
+}
+#index_section4 .inSec4-containerCards article .inSec4-card .inSec4-cardIcons img:hover {
+    transform: scale(1.2);
+}
+#index_section4 .inSec4-finalText {
+    position: relative;
+    z-index: 2;
+    font-size: 3rem;
+    margin: 50px 0 70px;
+    text-align: center;
+    padding: 0 10% 12%;
+}
+#index_section4 .inSec4-finalText a {
+    font-size: 6rem;
+    font-weight: bolder;
+    font-family: 'Bigelow Rules', cursive;
+}
+#index_section4 .inSec4-llamas2 {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    transform: rotate(180deg);
+}
+/* INDEX SECCION 5 */
+#index_section5 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10%;
+    background-color: #060606;
+}
+#index_section5  .inSec5-redesContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 100px 0 20px;
+}
+#index_section5  .inSec5-redesContainer .inSec5-individualRedes {
+    width: 100px;
+    height: auto;
+}
+#index_section5  .inSec5-redesContainer .inSec5-individualRedes a {
+    width: 100%;
+    height: auto;
+}
+#index_section5  .inSec5-redesContainer .inSec5-individualRedes a img {
+    width: 100%;
+    height: auto;
+    transition: ease .5s;
+    transition-delay: .1s,;
+}
+#index_section5  .inSec5-redesContainer .inSec5-individualRedes a img:hover {
+    transform: rotate(360deg);
+}
+#index_section5  .inSec5-redesContainer .inSec5-individualRedes p {
+    text-align: center;
+    color: #fefefe;
+    font-size: 2rem;
+}
+#index_section5 h5 {
+    color: #bd2929;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: 'Bigelow Rules', cursive;
+}
+#index_section5 .inSec5-butomCV {
+    display: inline-block;
+    font-size: 3.5rem;
+    font-family: 'Bigelow Rules', cursive;
+    padding: 10px 30px;
+    background-color: #fefefe;
+    border-radius: 10px;
+    margin: 20px auto 100px;
+    transition: ease .2s;
+}
+#index_section5 .inSec5-butomCV:hover {
+    transform: scale(1.1);
+    background-color: #bd2929;
+    color: #fefefe;
+}
+
 /* ILUTRATION */
 .ilustration-main {
     width: 80%;
@@ -313,7 +508,7 @@ a {
     right: 2%;
     overflow: hidden;
     background-color: #424242;
-    transition: ease 250ms;
+    transition: linear 250ms;
 }
 .ilustration-main .return-button:hover {
     background-color:#271213;
@@ -980,16 +1175,56 @@ a {
 }
 
 /* WEB */
-.web-main_container {
-    width: 100%;
-    height: 84vh;
+#web {
+    background-color: #086366;
+    color: #333;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+#web .container .cabecera {
     display: flex;
-    place-content: center;
-    place-items: center;
+    justify-content: space-between;
+    background-color: royalblue;
+    box-shadow: 0px 5px 50px 0px rgba(0,0,0,0.5);
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0.5em;
 }
-.web-main_container h1 {
-    font-size: 4rem;
+#web .container .cabecera .tagline {   
+    padding: 0 0 0 1em;
+    font-weight: normal;
+    font-size: 0.8em;
 }
+#web .container {
+    background-color: cadetblue;
+    width: 70%;
+    height: auto;
+    padding: 1em;
+    text-align: left;
+    margin: 0 auto;
+}
+#web .container h1{
+    font-size: 20px;
+}
+#web .container .post {
+    padding: 1em;
+}
+#web .container .pieDePagina {
+    padding: 2em;
+    font-size: 1.2em;
+    text-align: center;
+
+    background-color: #086366;
+    color: white;
+    margin: 0;
+    padding: 0.5em;
+}
+
 /* FOOTER */
 footer {
     width: 100%;
