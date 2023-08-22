@@ -1,87 +1,60 @@
 
 /* HEADER INDEX */
 #header-index {
-    z-index: 10;
+    z-index: 12;
     width: 100%;
     height: auto;
     position: fixed;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    background-color: #141414c8;
+    backdrop-filter: blur(2px)
 }
-/* HEADER NAV INDEX */ 
 #header-index nav {
-    display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
-    height: 50px;
-    backdrop-filter: blur(5px);
-    background-color: #131313d8;
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
 }
 /* Logo */
 #header-index nav .nav_logo-container {
+    margin-left: 3%;
     display: flex;
     place-content: center;
     place-items: center;
+    padding: 0 15px;
 }
 #header-index nav .nav_logo-container img {
     width: 35px;
+    transition: ease .5s;
+}
+#header-index nav .nav_logo-container img:hover {
+    transform: scale(1.2);
 }
 /* Menu */
 #header-index nav .header_menu {
-    width: auto;
-    height: 50px;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
 }
 #header-index nav .header_menu .menu_list {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
+    justify-content: space-around;
 }
 #header-index nav .header_menu .menu_list li {
-    display: flex;
-    justify-content: center;
+    width: auto;
+    height: auto;
     list-style: none;
-    width: 33%;
-    height: 50px;
 }
 #header-index nav .header_menu .menu_list li a {
-    display: inline-block;
     width: 100%;
-    padding: 15px 0;
+    padding: 0px 10px 1px;
     color: white;
+    font-size: 1.8rem;
     text-align: center;
 }
 #header-index nav .header_menu .menu_list li a:hover {
-    background-color: white;
-    color: black;
-}
-/* boton */
-/* REDES SOCIALES INDEX*/
-#header-index .header_icons-container { 
-    width: 100%;
-    height: 35px;
-    display: grid;
-    min-width: 320px;
-    backdrop-filter: blur(5px);
-    background-color: #131313d8;
-}
-#header-index .header_icons-container .icons {
-    width: 300px;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    justify-self: center;
-}
-#header-index .header_icons-container .icons a img {
-    width: 25px;
-    margin-top: 5px;
-    transition: transform 250ms;
-}
-#header-index .header_icons-container .icons a img:hover {
-    transform: scale(1.5);
-    transition: transform 250ms;
-    
+    border-bottom: 3px solid #bd2929;
 }
 
 /* HEADER Ilustraciones*/
