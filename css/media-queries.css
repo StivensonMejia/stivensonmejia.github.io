@@ -4,6 +4,19 @@
     #index_section3 .inSec3_containerCards .inSec3-cards h3 {
         font-size: 2rem;
     }
+    /* INDEX SEC 4 title carrusel */
+    #index_section4 .inSec4-carrousel .inSec4-containerCards article .inSec4-textContainer h3 {
+        font-size: 7rem;
+    }
+    /* INDEX SEC 4 carrusel selector */
+    #index_section4 .inSec4-carrousel .inSec4-cardSelection {
+        justify-content: space-around;
+        gap: 0px;
+    }
+    #index_section4 .inSec4-carrousel .inSec4-cardSelection a {
+        font-size: 2.4rem;
+    }
+
     /* ILUESTRACIONES sec4 */
     #ilustration_section4 .iSec4-flexContainer .iSec4-container_img {
         width: 100px;
@@ -58,7 +71,6 @@
 
 @media (max-width: 1200px) {
     /* INDEX sec3 */
-    
     #index_section3 .inSec3-containerPerfil h1{
         font-size: 6rem;
         text-align: center;
@@ -66,12 +78,31 @@
     #index_section3 .inSec3_containerTextSobreMi {
         display: block;
     }
-    #index_section3 .inSec3_containerTextSobreMi .inSec3-textBar {
-        position: relative;
-        width: 100%;
-    }
     #index_section3 .inSec3_containerTextSobreMi .inSec3-textRight, #index_section3 .inSec3_containerTextSobreMi .inSec3-textLeft {
         max-width: 100%;
+    }
+
+    /* INDEX sec4 */
+    #index_section4 .inSec4-carrousel .inSec4-containerCards article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #index_section4 .inSec4-carrousel .inSec4-containerCards article .inSec4-imgContainer {
+        width: 80vw;
+    }
+    #index_section4 .inSec4-carrousel .inSec4-containerCards article .inSec4-textContainer {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 5% 0;
+    }
+    
+
+    #index_section4 .inSec4-carrousel .inSec4-containerCards article .inSec4-textContainer .inSec4-iconContainer {
+        justify-content: space-between;
     }
     /* ILUSTRACIONES */
     .ilustration-main {

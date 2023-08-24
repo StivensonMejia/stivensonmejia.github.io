@@ -5,56 +5,58 @@
     width: 100%;
     height: auto;
     position: fixed;
-    background-color: #141414c8;
-    backdrop-filter: blur(2px)
 }
 #header-index nav {
     display: flex;
     justify-content: space-between;
-    height: 65px;
+    height: auto;
 }
 /* Logo */
 #header-index nav .nav_logo-container {
+    width: auto;
+    height: 70px;
     margin-left: 3%;
     display: flex;
-    place-content: center;
-    place-items: center;
-    padding: 0 15px;
+    align-items: end;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #bd2929;
+    backdrop-filter: blur(5px);
+    transition: ease .5s;
+}
+#header-index nav .nav_logo-container:hover {
+    height: 100px;
 }
 #header-index nav .nav_logo-container img {
     width: 35px;
-    transition: ease .5s;
-}
-#header-index nav .nav_logo-container img:hover {
-    transform: scale(1.2);
+    margin: 5px 12px;
 }
 /* Menu */
 #header-index nav .header_menu {
-    width: 500px;
-    height: 100%;
+    width: auto;
+    padding: 5px 10px;
+    height: 60px;
     display: flex;
     align-items: center;
-    padding-left: 3%;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 10px;
+    background-color: #141414ed;
+    backdrop-filter: blur(2px);
 }
-#header-index nav .header_menu .menu_list {
-    width: 100%;
+#header-index nav .header_menu a {
+    width: 120px;
+    height: 40px;
     display: flex;
-    justify-content: space-around;
-}
-#header-index nav .header_menu .menu_list li {
-    width: auto;
-    height: auto;
-    list-style: none;
-}
-#header-index nav .header_menu .menu_list li a {
-    width: 100%;
-    padding: 0px 10px 1px;
+    place-content: center;
+    place-items: center;
+    border-radius: 10px;
     color: white;
-    font-size: 1.8rem;
-    text-align: center;
+    font-weight: 500;
+    font-size: 1.9rem;
+    transition: ease-in .2s;
 }
-#header-index nav .header_menu .menu_list li a:hover {
-    border-bottom: 3px solid #bd2929;
+#header-index nav .header_menu a:hover {
+    background-color: #d6d6d618;
 }
 
 /* HEADER Ilustraciones*/
@@ -193,7 +195,12 @@
     border-bottom: 2px solid white;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    /* INDEX */
+    #header-index nav .header_menu {
+        display: none;
+    }
+    /* VIDEOS */
     #header-videos {
         width: 100%;
         height: 120px;
