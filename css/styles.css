@@ -7,13 +7,18 @@
 }
 :root {
     --black-background: #141414;
-    --black-alter: #535353;
-    --whithe: #fefefe;
+    --black-pure: #000;
+    --white: #fefefe;
     --red: #bd2929;
-    --strog-red: #b11515;
+    --red-soft : #861f1f;
 
     --font-title: 'Bigelow Rules', cursive;
     --font-paragraph: 'Grenze Gotisch', cursive;
+
+    --fontSize-megaTitle: 10rem;
+    --fontSize-title: 7rem;
+    --fontSize-subTitle: 5rem;
+    --fontSize-paragraph: 2.3rem;
 }
 .ytp-impression-link {
     display: none;
@@ -23,7 +28,6 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-size:1.6rem;
     font-family: 'Roboto mono', monospace;
     
 }
@@ -42,13 +46,13 @@ body::-webkit-scrollbar-thumb,
 a {
     text-decoration: none;
     display: inline;
-    color: black;
+    color: var(--black-pure);
 }
 
 /* INDEX */
 .main-index {
     width: 100%;
-    background-color: var(--whithe);
+    background-color: var(--white);
     background-image: url('/assets/img/calaveras_blanco.webp');
     background-attachment: fixed;
 }
@@ -77,6 +81,7 @@ a {
 #index_section1 .section1_container .inSec1-containerlogo {
     display: flex;
     width: 100%;
+    padding-left: 40px;
     height: auto;
     position: relative;
     flex-direction: column;
@@ -91,35 +96,23 @@ a {
     width: 100%;
     height: 320px;
 }
-#index_section1 .section1_container .inSec1-containerlogo P {
-    position: absolute;
-    font-family: 'Bigelow Rules', cursive;
-    font-size: 5rem;
-    color: var(--whithe);
-    letter-spacing: 2px;
-}
-#index_section1 .section1_container .inSec1-containerlogo .inSec1-text2 {
-    bottom: 20%;
-    right: 370px;
-}
 #index_section1 .section1_container .inSec1-containerButom a {
     width: 300px;
     height: 50px;
     position: absolute;
-    bottom: 5%;
+    bottom: 50px;
     left: 0;
     right: 0;
-    margin: auto;
-    font-size: 5rem;
-    font-family: 'Bigelow Rules', cursive;
-    letter-spacing: 2px;
-    color: var(--whithe);
+    margin: 0 auto;
+    font-size: var(--fontSize-subTitle);
+    font-family: var(--font-title);
+    color: var(--white);
     text-align: center;
-    transition: transform 300ms;
+    transition: transform .3s;
 }
 #index_section1 .section1_container .inSec1-containerButom a:hover {
     transform: scale(1.2);
-    color: var(--strog-red);
+    color: var(--red);
 }
 
 /* INDEX SECCION 1 container gost*/
@@ -147,7 +140,7 @@ a {
     width: 100%;
     height: auto;
     position: relative;
-    background-color: var(--whithe);
+    background-color: var(--white);
 }
 #index_section2 .inSec2-llamas {
     z-index: 3;
@@ -165,14 +158,14 @@ a {
     padding: 15% 10% 45%;
 }
 #index_section2 .inSec2-containerPerfil h2 {
-    font-size: 7rem;
+    font-size: var(--fontSize-title);
     font-family: var(--font-title);
     text-align: center;
     font-weight: 100;
 }
 #index_section2 .inSec2-containerPerfil p {
     max-width: 1000px;
-    font-size: 2.2rem;
+    font-size: var(--fontSize-paragraph);
     text-align: center;
     margin: 0 auto;
 }
@@ -219,17 +212,18 @@ a {
 }
 #index_section3 .inSec3-containerPerfil h1{
     z-index: 2;
-    font-size: 10rem;
-    color: var(--whithe);
+    font-size: var(--fontSize-megaTitle);
+    color: var(--white);
     font-weight: lighter;
     text-align: start;
-    font-family: 'Bigelow Rules', cursive;
+    font-family: var(--font-title);
     cursor: default;
-    letter-spacing: 1px;
     
 }
 #index_section3 .inSec3-containerPerfil .inSec3-profesionText {
-    font-size: 5rem;
+    margin-top: -30px;
+    font-size: var(--fontSize-title);
+    color: var(--white);
 }
 #index_section3 .inSec3-containerPerfil h1:hover {
     transition: ease .5s;
@@ -245,15 +239,15 @@ a {
 }
 #index_section3 .inSec3_containerTextSobreMi a {
     color: var(--red);
-    font-size: 2.3rem;
+    font-size: var(--fontSize-paragraph);
 }
 #index_section3 .inSec3_containerTextSobreMi .inSec3-relevantA {
-    font-size: 6rem;
-    font-family: 'Bigelow Rules', cursive;
+    font-size: var(--fontSize-subTitle);
+    font-family: var(--font-title);
 }
 #index_section3 .inSec3_containerTextSobreMi .inSec3-relevantB {
-    font-size: 4rem;
-    font-family: 'Bigelow Rules', cursive;
+    font-size: var(--fontSize-subTitle);
+    font-family: var(--font-title);
     letter-spacing: 1px;
     transition: ease-in .2s;
 }
@@ -264,18 +258,18 @@ a {
     margin-bottom: 30px;
 }
 #index_section3 .inSec3_containerTextSobreMi h2 {
-    font-size: 7rem;
+    font-size: var(--fontSize-title);
     font-weight: lighter;
     color: var(--red);
-    font-family: 'Bigelow Rules', cursive;
+    font-family: var(--font-title);
     transition: ease .5s;
 }
 #index_section3 .inSec3_containerTextSobreMi h2:hover {
     transform: translate(15px);
 }
 #index_section3 .inSec3_containerTextSobreMi p {
-    font-size: 2.2rem;
-    color: var(--whithe);
+    font-size: var(--fontSize-paragraph);
+    color: var(--white);
     font-weight: 300;
 }
 #index_section3 .inSec3_containerTextSobreMi .inSec3-textLeft{
@@ -307,14 +301,14 @@ a {
 #index_section3 .inSec3_containerCards .inSec3_cardSlider .inSec3-cards {
     width: 200px;
     margin: 0 40px;
-    color: var(--whithe);
+    color: var(--white);
 }
 #index_section3 .inSec3_containerCards .inSec3_cardSlider .inSec3-cards img {
     width: 100%;
 }
 #index_section3 .inSec3_containerCards .inSec3_cardSlider .inSec3-cards h3 {
-    font-size: 2.2rem;
-    font-family: 'Bigelow Rules', cursive;
+    font-size: var(--fontSize-paragraph);
+    font-family: var(--font-title);
     letter-spacing: 2px;
     font-weight: lighter;
     text-align: center;
@@ -340,19 +334,19 @@ a {
     position: relative;
     width: 100%;
     height: auto;
-    background-color: var(--whithe);
+    background-color: var(--white);
 }
 #index_section4  h4 {
-    font-size: 7rem;
+    font-size: var(--fontSize-title);
     font-weight: 500;
-    font-family: 'Bigelow Rules', cursive;
+    font-family: var(--font-title);
     text-align: center;
     padding: 50px 10% 10px;
 }
 #index_section4 .inSec4-finalText {
     position: relative;
     z-index: 2;
-    font-size: 2.2rem;
+    font-size: var(--fontSize-paragraph);
     text-align: center;
     padding: 0 10% 100px;
 }
@@ -413,7 +407,7 @@ a {
     color: var(--red);
     font-weight: 100;
     font-family: var(--font-title);
-    font-size: 9rem;
+    font-size: var(--fontSize-megaTitle);
     margin-bottom: -1.5rem;
 }
 #index_section4 .inSec4-carrousel .inSec4-containerCards article .inSec4-textContainer p {
@@ -440,7 +434,7 @@ a {
     border-radius: 10px;
     font-family: var(--font-title);
     background-color: var(--black-background);
-    color: var(--whithe);
+    color: var(--white);
     transition: ease .2s;
 
 }
@@ -525,23 +519,23 @@ a {
 }
 #index_section5  .inSec5-redesContainer .inSec5-individualRedes p {
     text-align: center;
-    color: var(--whithe);
-    font-size: 2rem;
+    color: var(--white);
+    font-size: var(--fontSize-paragraph);
 }
 #index_section5 h5 {
     color: var(--red);
-    font-size: 5rem;
+    font-size: var(--fontSize-subTitle);
     text-align: center;
     font-weight: 100;
     letter-spacing: 1px;
-    font-family: 'Bigelow Rules', cursive;
+    font-family: var(--font-title);
 }
 #index_section5 .inSec5-butomCV {
     display: inline-block;
     font-size: 3.5rem;
     font-family: 'Bigelow Rules', cursive;
     padding: 10px 30px;
-    background-color: var(--whithe);
+    background-color: var(--white);
     border-radius: 10px;
     margin: 20px auto 100px;
     transition: ease .2s;
@@ -549,13 +543,15 @@ a {
 #index_section5 .inSec5-butomCV:hover {
     transform: scale(1.1);
     background-color: var(--red);
-    color: var(--whithe);
+    color: var(--white);
 }
 
 /* ILUTRATION */
 .ilustration-main {
-    width: 80%;
-    float: right;
+    padding-left: 300px;
+    overflow: hidden;
+    background-image: url('/assets/img/calaveras_blanco.webp');
+    background-color: var(--white);
 }
 .ilustration-main .return-button {
     z-index: 9;
@@ -566,317 +562,145 @@ a {
     bottom: 3%;
     right: 2%;
     overflow: hidden;
-    background-color: #424242;
+    background-color: var(--red);
     transition: linear 250ms;
 }
-.ilustration-main .return-button:hover {
-    background-color:#271213;
-    transform: scale(1.15);
+/* ILUSTRACIONES SECCION 1 4 5 */
+#ilustration_section1, #ilustration_section4, #ilustration_section5 {
+    display: none;
+    background-color: var(--red);
 }
-.ilustration-main .return-button a {
+#ilustration_section1 div, #ilustration_section4 div, #ilustration_section5 div {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    color: #fefefe;
-    font-size: 3rem;
     justify-content: center;
     align-items: center;
+    background-color: var(--red);
 }
-
-/* PORTADA */
-.ilustration-main {
+#ilustration_section1 h1, #ilustration_section4 h1, #ilustration_section5 h1 {
+    color: var(--white);
+    font-family: var(--font-title);
+    font-size: var(--fontSize-megaTitle);
+    font-weight: lighter;
+}
+/* ILUSTRACIONES SECCION 2 y 3 */
+#ilustration_section3 {
+    display: none;
+}
+#ilustration_section2, #ilustration_section3 {
     position: relative;
+    padding-bottom: 100px;
 }
-.ilustration_portadaContainer {
-    width: 100%;
-    height: 50vh;
-    background-image: url('/assets/img/ilustraciones/ferchanGuitarra.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-/* PRESENTATION */
-#ilustration_section1 {
-    z-index: -1;
+#ilustration_section2 .ilSec2-textContainer, #ilustration_section3 .ilSec3-textContainer {
     position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    align-items: center;
-    padding: 200px 10% 100px;
-    background-color: #851f1f;
-}
-#ilustration_section1 .iSec1-imageContainer {
-    z-index: 1;
-    position: absolute;
-    left: -15%;
-    top: -100px;
-    width: 50%;
-    min-width: 350px;
-    display: flex;
-    place-content: center;
-}
-#ilustration_section1 .iSec1-imageContainer img {
-    width: 100%;
-}
-#ilustration_section1 .iSec1-textContainer {
     z-index: 2;
-    text-align: end;
-    max-width: 700px;
-    min-width: auto;
+    padding: 60px 10% 50px;
 }
-#ilustration_section1 .iSec1-textContainer h1 {
-    font-size: 10rem;
+#ilustration_section2 .ilSec2-textContainer h1, #ilustration_section3 .ilSec3-textContainer h1{
+    font-size: var(--fontSize-title);
     font-family: 'Bigelow Rules', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#ilustration_section2 .ilSec2-textContainer p, #ilustration_section3 .ilSec3-textContainer p {
+    margin-top: -15px;
+    font-size: var(--fontSize-paragraph);
     font-weight: 500;
-    color: #fefefe;
+    text-align: center;
 }
-#ilustration_section1 .iSec1-textContainer .iSec1-textPrincipal {
-    font-size: 2.2rem;
-    font-weight: 300;
-    color: #fefefe;
+#ilustration_section2 .ilSec2-gridContainer,
+#ilustration_section3 .ilSec3-gridContainer {
+    z-index: 2;
+    position: relative;
+    columns: 3 250px;
+    column-gap: 10px;
+    padding: 0 10% 10%;
 }
-#ilustration_section1 .iSec1-textContainer .iSec1-textPromocion {
-    font-size: 2.2rem;
-    font-weight: 300;
-    color: #fefefe;
+#ilustration_section2 .ilSec2-gridContainer figure, #ilustration_section3 .ilSec3-gridContainer figure {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
 }
-/* ILUSTRACIONES SECION 2 */
-#ilustration_section2 .llamas_presentationContainer {
-    position: absolute;
+#ilustration_section2 .ilSec2-gridContainer figure img, #ilustration_section3 .ilSec3-gridContainer figure img {
+    display: block;
+    cursor: pointer;
+    max-width: 100%;
+    transition: all .2s ease-in-out;
+}
+#ilustration_section2 .ilSec2-gridContainer figure img:hover, 
+#ilustration_section3 .ilSec3-gridContainer figure img:hover {
+    z-index: 8;
+    transform: scale(1.1);
+}
+.modal {
+    display: none;
+    position:  fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
-}  
-#ilustration_section2 {
-    position: relative;
-    background-image: url('/assets/img/calaveras_blanco.webp');
-    background-color: #fefefe;
-    text-align: center;
-    padding-bottom: 60px;
-}
-#ilustration_section2 .iSec2-textContainer {
-    padding: 200px 10% 50px;
-}
-#ilustration_section2 .iSec2-textContainer h1 {
-    font-size: 7rem;
-    font-family: 'Bigelow Rules', cursive;
-    letter-spacing: 2px;
-}
-#ilustration_section2 .iSec2-textContainer p {
-    font-size: 2.1rem;
-    font-weight: 300;
-}
-.ilustration_iSec2y3 .iSec2y3-gridContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: minmax(250px, 1fr);
-    grid-auto-flow: dense;
-    padding: 30px 10% 20px;
-    gap: 20px;
-}
-.ilustration_iSec2y3 .iSec2y3-gridContainer .iSec2y3-container_img {
-    transition: ease .2s;
-    cursor: pointer;
-}
-.ilustration_iSec2y3 .iSec2y3-gridContainer .iSec2y3-container_img:hover {
-    z-index: 8;
-    transform: scale(1.03);
-}
-.ilustration_iSec2y3 .iSec2y3-gridContainer .iSec2y3-container_img a {
-    width: 100%;
-    height: 100%;
-}
-.ferchanGuitarra {
-    background-image: url('/assets/img/ilustraciones/ferchanGuitarra.webp');
-    background-size: cover;
-    background-position: center;
-}
-.aplox {
-    background-image: url('/assets/img/ilustraciones/AploxJPG.webp');
-    background-size: cover;
-    background-position: center;
-}
-.ferchan {
-    background-image: url('/assets/img/ilustraciones/FerChanJPG.webp');
-    background-size: cover;
-    background-position: center;
-}
-.akshan {
-    background-image: url('/assets/img/ilustraciones/AkshanJPG.webp');
-    background-size: cover;
-}
-.anye {
-    background-image: url('/assets/img/ilustraciones/AnyeJPG.webp');
-    background-size: cover;
-}
-.gio {
-    background-image: url('/assets/img/ilustraciones/Gio.webp');
-    background-size: cover;
-}
-.fidlesticks {
-    background-image: url('/assets/img/ilustraciones/fiddlestick.webp');
-    background-size: cover;
-}
-.alucardcueva {
-    background-image: url('/assets/img/ilustraciones/alucardcueva2.webp');
-    background-size: cover;
-}
-.viego {
-    background-image: url('/assets/img/ilustraciones/Viego.webp');
-    background-size: cover;
-    background-position: center;
-}
-.isabella {
-    background-image: url('/assets/img/ilustraciones/isabella.webp');
-    background-size: cover;
-    background-position: center;
-}
-.alucard {
-    background-image: url('/assets/img/ilustraciones/Alucard\ Stardew\ Valey.webp');
-    background-size: cover;
-}
-.vampiro2 {
-    background-image: url('/assets/img/ilustraciones/Gotic.webp');
-    background-size: cover;
-    background-position: center;
-}
-.sasuke {
-    background-image: url('/assets/img/ilustraciones/sasuke.webp');
-    background-size: cover;
-    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.905);  
+    z-index: 10;
 }
 
-/* ILUSTRACIONES SECION 3 */
-#ilustration_section3 {
-    background-color:  #eee;
-    padding-bottom: 60px;
-}
-#ilustration_section3 .iSec3-textContainer {
-    padding: 60px 10% 0;
-}
-#ilustration_section3 .iSec3-textContainer h1 {
-    font-size: 5rem;
-    font-family: 'Bigelow Rules', cursive;
-    letter-spacing: 2px;
-    
-}
-#ilustration_section3 .iSec3-textContainer p {
-    font-size: 2.1rem;
-    font-weight: 300;
-}
-.itachiTrad {
-    background-image: url('/assets/img/ilustraciones/itachiTradicional.webp');
-    background-size: cover;
-    background-position: center;
-}
-.minatoTrad {
-    background-image: url('/assets/img/ilustraciones/minatoTradicional.webp');
-    background-size: cover;
-    background-position: center;
-}
-.sasukeTrad {
-    background-image: url('/assets/img/ilustraciones/sasukeTradicional.webp');
-    background-size: cover;
-    background-position: center;
-}
-.semirealTrad {
-    background-image: url('/assets/img/ilustraciones/tradicionalSemiReal.webp');
-    background-size: cover;
-    background-position: center;
-}
-.calaveraTrad {
-    background-image: url('/assets/img/ilustraciones/calaveraTradicional.webp');
-    background-size: cover;
-    background-position: center;
-}
-.kaynTrad {
-    background-image: url('/assets/img/ilustraciones/kaynTradicional.webp');
-    background-size: cover;
-    background-position: center;
-}
-
-/* ILUSTRACIONES SECION 4 */
-#ilustration_section4 {
-    position: relative;
-    background-color: rgb(201 194 186);
-    padding: 100px 10% 0;
-}
-#ilustration_section4 .iSec4-textContainer h1 {
-    font-size: 5rem;
-    font-family: 'Bigelow Rules', cursive;
-    letter-spacing: 2px;
-    text-align: center;
-    padding: 70px 0 180px;
-}
-#ilustration_section4 .iSec4-flexContainer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-#ilustration_section4 .iSec4-flexContainer .iSec4-container_img {
-    width: 180px;
-    height: 180px;
-    transition: ease .2s;
-}
-#ilustration_section4 .iSec4-flexContainer .iSec4-container_img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-#ilustration_section4 .iSec4-flexContainer .iSec4-container_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-#ilustration_section4 .llamas_presentationContainer {
-    width: 100%;
-    height: auto;
-    position: absolute;
+.modal-content {
+    position: absolute ;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    left: -0.13px;
-    transform: rotate(180deg);
+    margin: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
 }
 
-/* ILUSTRACIONES SECION 5 */
-#ilustration_section5 {
+.close-modal {
+    position: absolute;
+    right: 3%;
+    font-family: var(--font-title);
+    font-size: var(--fontSize-megaTitle);
+    color: var(--white);
+    cursor: pointer;
+    z-index: 11;
+}
+/* ILUSTRACIONES SECCION 6 */
+#ilustration_section6 {
+    display: none;
+}
+#ilustration_section6 .ilSec6-container {
     width: 100%;
-    min-height: 60vh;
-    max-height: auto;
-    padding: 0 10% ;
+    min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 50px;
-    padding: 20px 0;
     background-color: #851f1f;
 }
-#ilustration_section5 h2 {
-    color: #fefefe;
-    font-size: 6rem;
-    font-weight: 100;
-    letter-spacing: 2px;
-    font-family: 'Bigelow Rules', cursive;
+#ilustration_section6 .ilSec6-container .ilSec6-redesContainer {
+    width: 120px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
-#ilustration_section5 .iSec5-redesContainer img {
-    width: 150px;
+#ilustration_section6 .ilSec6-container .ilSec6-redesContainer img {
+    width: 120px;
     transition: ease .5s;
-    transition-delay: .3s;
+    transition-delay: .1s;
 }
-#ilustration_section5 .iSec5-redesContainer img:hover {
+#ilustration_section6 .ilSec6-container .ilSec6-redesContainer img:hover {
     transform: rotate(360deg);
 }
-#ilustration_section5 .iSec5-redesContainer p {
+#ilustration_section6 .ilSec6-container .ilSec6-redesContainer p {
     color: #fefefe;
     font-size: 2.5rem;
     font-weight: 300;
     text-align: center;
 }
+
 /* VIDEOS */
 /* VIDEOS SECCION 1 */
 #video_section1 {

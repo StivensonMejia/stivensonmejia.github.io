@@ -17,6 +17,10 @@
         font-size: 2.4rem;
     }
 
+    #ilustration_section2 .iSec1-imageContainer {
+        width: 100%;
+        top: -16%;
+    }
     /* ILUESTRACIONES sec4 */
     #ilustration_section4 .iSec4-flexContainer .iSec4-container_img {
         width: 100px;
@@ -107,7 +111,7 @@
     /* ILUSTRACIONES */
     .ilustration-main {
         width: 100%;
-        float: right;
+        padding-left: 0;
     }
     .ilustration_portadaContainer {
         background-position: center;
