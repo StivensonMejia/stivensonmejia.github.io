@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="/assets/img/lunaBlanca.webp">
+    <link rel="icon" href="/assets/Icons/pixelart.svg">
+    <link rel="stylesheet" href="/css/Ilustration.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/headers.css">
-    <link rel="stylesheet" href="/css/media-queries.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Grenze+Gotisch:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Grenze:wght@100;300;500;700&display=swap" rel="stylesheet">
     
     <title>Tricby's</title>
 </head>
@@ -20,109 +20,180 @@
     <header id="header-ilustraciones">
         <nav>
             <section class="nav_logo-container">
-                <img src="/assets/img/ilustratioIcon.jpg" alt="logo">
-                <span id="emojiSpan">💀</span>
-            </section>
-            <section class="header_menu">
-                <ul class="menu_list">
-                    <li><a href="/index.html">arte</a></li>
-                    <li><a href="/videos.html">videos</a></li>
-                    <li><a href="/web.html">web</a></li>
-                </ul>
+                <img src="/assets/img/ilustratioIcon.webp" alt="logo">
             </section>
             <section class="header_subMenu">
-                <a class="">acerca de tricby's</a>
-                <a class="active">arte digital</a>
-                <a class="">arte tradicional</a>
-                <a class="">pixel art</a>
-                <a class="">comisiones</a>
-                <a class="">contactame</a>
+                <div>
+                    <a class="active" >ACERCA DE TRICBY'S</a>
+                    <img src="./assets/Icons/about.svg" alt="">
+                </div>
+                <div>
+                    <a class="">ARTE DIGITAL</a>
+                    <img src="./assets/Icons/digital.svg" alt="">
+                </div>
+                <div>
+                    <a class="">ARTE TRADICIONAL</a>
+                    <img src="./assets/Icons/tradicional.svg" alt="">
+                </div>
+                <div>
+                    <a class="">PIXEL ART</a>
+                    <img src="./assets/Icons/pixelart.svg" alt="">
+                </div>
+                <div>
+                    <a class="">COMISIONES</a>
+                    <img src="./assets/Icons/about.svg" alt="">
+                </div>
+                <div>
+                    <a class="">CONTACTAME</a>
+                    <img src="./assets/Icons/about.svg" alt="">
+                </div>
+            </section>
+        </nav>
+    </header>
+    <header id="header-ilustraciones-movil">
+        <nav>
+            <section class="nav_logo-container-movil">
+                <img src="/assets/img/lunaBlanca.webp" alt="logo">
+            </section>
+            <section class="header_subMenu-movil sub1">
+                <a class=""><img src="./assets/Icons/about.svg" alt=""></a>
+                <a class=""><img src="./assets/Icons/digital.svg" alt=""></a>
+                <a class=""><img src="./assets/Icons/tradicional.svg" alt=""></a>
+            </section>
+            <section class="header_subMenu-movil sub2">
+                <a class=""><img src="./assets/Icons/pixelart.svg" alt=""></a>
+                <a class="">0</a>
+                <a class="">0</a>
             </section>
         </nav>
     </header>
     <main class="ilustration-main">
-        <section id="ilustration_section1">
-            <div>
-                <h1>EN PROCESO</h1>
-            </div>
+        <section id="ilustration_section1" class="visible-section">
+            <article class="section1_logoContainer">
+                <div class="ilSec1-logoSubContainer">
+                    <article class="ilSec1-containerlogo">
+                        <div class="ilSec1-containerImg"></div>
+                    </article>
+                    <article class="ilSec1-containerButom">
+                        <a href="#index_section3">SABER MÁS</a>
+                    </article>
+                </div>
+                <div class="ilSec1_gostContainer">
+                    <img src="./assets/img/tela3.webp" data-speed = "6" class="layer">
+                    <img src="./assets/img/tela1.webp" data-speed = "-9" class="layer layerRigth">
+                    <img src="./assets/img/tela2.webp" data-speed = "15" class="layer">
+                </div>
+            </article>
+            <article class="ilSec1-presentationContainer">
+
+            </article>
         </section>
         <section id="ilustration_section2">
-            <div class="ilSec2-textContainer">
-                <h1>ARTE DIGITAL</h1>
-                <p>Realizadas con la Tableta Huion H640P</p>
+            <div class="section_containerAll">
+                <article class="inSecAll-containerlogo">
+                    <div class="inSecAll-containerImg"></div>
+                </article>
             </div>
-            <article class="ilSec2-gridContainer">
-                <figure>
-                    <img src="./assets/img/ilustraciones/ferchanGuitarra.webp" alt="ilustracion" data-image="ferchanGuitarra">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/AploxJPG.webp" alt="ilustracion" data-image="Aplox">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/FerChanJPG.webp" alt="ilustracion" data-image="FerChan">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/Gio.webp" alt="ilustracion" data-image="Gio">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/Alucard Stardew Valey.webp" alt="ilustracion" data-image="AlucardStardewValey">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/AkshanJPG.webp" alt="ilustracion" data-image="Akshan">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/AnyeJPG.webp" alt="ilustracion" data-image="Anye"> 
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/Gotic.webp" alt="ilustracion" data-image="Gotic">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/alucardcueva2.webp" alt="ilustracion" data-image="alucardcueva2">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/isabella.webp" alt="ilustracion" data-image="isabella">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/Viego.webp" alt="ilustracion" data-image="Viego">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/sasuke.webp" alt="ilustracion" data-image="sasuke">
-                </figure>
-            </article>
+            
+            <div class="inSec2-container">
+                <img class="inSecAll-llamas" src="/assets/img/Llamas.webp" alt="">
+
+                <div class="ilSec2-textContainer">
+                    <h1>ARTE DIGITAL</h1>
+                    <p>Realizadas con la Tableta Huion H640P</p>
+                </div>
+
+                <article class="ilSec2-gridContainer">
+                    <figure>
+                        <img src="./assets/img/ilustraciones/ferchanGuitarra.webp" alt="ilustracion" data-image="ferchanGuitarra">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/AploxJPG.webp" alt="ilustracion" data-image="Aplox">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/FerChanJPG.webp" alt="ilustracion" data-image="FerChan">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/Gio.webp" alt="ilustracion" data-image="Gio">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/Alucard Stardew Valey.webp" alt="ilustracion" data-image="AlucardStardewValey">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/AkshanJPG.webp" alt="ilustracion" data-image="Akshan">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/AnyeJPG.webp" alt="ilustracion" data-image="Anye"> 
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/Gotic.webp" alt="ilustracion" data-image="Gotic">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/alucardcueva2.webp" alt="ilustracion" data-image="alucardcueva2">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/isabella.webp" alt="ilustracion" data-image="isabella">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/Viego.webp" alt="ilustracion" data-image="Viego">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/sasuke.webp" alt="ilustracion" data-image="sasuke">
+                    </figure>
+                </article>
+
+                <img class="inSecAll-llamas2" src="/assets/img/Llamas.webp" alt="">
+            </div>
+
             <div class="modal">
                 <img class="modal-content" id="modal-image">
                 <span class="close-modal">&times;</span>
-            </div>            
+            </div>          
         </section>
         <section id="ilustration_section3">
-            <div class="ilSec3-textContainer">
-                <h1>ARTE TRADICIONAL</h1>
-                <p>Realizados con un lápiz de grafito 6B</p>
+            <div class="section_containerAll">
+                <article class="inSecAll-containerlogo">
+                    <div class="inSecAll-containerImg"></div>
+                </article>
             </div>
-            <article class="ilSec3-gridContainer">
-                <figure>  
-                    <img src="./assets/img/ilustraciones/itachiTradicional.webp" alt="">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/minatoTradicional.webp" alt="">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/sasukeTradicional.webp" alt="">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/tradicionalSemiReal.webp" alt="">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/calaveraTradicional.webp" alt="">
-                </figure>
-                <figure>
-                    <img src="./assets/img/ilustraciones/kaynTradicional.webp" alt="">
-                </figure>
-            </article>
+
+            <div class="inSec3-container">
+                <img class="inSecAll-llamas" src="/assets/img/Llamas.webp" alt="">
+                
+                <div class="ilSec3-textContainer">
+                    <h1>ARTE TRADICIONAL</h1>
+                    <p>Realizados con un lápiz de grafito 6B</p>
+                </div>
+
+                <article class="ilSec3-gridContainer">
+                    <figure>  
+                        <img src="./assets/img/ilustraciones/itachiTradicional.webp" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/minatoTradicional.webp" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/sasukeTradicional.webp" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/tradicionalSemiReal.webp" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/calaveraTradicional.webp" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./assets/img/ilustraciones/kaynTradicional.webp" alt="">
+                    </figure>
+                </article>
+
+                <img class="inSecAll-llamas2" src="/assets/img/Llamas.webp" alt="">
+            </div>
+
             <div class="modal">
                 <img class="modal-content" id="modal-image">
                 <span class="close-modal">&times;</span>
-            </div>   
+            </div>  
+
         </section>
         <section id="ilustration_section4">
             <div>
@@ -137,11 +208,11 @@
         <section id="ilustration_section6" >
             <div class="ilSec6-container">
                 <div class="ilSec6-redesContainer"> 
-                    <a href="https://www.instagram.com/tricbys/" target="_blank"><img src="/assets/Icons/instagram.webp" alt="instagram"></a> 
+                    <a href="https://www.instagram.com/tricbys/" target="_blank"><img src="/assets/Icons/IconInstagram.svg" alt="instagram"></a> 
                     <p>Instagram</p>
                 </div>
                 <div class="ilSec6-redesContainer"> 
-                    <a href="https://www.facebook.com/tricby" target="_blank"><img src="/assets/Icons/facebook.webp" alt="facebook"></a>
+                    <a href="https://www.facebook.com/tricby" target="_blank"><img src="/assets/Icons/IconFacebook.svg" alt="facebook"></a>
                     <p>Facebook</p>
                 </div>
             </div>
