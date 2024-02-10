@@ -1,0 +1,56 @@
+/* GLOBAL CHANGES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bigelow Rules', serif;
+    font-family: 'Grenze', serif;
+}
+:root {
+    --black-background: #141414;
+    --black-pure: #000;
+    --white: #fefefe;
+    --red: #bd2929;
+    --red-soft : #861f1f;
+
+    --font-title: 'Bigelow Rules', serif;
+    --font-paragraph: 'Grenze', serif;
+
+    --fontSize-megaTitle: 10rem;
+    --fontSize-title: 7rem;
+    --fontSize-subTitle: 5rem;
+    --fontSize-paragraph: 2.3rem;
+}
+.ytp-impression-link {
+    display: none;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar, 
+.container_galery::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    padding: 2px;
+    background-color: var(--black-background);
+}
+body::-webkit-scrollbar-thumb,
+.container_galery::-webkit-scrollbar-thumb{
+    background-color: var(--red);
+    border-radius: 2px;
+}
+
+body::-webkit-scrollbar-button {
+    background-repeat: no-repeat;   
+    background-size: 80%;
+    background-position: center;
+    background-image: url('/assets/Icons/Down.webp');
+}
+
+a {
+    text-decoration: none;
+}
+
+
