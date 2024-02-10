@@ -1,5 +1,5 @@
 
-![Logo Tricby's](/assets/Icons/IconTricbys.webp)
+![Logo Tricby's](/assets/img/tricbys.webp)
 
 # Mi Portafolio Front-End
 
