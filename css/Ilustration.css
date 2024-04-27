@@ -522,10 +522,11 @@
 
 /* MEDIAQUERYS */
 @media (width <= 1200px) {
+    /* hace visible el header movil */
     #header-ilustraciones-movil { 
         display: block;
     }
-    /* ILUSTRACIONES */
+    /* oculta el header desktop */
     #header-ilustraciones {
         display: none;
     }
@@ -534,24 +535,37 @@
         width: 100%;
         margin-left: 0;
     }
-    /* cambia el logo de tricby´s desktop por el movil */
-    #ilustration_section1 .section1_logoContainer .ilSec1-logoSubContainer .ilSec1-containerlogo .ilSec1-containerImg {
-        background-image: url('/assets/img/tricbys2.webp');
-        width: 90%;
-    }
     /* quita la deciracion de llamas inferior  */
     .inSecAll-llamas2 { 
         display: none;
     }
+    /* cambia el logo de tricby´s desktop por el movil */
+    #ilustration_section1 {
+        .section1_logoContainer {
+            .ilSec1-logoSubContainer {
+                .ilSec1-containerlogo {
+                    .ilSec1-containerImg {
+                        background-image: url('/assets/img/tricbys2.webp');
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
 }
-@media (width <= 900px) {
-    /* ILUSTRATION SECCION 1 / cambio de logo */
-    #ilustration .section1_container .inSecAll-containerlogo .inSecAll-containerImg {
-        background-image: url('/assets/img/tricbys2.webp');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100%;
-        height: 320px;
+@media (width <= 410px) {
+    #header-ilustraciones-movil {
+        nav {
+            .nav_logo-container-movil {
+                width: 70px;
+                height: 70px;
+            }
+            .header_subMenu-movil {
+                a {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
     }
 }

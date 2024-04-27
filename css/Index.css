@@ -90,7 +90,6 @@
     background-color: var(--black-background);
     background-image: url('/assets/img/FondoCalaverasNegro.webp');
     background-position: center;
-    background-attachment: fixed;
 }
 /* INDEX SECCION 1 */
 #index_section1 {
@@ -160,7 +159,7 @@
                 line-height: 3rem;
 
                 animation: revealindex linear 1s both;
-                animation-delay: 7s;
+                animation-delay: 4s;
             }
             h4 {
                 font-family: var(--font-paragraph);
@@ -170,7 +169,7 @@
                 font-weight: 300;
                 line-height: 2.5rem;
                 animation: revealindex linear 1s both;
-                animation-delay: 11s;
+                animation-delay: 5s;
             }
         }
 
@@ -388,9 +387,6 @@
                         color: var(--black-background);
                         font-weight: bold;
                     }
-                }
-                .progressButon {
-                    width: 240px;
                 }
                 .end {
                     display: flex;
