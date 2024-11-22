@@ -21,29 +21,42 @@
             <section class="nav_logo-container">
                 <a href="#index_section1"><img src="/assets/img/lunaBlanca.webp" alt="logo"></a>
             </section>
-            
-            <section class="header_menu">
-                <div class="icon-container"><a href="#index_section2">2</a></div>
-                <div class="icon-container"><a href="#index_section3">3</a></div>
-                <div class="icon-container"><a href="#index_section4">4</a></div>
-                <div class="icon-container"><a href="#index_section5">5</a></div>
+            <section class="headerMenu">
+                <article class="languageContainer">
+                    <div class="languageIconContainer BGusa">
+                        <a class="languageIcon">文</a>
+                    </div>
+                    <div class="languageSelector">
+                        <img id="spanish" src="./assets/Icons/Col.webp" alt="">
+                        <img id="english" src="./assets/Icons/Usa.webp" alt="">
+                    </div>
+                </article>
+                <div class="iconContainer"><a href="#index_section2">2</a></div>
+                <div class="iconContainer"><a href="#index_section3">3</a></div>
+                <div class="iconContainer"><a href="#index_section4">4</a></div>
+                <div class="iconContainer"><a href="#index_section5">5</a></div>
             </section>
         </nav>
     </header>
     <main class="main-index">
+        <article class="colorThemeSelector">
+            <div class="themeRed"></div>
+            <div class="themePurple"></div>
+            <div class="themeBlue"></div>
+        </article>
         <section id="index_section1">
             <article>
                 <div class="inSec1-textContainer">
-                    <p>Hola, soy</p>
-                    <h1>STIVENSON DAVID MEJIA</h1>
-                    <h2>
-                        Desarrollador FronEnd, Ilustrador<a>, Desarrollador de videojuegos, Guitarrista, Programador, Editor Audiovisual, Diseñador Creativo.</a>
+                    <p id="greeting">Hi, I am</p>
+                    <h1 id="full_name">STIVENSON DAVID MEJIA</h1>
+                    <h2 id="first_self_title">
+                        Designer & Front-End Developer / Indie Game Creator.
                     </h2> 
-                    <h3>
-                        Arquitecto visual del mundo digital, Creador de exquisitas obras visuales, Forjador de Universos Digitales, Virtuoso de las cuerdas, Mago del Código Encantado, Alquimista de Historias Multimedia, Conquistador de Universos Visuales.
+                    <h3 id="second_self_title">
+                        Visionary skald of the digital realms, smith of exquisite visual legends, forgemaster of pixel-runed worlds, keeper of the lyrical strings, weaver of enchanted code, rune alchemist of multimedia sagas, conqueror of the vast visual fjords.
                     </h3> 
-                    <h4>
-                        Constructor de Catedrales de Código Visual, Creador Magistral de Pinturas Digitales, Arquitecto Maestro de Cosmos Binarios, Virtuoso de la Sinfonía Intangible, Brujo del Lenguaje de Máquinas, Conductor Maestro de Epopeyas Digitales, Emperador Supremo de la Estética Cósmica.
+                    <h4 id="third_self_subtitle">
+                        Builder of runic temples of visual code, master carver of digital frescoes, architect of the vast binary cosmos, skald of intangible symphonies, sorcerer of enchanted languages, guide of pixelated epics, sovereign of the aesthetics of the nine worlds.
                     </h4>
                 </div>
                 <div class="inSec1-imgContainer">
@@ -56,14 +69,51 @@
                 </div>
             </article>
             <div class="inSec1-SMContainer">
-                <a href="#index_section2">
-                    ¿SABER MÁS?
+                <a id="more_button" href="#index_section2">
+                    KNOW MORE
                 </a>
                 <img src="./assets/Icons/Down.webp" alt="Flecha abajo">
             </div>
         </section>
+        <section id="index_section4">
+            <h1 id="title_section4">
+                ABOUT ME
+            </h1>
+            <article class="inSec4-textContainer">
+                <div class="inSec4-img">
+                    <img class="inSec3-fotoPerfil" src="./assets/img/Stivenson.webp" alt="">
+                </div>
+                <div class="inSec4-text">
+                    <div>
+                        <a id="paragraph1_1" class="relevantLetter">H</a>
+                        <p id="paragraph1_2">i again! My name is Stivenson but</p> 
+                        <a id="paragraph1_3" class="highlightText">can you tell me Tricby. </a> 
+                        <p id="paragraph1_4">My foray into the world of programming began not long ago, starting with</p>  
+                        <a id="paragraph1_5" class="highlightText">the creation of static web pages and then entering into the creation of video games.</a>
+                        <p id="paragraph1_6">My interest in technology has been with me since childhood, and I was finally able to give it free rein thanks to the acquisition of a computer.</p> 
+                    </div>
+                    <div>
+                        <a id="paragraph2_1" class="relevantLetter">B</a>
+                        <p id="paragraph2_2">efore entering the world of programming,</p> 
+                        <a id="paragraph2_3" class="highlightText">I was dedicated to art, creating illustrations,</a> 
+                        <p id="paragraph2_4">both traditional and digital drawings, paintings and sculptures. Also...</p>  
+                        <a id="paragraph2_5" class="highlightText" target="_blank" href="https://www.youtube.com/channel/UCidwNTmcHwTklWF5R4WgcCw">I started a YouTube channel</a>
+                        <p id="paragraph2_6">where I shared Minecraft videos, recreated little stories and constructions.</p>
+                    </div>
+                    <div>
+                        <a id="paragraph3_1" class="relevantLetter">C</a>
+                        <p id="paragraph3_2">urrently,</p>
+                        <a id="paragraph3_3" class="highlightText">I work and study,</a> 
+                        <p id="paragraph3_4">but in my free time I get involved in the</p>  
+                        <a id="paragraph3_5" class="highlightText">programming and web development.</a>
+                        <p id="paragraph3_6">I also spend time drawing to keep my creativity active. and I hope to soon find opportunities in </p>  
+                        <a id="paragraph3_7" class="highlightText">the technology industry.</a> 
+                    </div>
+                </div>
+            </article>
+        </section>
         <section id="index_section2">
-            <h1 id="1">PROYECTOS</h1>
+            <h1 id="title_section2">PROJECTS</h1>
             <div class="inSec2-containerCards">
                 <article class="inSec2-cards">
                     <div class="inSec2-imgContainer">
@@ -78,10 +128,12 @@
                                 <p>Aseprite</p>
                             </div>
                         </div>
-                        <p class="inSec2-text"> He desarrollado un juego donde controlarás a un pequeño ser con cabeza de calabaza mientras corre sin parar, esquivando obstáculos generados aleatoriamente en un mundo lleno de peligros. Disponible en ITCH.IO </p>
+                        <p id="text_project1" class="inSec2-text"> 
+                            I have developed a game where you will control a small being with a pumpkin head while it runs non-stop, avoiding randomly generated obstacles in a world full of dangers. Available on ITCH.IO 
+                        </p>
                         <div class="inSec2-butonContainer">
-                            <a class="inSec2-buton" Target="_blank" href="https://stivensonmejia.github.io/PumpkinJumpkin/">VER PAGINA WEB</a>
-                            <a class="inSec2-buton" Target="_blank" href="https://tricby.itch.io/pumpkin-jumpkin-beta">IR A DESCARGAR</a>
+                            <a id="button1_project1" class="inSec2-buton" Target="_blank" href="https://stivensonmejia.github.io/PumpkinJumpkin/">SEE WEBSITE</a>
+                            <a id="button2_project1" class="inSec2-buton" Target="_blank" href="https://tricby.itch.io/pumpkin-jumpkin-beta">GO DOWNLOAD</a>
                         </div>
                     </div>
                 </article>
@@ -99,17 +151,19 @@
                                 <p>Photoshop</p>
                             </div>
                         </div>
-                        <p class="inSec2-text end">Te invito a explorar mi página web de artista, donde podrás encontrar una amplia selección de mis ilustraciones, tanto digitales como tradicionales, y mucho más. si te gusta mi trabajo puedes seguirme en mis redes o contactarme.</p>
+                        <p id="text_project2" class="inSec2-text end">
+                            I invite you to explore my artist website, where you can find a wide selection of my illustrations, both digital and traditional, and much more. If you like my work you can follow me on my networks or contact me.
+                        </p>
                         <div class="inSec2-butonContainer end">
-                            <a class="inSec2-buton" Target="_blank" href="https://github.com/StivensonMejia/stivensonmejia.github.io">VER CODIGO</a>
-                            <a class="inSec2-buton" Target="_blank" href="./ilustration.html">VISITAR</a>
+                            <a id="button1_project2" class="inSec2-buton" Target="_blank" href="https://github.com/StivensonMejia/stivensonmejia.github.io">SEE CODE</a>
+                            <a id="button2_project2" class="inSec2-buton" Target="_blank" href="./ilustration.html">VISIT WEBSITE</a>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
         <section id="index_section3">
-            <h1>TECNOLOGIAS</h1>
+            <h1 id="title_section3" >SKILLS</h1>
             <div class="inSec3-containerSkills">
                 <article class="inSec3-subContainerSkills">
                     <div class="inSec3-cards">
@@ -149,27 +203,6 @@
                 </article>
             </div>
         </section>
-        <section id="index_section4">
-            <h1>
-                SOBRE MI
-            </h1>
-            <article class="inSec4-textContainer">
-                <div class="inSec4-text">
-                    <p>
-                        <a class="relevantLetter">¡H</a>ola de nuevo! Mi nombre es Stivenson Pero <a class="highlightText">me puedes decir Tricby.</a> Mi incursión en el mundo de la programación comenzó no hace mucho, empezando con la <a class="highlightText">creación de páginas web estáticas y luego adentrándome en la creación de videojuegos</a>. Mi interés por la tecnología ha estado conmigo desde la infancia, y finalmente pude darle rienda suelta gracias a la adquisición de una computadora.
-                    </p>
-                    <p>
-                        <a class="relevantLetter">A</a>ntes de adentrarme en el mundo de la programación, <a class="highlightText">me dedicaba al arte, creando ilustraciones,</a> dibujos tanto tradicionales como digitales, pinturas y esculturas. Además, <a class="highlightText" target="_blank" href="https://www.youtube.com/channel/UCidwNTmcHwTklWF5R4WgcCw">inicié un canal en YouTube</a> donde compartía videos de minecraft, recreaba pequeñas historias y construcciones.
-                    </p>
-                    <p>
-                        <a class="relevantLetter">A</a>ctualmente, <a class="highlightText">trabajo y estudio,</a> pero en mis momentos libres me involucro <a class="highlightText">en la programación y el desarrollo web.</a> También dedico tiempo al dibujo para mantener mi creatividad activa. y espero pronto encontrar oportunidades en la <a class="highlightText">industria tecnológica.</a> 
-                    </p>
-                </div>
-                <div class="inSec4-img">
-                    <img class="inSec3-fotoPerfil" src="./assets/img/Stivenson.webp" alt="">
-                </div>
-            </article>
-        </section>
         <section id="index_section5">
             <div class="inSec5-redesContainer">
                 <article class="inSec5-individualRedes">
@@ -194,13 +227,15 @@
                 </article>
             </div>
             <article class="inSec5-containerContactMe">
-                <p class="inSec5-textContactMe">CONTÁCTAME</p>
+                <p id="title_section5" class="inSec5-textContactMe">CONTACT ME</p>
             </article>
             
             <div class="inSec5-imgContainer">
                 <img src="./assets/img/FerChanFinal.webp" alt="">
             </div>
         </section>
+        <script src="./translateIndex.js"></script>
+        <script src="./index.js"></script>
     </main>
     <!--  <footer id="footer-index">
         <section class="inFooter-containerText">

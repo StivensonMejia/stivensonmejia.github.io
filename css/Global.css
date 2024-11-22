@@ -19,7 +19,7 @@
     --fontSize-megaTitle: 10rem;
     --fontSize-title: 7rem;
     --fontSize-subTitle: 5rem;
-    --fontSize-paragraph: 2.3rem;
+    --fontSize-paragraph: 2.5rem;
 }
 .ytp-impression-link {
     display: none;
@@ -31,23 +31,21 @@ html {
 body::-webkit-scrollbar, 
 .container_galery::-webkit-scrollbar {
     width: 10px;
-    height: 10px;
     display: inline-block;
-    padding: 2px;
-    background-color: var(--black-background);
+    background-color: var(--white);
 }
 body::-webkit-scrollbar-thumb,
 .container_galery::-webkit-scrollbar-thumb{
     background-color: var(--red);
-    border-radius: 2px;
 }
 
-body::-webkit-scrollbar-button {
+/* body::-webkit-scrollbar-button {
+    height: 10px;
     background-repeat: no-repeat;   
     background-size: 80%;
     background-position: center;
     background-image: url('/assets/Icons/Down.webp');
-}
+} */
 
 a {
     text-decoration: none;
