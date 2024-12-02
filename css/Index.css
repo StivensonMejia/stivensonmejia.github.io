@@ -69,14 +69,14 @@
                     justify-content: center;
                     align-items: center;
                     border-radius: 10px;
+                    user-select: none;
                     transition: ease-in .1s;
                     &:hover {
                         transform: scale(1.1);
                     }
                     &:active {
                         transition: ease-in-out .0s;
-                        transform: translateX(-5px);
-                        filter: drop-shadow(10px 0px 0 var(--red));
+                        transform: scale(.9);
                     }
                     .languageIcon {
                         width: 40px;
@@ -157,7 +157,7 @@
     position: relative;
 }
 /* TEMAS */
-.colorThemeSelector {
+.inedex_colorThemeSelector {
     z-index: 20;
     position: fixed;
     width: 120px;
@@ -182,17 +182,15 @@
 
 }
 /* INDEX SECCION 1 */
-#index_section1 {
+#index_introSection {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
-    place-items: center;
-    place-content: center;
-    gap: 20px;
+    justify-content: center;
     overflow: hidden;
     padding: 0 15%;
-    animation: revealindex linear 1s both;
+    animation: revealindex linear .5s both;
 
     article {
         position: relative;
@@ -200,14 +198,12 @@
         height: 100%;
         display: flex;
         place-items: center;
-        justify-content: start;
         gap: 10px;
-        .inSec1-textContainer {
+        .inSecIntro-textContainer {
             z-index: 2;
             width: auto;
             cursor: default;
-            max-width: 800px;
-            text-wrap: pretty;
+            max-width: 750px;
             text-align: end;
             p {
                 font-family: var(--font-paragraph);
@@ -231,24 +227,21 @@
                 font-weight: 300;
                 margin-top: -5px;
                 line-height: 4rem;
-                animation: revealindex linear 1s both;
+                text-wrap: balance;
+
+                animation: revealindex ease-in-out .3s both;
                 animation-delay: 1s;
-                a {
-                    color: rgb(174, 174, 174);
-                    animation: revealindex linear 1s both;
-                    animation-delay: 3s;
-                }
             }
             h3 {
-                opacity: 0;
                 font-family: var(--font-paragraph);
                 font-size: 3rem;
                 color: rgb(123, 123, 123);
                 margin-top: 6px;
                 font-weight: 300;
                 line-height: 3rem;
+                text-wrap: balance;
 
-                animation: revealindex linear 1s both;
+                animation: revealSec1Titles linear .3s both;
                 animation-delay: 4s;
             }
             h4 {
@@ -258,12 +251,14 @@
                 margin-top: 5px;
                 font-weight: 300;
                 line-height: 2.5rem;
-                animation: revealindex linear 1s both;
-                animation-delay: 5s;
+                text-wrap: balance;
+
+                animation: revealSec1Titles ease-out .2s both;
+                animation-delay: 4.5s;
             }
         }
 
-        .inSec1-imgContainer {
+        .inSecIntro-imgContainer {
             width: 35%;
             display: flex;
             flex-direction: column;
@@ -275,11 +270,11 @@
                     filter: drop-shadow(20px 0px 0 var(--red));
                 }
             }
-            .inSec1-redesContainer {
+            .inSecIntro-redesContainer {
                 display: flex;
                 gap: 10px;
                 justify-content: center;
-                .inSec1-butonRedes {
+                .inSecIntro-butonRedes {
                     display: inline-block;
                     width: 50px;
                     height: 50px;
@@ -293,7 +288,7 @@
                         }
                     }
                 }
-                .inSec1-butonCV {
+                .inSecIntro-butonCV {
                     display: flex;
                     place-items: center;
                     color: var(--white);
@@ -314,40 +309,41 @@
             }
         }
     }
-    .inSec1-SMContainer {
+    .inSecIntro-SMContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px;
         position: absolute;
         left: 0;
         right: 0;
-        bottom: 20px;
+        bottom: 5px;
         margin: auto;
-        animation: revealindex linear .5s both;
-        animation-delay: 6.5s;
+        animation: revealindex ease-out .5s both;
+        animation-delay: 6s;
         a {
             font-family: var(--font-title);
             font-size: 4rem;
             font-weight: lighter;
-            letter-spacing: 1px;
             color: var(--red);
             cursor: pointer;
-            transition: ease-in-out .2s;
+            transition: linear .2s;
             border-bottom: 2px solid transparent;
             &:hover {
-                border-bottom: 2px solid var(--red);
+                transform: scaleX(1.1);
             }
         }
         img {
             width: 40px;
             animation: MoveArrow 4s ease-in-out infinite;
+            &:hover {
+                transform: scaleX(1.1);
+            }
         }
     }
 }
 
 /* INDEX SECCION 2 */
-#index_section2 {
+#index_projectSection {
     position: relative;
     width: 100%;
     height: auto;
@@ -366,7 +362,7 @@
         animation-range: entry 20% cover 30%;
     }
 
-    .inSec2-containerCards {
+    .inSecProjects-containerCards {
         width: 100%;
         height: auto;
         display: flex;
@@ -378,7 +374,7 @@
             flex-direction: row-reverse;
         }
 
-        .inSec2-cards{
+        .inSecProjects-cards{
             z-index: 2;
             width: auto;
             height: auto;
@@ -391,7 +387,7 @@
             animation-timeline: view();
             animation-range: entry 20% cover 30%;
 
-            .inSec2-imgContainer {
+            .inSecProjects-imgContainer {
                 position: relative;
                 width: 360px;
                 height: 300px;
@@ -409,7 +405,7 @@
                     }
                 }
             }
-            .inSec2-textContainer {
+            .inSecProjects-textContainer {
                 position: relative;
                 width: 500px;
                 display: flex;
@@ -423,7 +419,7 @@
                     font-weight: lighter;
                     margin-bottom: -5px;
                 }
-                .inSec2-technologiesContainer {
+                .inSecProjects-technologiesContainer {
                     display: flex;
                     gap: 5px;
                     padding-top: 5px;
@@ -438,7 +434,7 @@
                         border-radius: 5px;
                     }
                 }
-                .inSec2-text {
+                .inSecProjects-text {
                     font-size: 2rem;
                     text-wrap: pretty;
                     padding-bottom: 40px;
@@ -450,7 +446,7 @@
                         color: var(--white);
                     }
                 }
-                .inSec2-butonContainer {
+                .inSecProjects-butonContainer {
                     width: 100%;
                     overflow: hidden;
                     height: auto;
@@ -458,7 +454,7 @@
                     gap: 20px;
                     border-radius: 5px;
                 }
-                .inSec2-buton {
+                .inSecProjects-buton {
                     position: relative;
                     width: 120px;
                     height: auto;
@@ -490,7 +486,7 @@
 }
 
 /* INDEX SECCION 3 */
-#index_section3 {
+#index_skillSection {
     position: relative;
     width: 100%;
     height: auto;
@@ -553,7 +549,7 @@
 }
 
 /* INDEX SECCION 4 */
-#index_section4 {
+#index_aboutMeSection {
     position: relative;
     width: 100%;
     height: auto;
@@ -570,7 +566,7 @@
         animation-timeline: view();
         animation-range: entry 20% cover 30%;
     }
-    .inSec4-textContainer {
+    .inSecAM-textContainer {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -580,7 +576,7 @@
         animation-timeline: view();
         animation-range: entry 20% cover 30%;
 
-        .inSec4-text{
+        .inSecAM-text{
             width: 60%;
             div{
                 font-family: var(--font-paragraph);
@@ -605,7 +601,7 @@
                 }
             }
         }
-        .inSec4-img {
+        .inSecAM-img {
             width: 300px;
             height: 350px;
             border-radius: 5px;
@@ -761,11 +757,29 @@
 }
 @keyframes revealTitles {
     from {
-        transform: translateX(-20rem);
+        transform: translateX(-100rem) scale(0.8);
         opacity: 0;
     }
     to {
-        transform: scale(1);
+        transform: translateX(0) scale(1);
+        opacity: 1;
+    }
+}
+@keyframes revealSec1Titles {
+    0% {
+        transform: translateX(-100rem);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(5rem);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(20rem) scaleX(0.6) scaleY(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0) scale(1);
         opacity: 1;
     }
 }
@@ -774,14 +788,14 @@
 
 @media (width <= 1500px) {
     /* SECCION 1 */
-    #index_section1 {
+    #index_introSection {
         article {
-            .inSec1-imgContainer {
+            .inSecIntro-imgContainer {
                 position: absolute;
                 width: 100%;
                 opacity: .05;
             }
-            .inSec1-textContainer {
+            .inSecIntro-textContainer {
                 text-align: center;
             }
         }
@@ -790,12 +804,12 @@
 
 @media (width <= 1200px) {
     /* SECCION 4 */
-    #index_section4 {
-        .inSec4-textContainer {
+    #index_aboutMeSection {
+        .inSecAM-textContainer {
             display: flex;
             flex-direction: column-reverse;
             gap: 30px;
-            .inSec4-text{
+            .inSecAM-text{
                 width: 100%;
                 p{
                     font-family: var(--font-paragraph);
@@ -807,7 +821,7 @@
                     margin-bottom: 30px;
                 }
             }
-            .inSec4-img {
+            .inSecAM-img {
                 width: 280px;
                 height: 280px;
                 border-radius: 5px;
@@ -837,10 +851,10 @@
         display: none;
     }
     /* SECCION 1 */
-    #index_section1 {
+    #index_introSection {
         padding: 50px 10%;
         article{
-            .inSec1-textContainer {
+            .inSecIntro-textContainer {
                 p {
                     font-size: 2.5rem;
                     line-height: 2.5rem;
@@ -866,18 +880,18 @@
         }
     }
     /* SECCION 2 */
-    #index_section2 {
+    #index_projectSection {
         padding: 150px 10%;
-        .inSec2-containerCards {
-            .inSec2-cards{
+        .inSecProjects-containerCards {
+            .inSecProjects-cards{
                 gap: 20px;
                 flex-direction: column;
-                .inSec2-imgContainer{
+                .inSecProjects-imgContainer{
                     width: 100%;
                 }
-                .inSec2-textContainer {
+                .inSecProjects-textContainer {
                     width: 100%;
-                    .inSec2-text {
+                    .inSecProjects-text {
                         margin-top: 10px;
                     }
                 }
@@ -888,7 +902,7 @@
         }
     } 
     /* SECCION 3 */
-    #index_section3 {
+    #index_skillSection {
         padding: 150px 10%;
         .inSec3-containerSkills {
             gap: 20px;
@@ -906,7 +920,7 @@
         }
     }
     /* SECCION 4 */
-    #index_section4{
+    #index_aboutMeSection{
         padding: 150px 10%;
     }
     /* SECCION 5 */
@@ -921,9 +935,9 @@
 
 @media (width <= 400px) {
     /* SECCION 1 */
-    #index_section1 {
+    #index_introSection {
         article{
-            .inSec1-textContainer {
+            .inSecIntro-textContainer {
                 p {
                     font-size: 2rem;
                     line-height: 2.5rem;

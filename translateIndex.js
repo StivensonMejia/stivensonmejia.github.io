@@ -53,7 +53,7 @@ const content = {
         third_self_subtitle : "Constructor de templos rúnicos del código visual, tallador magistral de frescos digitales, arquitecto de los vastos cosmos binarios, skald de sinfonías intangibles, brujo de lenguajes encantados, guía de epopeyas pixeladas, soberano de la estética de los nueve mundos.",
         more_button: "CONOCE MÁS",
         //PROYECTOS
-        title_section2: "PROYECTOS",
+        title_projectSection: "PROYECTOS",
         text_project1: "He desarrollado un juego donde controlarás a un pequeño ser con cabeza de calabaza mientras corre sin parar, esquivando obstáculos generados aleatoriamente en un mundo lleno de peligros. Disponible en ITCH.IO",
         button1_project1: "VER PÁGINA WEB",
         button2_project1: "IR A DESCARGAR",
@@ -61,9 +61,9 @@ const content = {
         button1_project2: "VER CÓDIGO",
         button2_project2: "VISITAR WEB",
         //HABILIDADES
-        title_section3:"HABILIDADES",
+        title_skillSection:"HABILIDADES",
         //SOBRE MI
-        title_section4:"SOBRE MI",
+        title_aboutMeSection:"SOBRE MI",
         paragraph1_1: "!H",
         paragraph1_2: "ola de nuevo! Mi nombre es Stivenson pero",
         paragraph1_3: "me puedes decir Tricby.",
@@ -97,7 +97,7 @@ const content = {
         third_self_subtitle: "Builder of runic temples of visual code, master carver of digital frescoes, architect of the vast binary cosmos, skald of intangible symphonies, sorcerer of enchanted languages, guide of pixelated epics, sovereign of the aesthetics of the nine worlds.",
         more_button: "KNOW MORE",
         //PROJECTS
-        title_section2: "PROJECTS",
+        title_projectSection: "PROJECTS",
         text_project1: "I have developed a game where you will control a small being with a pumpkin head while it runs non-stop, avoiding randomly generated obstacles in a world full of dangers. Available on ITCH.IO",
         button1_project1: "SEE WEBSITE",
         button2_project1: "GO DOWNLOAD",
@@ -105,9 +105,9 @@ const content = {
         button1_project2: "SEE CODE",
         button2_project2: "VISIT WEBSITE",
         //HABILIDADES
-        title_section3:"SKILLS",
+        title_skillSection:"SKILLS",
         //ABOUT ME
-        title_section4:"ABOUT ME",
+        title_aboutMeSection:"ABOUT ME",
         paragraph1_1: "H",
         paragraph1_2: "i again! My name is Stivenson but",
         paragraph1_3: "can you tell me Tricby. ",
@@ -145,7 +145,7 @@ function changeLanguage(language) {
         document.getElementById('third_self_subtitle').textContent = content[language].third_self_subtitle;
         document.getElementById('more_button').textContent = content[language].more_button;
         //PROJECTS
-        document.getElementById('title_section2').textContent = content[language].title_section2;
+        document.getElementById('title_projectSection').textContent = content[language].title_projectSection;
         document.getElementById('text_project1').textContent = content[language].text_project1;
         document.getElementById('button1_project1').textContent = content[language].button1_project1;
         document.getElementById('button2_project1').textContent = content[language].button2_project1;
@@ -153,9 +153,9 @@ function changeLanguage(language) {
         document.getElementById('button1_project2').textContent = content[language].button1_project2;
         document.getElementById('button2_project2').textContent = content[language].button2_project2;
         //HABILIDADES
-        document.getElementById('title_section3').textContent = content[language].title_section3;
+        document.getElementById('title_skillSection').textContent = content[language].title_skillSection;
         //ABOUT ME
-        document.getElementById('title_section4').textContent = content[language].title_section4;
+        document.getElementById('title_aboutMeSection').textContent = content[language].title_aboutMeSection;
         document.getElementById('paragraph1_1').textContent = content[language].paragraph1_1;
         document.getElementById('paragraph1_2').textContent = content[language].paragraph1_2;
         document.getElementById('paragraph1_3').textContent = content[language].paragraph1_3;
