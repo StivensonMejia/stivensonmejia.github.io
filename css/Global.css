@@ -18,7 +18,7 @@
 
     --fontSize-megaTitle: 10rem;
     --fontSize-title: 7rem;
-    --fontSize-subTitle: 5rem;
+    --fontSize-subTitle: 4rem;
     --fontSize-paragraph: 2.5rem;
 }
 .ytp-impression-link {
@@ -32,11 +32,14 @@ body::-webkit-scrollbar,
 .container_galery::-webkit-scrollbar {
     width: 10px;
     display: inline-block;
-    background-color: var(--white);
+    background-color: var(--red);
+    scroll-padding: 2em;
 }
 body::-webkit-scrollbar-thumb,
 .container_galery::-webkit-scrollbar-thumb{
-    background-color: var(--red);
+    background-color: var(--white);
+    
+    scroll-padding: 2em;
 }
 
 /* body::-webkit-scrollbar-button {
@@ -49,6 +52,16 @@ body::-webkit-scrollbar-thumb,
 
 a {
     text-decoration: none;
+}
+
+
+@media (max-width: 1380px) {
+    :root {
+        --fontSize-megaTitle: 7rem;
+        --fontSize-title: 5rem;
+        --fontSize-subTitle: 3rem;
+        --fontSize-paragraph: 2.2rem;
+    }
 }
 
 

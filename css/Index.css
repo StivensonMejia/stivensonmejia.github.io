@@ -151,6 +151,7 @@
 /* INDEX MAIN */
 .main-index {
     width: 100%;
+    padding-right: 85px;
     background-color: var(--black-background);
     background-image: url('/assets/img/FondoCalaverasNegro.webp');
     background-position: center;
@@ -198,47 +199,49 @@
         height: 100%;
         display: flex;
         place-items: center;
-        gap: 10px;
+        gap: 50px;
         .inSecIntro-textContainer {
             z-index: 2;
             width: auto;
             cursor: default;
-            max-width: 750px;
+            max-width: 65%;
             text-align: end;
             p {
                 font-family: var(--font-paragraph);
-                font-size: 3rem;
+                font-size: var(--fontSize-paragraph);
                 color: rgb(174, 174, 174);
                 font-weight: 300;
+                padding-right: 10px;
             }
             h1 {
                 z-index: 5;
                 font-family: var(--font-title);
                 font-size: var(--fontSize-megaTitle);
                 color: var(--red);
-                line-height: 8.5rem;
+                line-height: 7rem;
                 font-weight: lighter;
+                
             }
             h2 {
                 z-index: 2;
                 font-family: var(--font-paragraph);
-                font-size: 5rem;
+                font-size: var(--fontSize-subTitle);
                 color: var(--white);
                 font-weight: 300;
-                margin-top: -5px;
+                margin-bottom: 50px;
                 line-height: 4rem;
-                text-wrap: balance;
+                text-wrap: pretty;
 
                 animation: revealindex ease-in-out .3s both;
                 animation-delay: 1s;
             }
             h3 {
                 font-family: var(--font-paragraph);
-                font-size: 3rem;
+                font-size: var(--fontSize-paragraph);
                 color: rgb(123, 123, 123);
                 margin-top: 6px;
                 font-weight: 300;
-                line-height: 3rem;
+                line-height: 2.5rem;
                 text-wrap: balance;
 
                 animation: revealSec1Titles linear .3s both;
@@ -259,7 +262,7 @@
         }
 
         .inSecIntro-imgContainer {
-            width: 35%;
+            width: 30%;
             display: flex;
             flex-direction: column;
             img {
@@ -322,7 +325,7 @@
         animation-delay: 6s;
         a {
             font-family: var(--font-title);
-            font-size: 4rem;
+            font-size: var(--fontSize-subTitle);
             font-weight: lighter;
             color: var(--red);
             cursor: pointer;
@@ -389,7 +392,7 @@
 
             .inSecProjects-imgContainer {
                 position: relative;
-                width: 360px;
+                width: 60%;
                 height: 300px;
                 overflow: hidden;
                 border-radius: 10px;
@@ -398,9 +401,9 @@
                     height: 100%;
                     object-fit: cover;
                     transition: .2s ease-in;
-                    filter: blur(2px);
+                    filter: blur(1px);
                     &:hover {
-                        transform: scale(1.1);
+                        transform: scale(1.05);
                         filter: blur(0px);
                     }
                 }
@@ -410,8 +413,6 @@
                 width: 500px;
                 display: flex;
                 flex-direction: column;
-                align-content: center;
-                justify-content: space-between;
                 h3 {
                     font-family: var(--font-title);
                     font-size: var(--fontSize-subTitle);
@@ -421,7 +422,7 @@
                 }
                 .inSecProjects-technologiesContainer {
                     display: flex;
-                    gap: 5px;
+                    gap: 8px;
                     padding-top: 5px;
                     flex-wrap: wrap;
                     p {
@@ -430,16 +431,18 @@
                         background-color: var(--red);
                         font-size: 1.6rem;
                         color: var(--white);
-                        padding: 1px 10px;
+                        padding: 2px 10px;
                         border-radius: 5px;
                     }
                 }
                 .inSecProjects-text {
                     font-size: 2rem;
                     text-wrap: pretty;
-                    padding-bottom: 40px;
+                    padding-top: 5px;
                     line-height: 2rem;
                     color: rgb(123, 123, 123);
+                    margin-bottom: auto;
+                    
                     transition: ease-in-out .2s;
                     cursor: default;
                     &:hover {
@@ -452,27 +455,26 @@
                     height: auto;
                     display: flex;
                     gap: 20px;
-                    border-radius: 5px;
+                    padding-bottom: 5px;
                 }
                 .inSecProjects-buton {
-                    position: relative;
                     width: 120px;
                     height: auto;
-                    padding: 12px 10px;
+                    padding: 6px 0;
                     display: flex;
-                    align-items: center;
                     justify-content: center;
                     font-size: 2.2rem;
                     font-family: var(--font-title);
                     color: var(--white);
-                    transition: ease .2s;
-                    border: 2px solid var(--white);
                     border-radius: 10px;
-                    letter-spacing: .5px;
+                    letter-spacing: .6px;
+
+                    border: 2px solid var(--white);
+                    transition: ease .2s;
                     &:hover {
                         background-color: var(--white);
                         color: var(--black-background);
-                        font-weight: bold;
+                        font-weight: bolder;
                     }
                 }
                 .end {
@@ -624,48 +626,14 @@
     flex-direction: column;
     padding: 320px 15%;
     overflow: hidden;
-    .inSec5-redesContainer {
-        z-index: 2;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding-bottom:10px;
-        border-bottom: 2px solid var(--red);
-        .inSec5-individualRedes {
-            width: 100px;
-            height: auto;
-            a {
-                width: 100%;
-                height: auto;
-                img {
-                    width: 100%;
-                    height: auto;
-                    transition: ease .5s;
-                    transition-delay: .1s,;
-                    &:hover {
-                        transform: rotate(360deg);
-                    }
-                }
-            }
-            p {
-                text-align: center;
-                color: var(--white);
-                font-size: var(--fontSize-paragraph);
-                font-weight: 300;
-            }
-        }  
-    }
-    .inSec5-containerContactMe {
+    .inSecAMcontainerContactMe {
         z-index: 2;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
         padding-top:10px;
-        .inSec5-butomCV {
+        .inSecAMbutomCV {
             display: flex;
             height: 50px;
             place-items: center;
@@ -683,7 +651,7 @@
                 font-weight: bold;
             }
         }
-        .inSec5-textContactMe {
+        .inSecAMtextContactMe {
             z-index: 2;
             font-family: var(--font-title);
             font-size: var(--fontSize-subTitle);
@@ -691,7 +659,7 @@
             text-align: center;
         }
     }
-    .inSec5-imgContainer {
+    .inSecAMimgContainer {
         z-index: 1;
         width: 100%;
         position: absolute;
@@ -786,7 +754,29 @@
 
 /* MEDIAQUERYS */
 
-@media (width <= 1500px) {
+@media (max-width: 1380px) {
+    /* SECCION 1  */
+    #index_introSection {
+        article {
+            .inSecIntro-textContainer {
+                h1 {
+                    line-height: 6rem;
+                }
+                h2 {
+                    line-height: 3rem;
+                }
+                h3 {
+                    line-height: 2rem;
+                }
+                h4 {
+                    line-height: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
     /* SECCION 1 */
     #index_introSection {
         article {
@@ -797,12 +787,10 @@
             }
             .inSecIntro-textContainer {
                 text-align: center;
+                max-width: 100%;
             }
         }
     }
-}
-
-@media (width <= 1200px) {
     /* SECCION 4 */
     #index_aboutMeSection {
         .inSecAM-textContainer {
@@ -839,46 +827,23 @@
     #index_section5 {
         padding: 200px 15%;
 
-        .inSec5-imgContainer {
+        .inSecAMimgContainer {
             padding: 0px 0px;
         }
     }
 }
 
 @media (width <= 800px) {
+    /* MAIN */
+    .main-index {
+        padding-right: 0px;
+    }
     /* HEADER */
     #header-index { 
         display: none;
     }
     /* SECCION 1 */
-    #index_introSection {
-        padding: 50px 10%;
-        article{
-            .inSecIntro-textContainer {
-                p {
-                    font-size: 2.5rem;
-                    line-height: 2.5rem;
-                }
-                h1 {
-                    font-size: 6rem;
-                    line-height: 6rem;
-                }
-                h2 {
-                    font-size: 3rem;
-                    line-height: 2.5rem;
-                }
-                h3 {
-                    font-size: 2.5rem;
-                    line-height: 2rem;
-                }
-                h4 {
-                    font-size: 1.5rem;
-                    line-height: 1.5rem;
-                    margin-bottom: 40px;
-                }
-            }
-        }
-    }
+    
     /* SECCION 2 */
     #index_projectSection {
         padding: 150px 10%;
@@ -927,7 +892,7 @@
     #index_section5 {
         padding: 150px 10%;
 
-        .inSec5-imgContainer {
+        .inSecAMimgContainer {
             padding: 0px 0px;
         }
     }
