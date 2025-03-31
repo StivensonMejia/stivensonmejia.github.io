@@ -28,7 +28,7 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-body::-webkit-scrollbar, 
+/* body::-webkit-scrollbar, 
 .container_galery::-webkit-scrollbar {
     width: 10px;
     display: inline-block;
@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb,
     background-color: var(--white);
     
     scroll-padding: 2em;
-}
+} */
 
 /* body::-webkit-scrollbar-button {
     height: 10px;

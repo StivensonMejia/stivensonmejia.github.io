@@ -54,12 +54,15 @@ const content = {
         more_button: "CONOCE MÁS",
         //PROYECTOS
         title_projectSection: "PROYECTOS",
-        text_project1: "He desarrollado un juego donde controlarás a un pequeño ser con cabeza de calabaza mientras corre sin parar, esquivando obstáculos generados aleatoriamente en un mundo lleno de peligros. Disponible en ITCH.IO",
-        button1_project1: "VER PÁGINA WEB",
-        button2_project1: "IR A DESCARGAR",
-        text_project2: "Te invito a explorar mi página web de artista, donde podrás encontrar una amplia selección de mis ilustraciones, tanto digitales como tradicionales, y mucho más. si te gusta mi trabajo puedes seguirme en mis redes o contactarme.",
-        button1_project2: "VER CÓDIGO",
-        button2_project2: "VISITAR WEB",
+        text_project_ValorXHora: "Creé una aplicación web para calcular el valor de las horas trabajadas. Permite ingresar horarios y genera tablas con un desglose claro de días, horas y montos, almacenando los datos en localStorage. Durante su desarrollo, aprendí manipulación del DOM y almacenamiento local.",
+        button1_project_ValorXHora: "VISITAR WEB",
+        button2_project_ValorXHora: "VER CÓDIGO",
+        text_project_PumpkinJumpkin: "Desarrollé un juego endless runner con generación procedural de obstáculos, controles fluidos y power-ups que ayudan al jugador a progresar. Durante el desarrollo, mejoré mi lógica de programación y habilidades de depuración de código. También añadí un modo hardcore donde la velocidad aumenta para un mayor desafío. ¡Disponible en ITCH.IO!.",
+        button1_project_PumpkinJumpkin: "VISITAR WEB",
+        button2_project_PumpkinJumpkin: "IR A DESCARGAR",
+        text_project_TricbysART: "Desarrollé una web para exhibir mis ilustraciones, tanto digitales como tradicionales. Para su creación, aprendí maquetación, diseño web y animaciones, logrando una presentación atractiva y funcional. También incluye enlaces a mis redes y contacto.",
+        button1_project_TricbysART: "VISITAR WEB",
+        button2_project_TricbysART: "VER CÓDIGO",
         //HABILIDADES
         title_skillSection:"HABILIDADES",
         //SOBRE MI
@@ -98,12 +101,15 @@ const content = {
         more_button: "KNOW MORE",
         //PROJECTS
         title_projectSection: "PROJECTS",
-        text_project1: "I have developed a game where you will control a small being with a pumpkin head while it runs non-stop, avoiding randomly generated obstacles in a world full of dangers. Available on ITCH.IO",
-        button1_project1: "SEE WEBSITE",
-        button2_project1: "GO DOWNLOAD",
-        text_project2: "I invite you to explore my artist website, where you can find a wide selection of my illustrations, both digital and traditional, and much more. If you like my work you can follow me on my networks or contact me.",
-        button1_project2: "SEE CODE",
-        button2_project2: "VISIT WEBSITE",
+        text_project_ValorXHora: "I created a web application to calculate worked hours' value. It allows users to enter schedules and generates tables with a clear breakdown of days, hours, and amounts, storing data in localStorage. Through this project, I learned DOM manipulation and local storage handling.",
+        button1_project_ValorXHora: "VISIT WEBSITE",
+        button2_project_ValorXHora: "VIEW CODE",
+        text_project_PumpkinJumpkin: "I developed an endless runner game featuring procedurally generated obstacles, fluid controls, and power-ups that help the player progress. While working on it, I improved my programming logic and debugging skills. I also added a hardcore mode where speed increases for an extra challenge. Available on ITCH.IO!.",
+        button1_project_PumpkinJumpkin: "VISIT WEBSITE",
+        button2_project_PumpkinJumpkin: "GO DOWNLOAD",
+        text_project_TricbysART: "I developed a website to showcase my illustrations, both digital and traditional. Through this project, I learned layout design, web styling, and animations to create an appealing and functional display. It also includes links to my social media and contact information.",
+        button1_project_TricbysART: "VISIT WEBSITE",
+        button2_project_TricbysART: "VIEW CODE",
         //HABILIDADES
         title_skillSection:"SKILLS",
         //ABOUT ME
@@ -146,12 +152,15 @@ function changeLanguage(language) {
         document.getElementById('more_button').textContent = content[language].more_button;
         //PROJECTS
         document.getElementById('title_projectSection').textContent = content[language].title_projectSection;
-        document.getElementById('text_project1').textContent = content[language].text_project1;
-        document.getElementById('button1_project1').textContent = content[language].button1_project1;
-        document.getElementById('button2_project1').textContent = content[language].button2_project1;
-        document.getElementById('text_project2').textContent = content[language].text_project2;
-        document.getElementById('button1_project2').textContent = content[language].button1_project2;
-        document.getElementById('button2_project2').textContent = content[language].button2_project2;
+        document.getElementById('text_project_ValorXHora').textContent = content[language].text_project_ValorXHora;
+        document.getElementById('button1_project_ValorXHora').textContent = content[language].button1_project_ValorXHora;
+        document.getElementById('button2_project_ValorXHora').textContent = content[language].button2_project_ValorXHora;
+        document.getElementById('text_project_PumpkinJumpkin').textContent = content[language].text_project_PumpkinJumpkin;
+        document.getElementById('button1_project_PumpkinJumpkin').textContent = content[language].button1_project_PumpkinJumpkin;
+        document.getElementById('button2_project_PumpkinJumpkin').textContent = content[language].button2_project_PumpkinJumpkin;
+        document.getElementById('text_project_TricbysART').textContent = content[language].text_project_TricbysART;
+        document.getElementById('button1_project_TricbysART').textContent = content[language].button1_project_TricbysART;
+        document.getElementById('button2_project_TricbysART').textContent = content[language].button2_project_TricbysART;
         //HABILIDADES
         document.getElementById('title_skillSection').textContent = content[language].title_skillSection;
         //ABOUT ME
