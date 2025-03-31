@@ -206,19 +206,20 @@
             cursor: default;
             max-width: 65%;
             text-align: end;
-            p {
+            .greeting {
                 font-family: var(--font-paragraph);
                 font-size: var(--fontSize-paragraph);
                 color: rgb(174, 174, 174);
                 font-weight: 300;
                 padding-right: 10px;
+                margin-bottom: 10px
             }
             h1 {
                 z-index: 5;
                 font-family: var(--font-title);
-                font-size: var(--fontSize-megaTitle);
+                font-size: var(--fontSize-Title);
                 color: var(--red);
-                line-height: 7rem;
+                line-height: 5rem;
                 font-weight: lighter;
                 
             }
@@ -229,11 +230,20 @@
                 color: var(--white);
                 font-weight: 300;
                 margin-bottom: 50px;
-                line-height: 4rem;
+                line-height:3rem;
                 text-wrap: pretty;
 
                 animation: revealindex ease-in-out .3s both;
                 animation-delay: 1s;
+            }
+            .but {
+                color: var(--white);
+                font-family: var(--font-paragraph);
+                font-size: 2.2rem;
+                line-height: 1rem;
+
+                animation: revealindex ease-in-out .3s both;
+                animation-delay: 2.5s;
             }
             h3 {
                 font-family: var(--font-paragraph);
@@ -241,7 +251,6 @@
                 color: rgb(123, 123, 123);
                 margin-top: 6px;
                 font-weight: 300;
-                line-height: 2.5rem;
                 text-wrap: balance;
 
                 animation: revealSec1Titles linear .3s both;
@@ -249,11 +258,10 @@
             }
             h4 {
                 font-family: var(--font-paragraph);
-                font-size: 2rem;
+                font-size: var(--fontSize-smallParagraph);
                 color: rgb(85, 85, 85);
                 margin-top: 5px;
                 font-weight: 300;
-                line-height: 2.5rem;
                 text-wrap: balance;
 
                 animation: revealSec1Titles ease-out .2s both;
@@ -296,7 +304,7 @@
                     place-items: center;
                     color: var(--white);
                     font-family: var(--font-title);
-                    font-size: 3rem;
+                    font-size: var(--fontSize-buttons);
                     border: solid 2px var(--white);
                     padding: 0 10px;
                     border-radius: 7px;
@@ -354,13 +362,13 @@
 
     h1 {
         font-family: var(--font-title);
-        font-size: var(--fontSize-title);
+        font-size: var(--fontSize-Title);
         color: var(--red);
         font-weight: lighter;
         text-align: start;
         padding: 0 0 150px;
 
-        animation: revealTitles linear both;
+        animation: revealContent linear both;
         animation-timeline: view();
         animation-range: entry 20% cover 30%;
     }
@@ -376,7 +384,7 @@
             justify-content: end;
             flex-direction: row-reverse;
         }
-
+        
         .inSecProjects-cards{
             z-index: 2;
             width: auto;
@@ -385,7 +393,7 @@
             display: flex;
             gap: 60px;
 
-            animation: revealContent linear both;
+            animation: revealContentLeft linear both;
             animation-timeline: view();
             animation-range: entry 20% cover 30%;
 
@@ -410,23 +418,25 @@
                 width: 500px;
                 display: flex;
                 flex-direction: column;
+                padding: 5px;
                 h3 {
                     font-family: var(--font-title);
                     font-size: var(--fontSize-subTitle);
                     color: var(--white);
                     font-weight: lighter;
+                    line-height: 3rem;
                     margin-bottom: -5px;
                 }
                 .inSecProjects-technologiesContainer {
                     display: flex;
                     gap: 8px;
-                    padding-top: 5px;
+                    padding: 8px 0;
                     flex-wrap: wrap;
                     p {
                         display: inline-block;
                         font-family: var(--font-paragraph);
                         background-color: var(--red);
-                        font-size: 1.6rem;
+                        font-size: 1.3rem;
                         color: var(--white);
                         padding: 2px 10px;
                         border-radius: 3px;
@@ -434,9 +444,9 @@
                     }
                 }
                 .inSecProjects-text {
-                    font-size: 2rem;
+                    font-size: var(--fontSize-smallParagraph);
+                    font-family: var(--font-paragraph);
                     text-wrap: pretty;
-                    padding-top: 5px;
                     line-height: 2rem;
                     color: var(--white);
                     margin-bottom: auto;
@@ -450,26 +460,24 @@
                     height: auto;
                     display: flex;
                     gap: 20px;
-                    padding-bottom: 5px;
-                }
-                .inSecProjects-buton {
-                    width: 120px;
-                    height: auto;
-                    padding: 6px 0;
-                    display: flex;
-                    justify-content: center;
-                    font-size: 2.5rem;
-                    font-family: var(--font-title);
-                    color: var(--white);
-                    border-radius: 7px;
-                    letter-spacing: .6px;
-
-                    border: 2px solid var(--white);
-                    transition: ease .2s;
-                    &:hover {
-                        background-color: var(--white);
-                        color: var(--black-background);
-                        font-weight: bold;
+                    .inSecProjects-buton {
+                        width: 150px;
+                        height: auto;
+                        padding: 6px 0;
+                        display: flex;
+                        justify-content: center;
+                        font-size: var(--fontSize-buttons);
+                        font-family: var(--font-title);
+                        color: var(--white);
+                        border-radius: 7px;
+    
+                        border: 2px solid var(--white);
+                        transition: ease .2s;
+                        &:hover {
+                            background-color: var(--white);
+                            color: var(--black-background);
+                            font-weight: bold;
+                        }
                     }
                 }
                 .end {
@@ -478,6 +486,11 @@
                     text-align: end;
                 }
             }
+        }
+        .inSecProjects-cardsRight {
+            animation: revealContentRightLarge linear both;
+            animation-timeline: view();
+            animation-range: entry 20% cover 30%;
         }
     }
 }
@@ -490,7 +503,7 @@
     padding: 150px 15%;
     h1 {
         font-family: var(--font-title);
-        font-size: var(--fontSize-title);
+        font-size: var(--fontSize-Title);
         color: var(--red);
         font-weight: lighter;
         text-align: center;
@@ -553,13 +566,13 @@
     padding: 150px 15%;
     h1 {
         font-family: var(--font-title);
-        font-size: var(--fontSize-title);
+        font-size: var(--fontSize-Title);
         color: var(--red);
         font-weight: lighter;
         text-align: start;
         padding: 0 0 150px;
 
-        animation: revealTitles linear both;
+        animation: revealContent linear both;
         animation-timeline: view();
         animation-range: entry 20% cover 30%;
     }
@@ -581,16 +594,17 @@
                 color: var(--white);
                 text-wrap: pretty;
                 font-weight: 300;
-                line-height: 3rem;
-                margin-bottom: 20px;
-                margin-top: 20px;
+                margin-bottom: 30px;
+                margin-top: 30px;
+
                 p{
                     display: inline;
                 }
                 .relevantLetter {
                     font-family: var(--font-title);
-                    font-size: var(--fontSize-subTitle);
+                    font-size: 4rem;
                     line-height: 1px;
+                    letter-spacing: -5px;
                     color: var(--red);
                 }
                 .highlightText {
@@ -718,13 +732,33 @@
         opacity: 1;
     }
 }
-@keyframes revealTitles {
+@keyframes revealContentLeft {
     from {
-        transform: translateX(-100rem) scale(0.8);
+        transform: translateX(-35rem);
         opacity: 0;
     }
     to {
-        transform: translateX(0) scale(1);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes revealContentRightLarge {
+    0% {
+        transform: translateX(25%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes revealContentRightSmall {
+    0% {
+        transform: translateX(12%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -748,28 +782,6 @@
 }
 
 /* MEDIAQUERYS */
-
-@media (max-width: 1380px) {
-    /* SECCION 1  */
-    #index_introSection {
-        article {
-            .inSecIntro-textContainer {
-                h1 {
-                    line-height: 6rem;
-                }
-                h2 {
-                    line-height: 3rem;
-                }
-                h3 {
-                    line-height: 2rem;
-                }
-                h4 {
-                    line-height: 1.8rem;
-                }
-            }
-        }
-    }
-}
 
 @media (max-width: 1200px) {
     /* SECCION 1 */
@@ -809,7 +821,13 @@
             article:nth-child(2) {
                 flex-direction: column;
             }
+            .inSecProjects-cardsRight {
+                animation: revealContentRightSmall linear both;
+                animation-timeline: view();
+                animation-range: entry 20% cover 30%;
+            }
         }
+        
     } 
     /* SECCION 4 */
     #index_aboutMeSection {
@@ -894,30 +912,18 @@
     }
 }
 
-@media (width <= 400px) {
-    /* SECCION 1 */
-    #index_introSection {
-        article{
-            .inSecIntro-textContainer {
-                p {
-                    font-size: 2rem;
-                    line-height: 2.5rem;
-                }
+@media (max-width: 460px) {
+    #index_introSection{
+        article {
+            .inSecIntro-textContainer{
                 h1 {
-                    font-size: 4rem;
-                    line-height: 4rem;
+                    line-height: 3rem;
                 }
-                h2 {
-                    font-size: 2.8rem;
-                    line-height: 2.5rem;
-                }
-                h3 {
-                    font-size: 2.2rem;
+                h2{
                     line-height: 2rem;
                 }
-                h4 {
-                    font-size: 1.5rem;
-                    line-height: 1.5rem;
+                h4{
+                    display: none;
                 }
             }
         }

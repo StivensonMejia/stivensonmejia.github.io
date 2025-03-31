@@ -49,6 +49,7 @@ const content = {
         greeting: "Hola, soy",
         full_name: "STIVENSON DAVID MEJIA",
         first_self_title: "Diseñador y Desarrollador Front-End / Creador de Juegos Independientes.",
+        but: "Pero... también soy",
         second_self_title: "Visionario skald de los reinos digitales, herrero de exquisitas leyendas visuales, forjador de mundos pixelados con runas, guardián de las cuerdas líricas, tejedor de códigos encantados, alquimista rúnico de sagas multimedia, conquistador de los vastos fiordos visuales.",
         third_self_subtitle : "Constructor de templos rúnicos del código visual, tallador magistral de frescos digitales, arquitecto de los vastos cosmos binarios, skald de sinfonías intangibles, brujo de lenguajes encantados, guía de epopeyas pixeladas, soberano de la estética de los nueve mundos.",
         more_button: "CONOCE MÁS",
@@ -59,7 +60,7 @@ const content = {
         button2_project_ValorXHora: "VER CÓDIGO",
         text_project_PumpkinJumpkin: "Desarrollé un juego endless runner con generación procedural de obstáculos, controles fluidos y power-ups que ayudan al jugador a progresar. Durante el desarrollo, mejoré mi lógica de programación y habilidades de depuración de código. También añadí un modo hardcore donde la velocidad aumenta para un mayor desafío. ¡Disponible en ITCH.IO!.",
         button1_project_PumpkinJumpkin: "VISITAR WEB",
-        button2_project_PumpkinJumpkin: "IR A DESCARGAR",
+        button2_project_PumpkinJumpkin: "DESCARGAR",
         text_project_TricbysART: "Desarrollé una web para exhibir mis ilustraciones, tanto digitales como tradicionales. Para su creación, aprendí maquetación, diseño web y animaciones, logrando una presentación atractiva y funcional. También incluye enlaces a mis redes y contacto.",
         button1_project_TricbysART: "VISITAR WEB",
         button2_project_TricbysART: "VER CÓDIGO",
@@ -96,6 +97,7 @@ const content = {
         greeting: "Hi I am",
         full_name: "STIVENSON DAVID MEJIA",
         first_self_title: "Designer & Front-End Developer / Indie Game Creator.",
+        but: "But... I'm also",
         second_self_title: "Visionary skald of the digital realms, smith of exquisite visual legends, forgemaster of pixel-runed worlds, keeper of the lyrical strings, weaver of enchanted code, rune alchemist of multimedia sagas, conqueror of the vast visual fjords.",
         third_self_subtitle: "Builder of runic temples of visual code, master carver of digital frescoes, architect of the vast binary cosmos, skald of intangible symphonies, sorcerer of enchanted languages, guide of pixelated epics, sovereign of the aesthetics of the nine worlds.",
         more_button: "KNOW MORE",
@@ -147,6 +149,7 @@ function changeLanguage(language) {
         document.getElementById('greeting').textContent = content[language].greeting;
         document.getElementById('full_name').innerText = content[language].full_name;
         document.getElementById('first_self_title').textContent = content[language].first_self_title;
+        document.getElementById('but').textContent = content[language].but;
         document.getElementById('second_self_title').textContent = content[language].second_self_title;
         document.getElementById('third_self_subtitle').textContent = content[language].third_self_subtitle;
         document.getElementById('more_button').textContent = content[language].more_button;

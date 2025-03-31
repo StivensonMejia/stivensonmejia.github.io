@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Grenze:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Metamorphous&display=swap" rel="stylesheet">
 
     <title>Tricby's</title>
 </head>
@@ -47,11 +47,12 @@
         <section id="index_introSection">
             <article>
                 <div class="inSecIntro-textContainer">
-                    <p id="greeting">Hi, I am</p>
+                    <p id="greeting" class="greeting">Hi, I am</p>
                     <h1 id="full_name">STIVENSON DAVID MEJIA</h1>
                     <h2 id="first_self_title">
                         Designer & Front-End Developer / Indie Game Creator.
                     </h2> 
+                    <p id="but" class="but">But... I'm also</p>
                     <h3 id="second_self_title">
                         Visionary skald of the digital realms, smith of exquisite visual legends, forgemaster of pixel-runed worlds, keeper of the lyrical strings, weaver of enchanted code, rune alchemist of multimedia sagas, conqueror of the vast visual fjords.
                     </h3> 
@@ -81,6 +82,51 @@
             <div class="inSecProjects-containerCards">
                 <article class="inSecProjects-cards">
                     <div class="inSecProjects-imgContainer">
+                        <img src="./assets/img/PortadaVideoJuego.webp" alt="">
+                    </div>
+                    <div class="inSecProjects-textContainer">
+                        <div>
+                            <h3 class="">PUMPKIN JUMPKIN</h3>
+                            <div class="inSecProjects-technologiesContainer ">
+                                <p>GDscript</p>
+                                <p>Godot Engine</p>
+                                <p>Aseprite</p>
+                            </div>
+                        </div>
+                        <p id="text_project_PumpkinJumpkin" class="inSecProjects-text "> 
+                            I developed an endless runner game featuring procedurally generated obstacles, fluid controls, and power-ups that help the player progress. While working on it, I improved my programming logic and debugging skills. I also added a hardcore mode where speed increases for an extra challenge. Available on ITCH.IO! 
+                        </p>
+                        <div class="inSecProjects-butonContainer ">
+                            <a id="button1_project_PumpkinJumpkin" class="inSecProjects-buton" Target="_blank" href="https://stivensonmejia.github.io/PumpkinJumpkin/">VISIT WEBSITE</a>
+                            <a id="button2_project_PumpkinJumpkin" class="inSecProjects-buton" Target="_blank" href="https://tricby.itch.io/pumpkin-jumpkin-beta">GO DOWNLOAD</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="inSecProjects-cards inSecProjects-cardsRight">
+                    <div class="inSecProjects-imgContainer">
+                        <img class="imgBackground" src="./assets/img/PortadaIlustraciones.webp" alt="">
+                    </div>
+                    <div class="inSecProjects-textContainer">
+                        <div>
+                            <h3 class="end">TRICBY´S ART</h3>
+                            <div class="inSecProjects-technologiesContainer end">
+                                <p>JavaScript</p>
+                                <p>HTLM</p>
+                                <p>CSS</p>
+                                <p>Photoshop</p>
+                            </div>
+                        </div>
+                        <p id="text_project_TricbysART" class="inSecProjects-text end">
+                            I developed a website to showcase my illustrations, both digital and traditional. Through this project, I learned layout design, web styling, and animations to create an appealing and functional display. It also includes links to my social media and contact information.
+                        </p>
+                        <div class="inSecProjects-butonContainer end">
+                            <a id="button1_project_TricbysART" class="inSecProjects-buton" Target="_blank" href="https://stivensonmejia.github.io/TricbysArt/">VISIT WEBSITE</a>
+                            <a id="button2_project_TricbysART" class="inSecProjects-buton" Target="_blank" href="https://github.com/StivensonMejia/TricbysArt">VIEW CODE</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="inSecProjects-cards">
+                    <div class="inSecProjects-imgContainer">
                         <img src="./assets/img/ValorXHora.webp" alt="">
                     </div>
                     <div class="inSecProjects-textContainer">
@@ -98,51 +144,6 @@
                         <div class="inSecProjects-butonContainer">
                             <a id="button1_project_ValorXHora" class="inSecProjects-buton" Target="_blank" href="https://stivensonmejia.github.io/ValorHoraLaboral/">VISIT WEBSITE</a>
                             <a id="button2_project_ValorXHora" class="inSecProjects-buton" Target="_blank" href="https://github.com/StivensonMejia/ValorHoraLaboral">VIEW CODE</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="inSecProjects-cards">
-                    <div class="inSecProjects-imgContainer">
-                        <img src="./assets/img/PortadaVideoJuego.webp" alt="">
-                    </div>
-                    <div class="inSecProjects-textContainer">
-                        <div>
-                            <h3 class="end">PUMPKIN JUMPKIN</h3>
-                            <div class="inSecProjects-technologiesContainer end">
-                                <p>GDscript</p>
-                                <p>Godot Engine</p>
-                                <p>Aseprite</p>
-                            </div>
-                        </div>
-                        <p id="text_project_PumpkinJumpkin" class="inSecProjects-text end"> 
-                            I developed an endless runner game featuring procedurally generated obstacles, fluid controls, and power-ups that help the player progress. While working on it, I improved my programming logic and debugging skills. I also added a hardcore mode where speed increases for an extra challenge. Available on ITCH.IO! 
-                        </p>
-                        <div class="inSecProjects-butonContainer end">
-                            <a id="button1_project_PumpkinJumpkin" class="inSecProjects-buton" Target="_blank" href="https://stivensonmejia.github.io/PumpkinJumpkin/">VISIT WEBSITE</a>
-                            <a id="button2_project_PumpkinJumpkin" class="inSecProjects-buton" Target="_blank" href="https://tricby.itch.io/pumpkin-jumpkin-beta">GO DOWNLOAD</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="inSecProjects-cards">
-                    <div class="inSecProjects-imgContainer">
-                        <img class="imgBackground" src="./assets/img/PortadaIlustraciones.webp" alt="">
-                    </div>
-                    <div class="inSecProjects-textContainer">
-                        <div>
-                            <h3 class="">TRICBY´S ART</h3>
-                            <div class="inSecProjects-technologiesContainer">
-                                <p>JavaScript</p>
-                                <p>HTLM</p>
-                                <p>CSS</p>
-                                <p>Photoshop</p>
-                            </div>
-                        </div>
-                        <p id="text_project_TricbysART" class="inSecProjects-text">
-                            I developed a website to showcase my illustrations, both digital and traditional. Through this project, I learned layout design, web styling, and animations to create an appealing and functional display. It also includes links to my social media and contact information.
-                        </p>
-                        <div class="inSecProjects-butonContainer">
-                            <a id="button1_project_TricbysART" class="inSecProjects-buton" Target="_blank" href="https://stivensonmejia.github.io/TricbysArt/">VISIT WEBSITE</a>
-                            <a id="button2_project_TricbysART" class="inSecProjects-buton" Target="_blank" href="https://github.com/StivensonMejia/TricbysArt">VIEW CODE</a>
                         </div>
                     </div>
                 </article>

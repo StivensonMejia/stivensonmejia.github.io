@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Bigelow Rules', serif;
-    font-family: 'Grenze', serif;
 }
 :root {
     --black-background: #141414;
@@ -13,13 +11,14 @@
     --red: #bd2929;
     --red-soft : #861f1f;
 
-    --font-title: 'Bigelow Rules', serif;
-    --font-paragraph: 'Grenze', serif;
+    --font-title: "Griffy", system-ui;
+    --font-paragraph: "Metamorphous", serif;
 
-    --fontSize-megaTitle: 10rem;
-    --fontSize-title: 7rem;
-    --fontSize-subTitle: 4rem;
-    --fontSize-paragraph: 2.5rem;
+    --fontSize-Title: 6.2rem;
+    --fontSize-subTitle: 3rem;
+    --fontSize-paragraph: 1.8rem;
+    --fontSize-smallParagraph: 1.5rem;
+    --fontSize-buttons: 1.8rem;
 }
 .ytp-impression-link {
     display: none;
@@ -57,10 +56,20 @@ a {
 
 @media (max-width: 1380px) {
     :root {
-        --fontSize-megaTitle: 7rem;
-        --fontSize-title: 5rem;
-        --fontSize-subTitle: 3rem;
-        --fontSize-paragraph: 2.2rem;
+        --fontSize-Title: 4.5rem;
+        --fontSize-subTitle: 2.6rem;
+        --fontSize-paragraph: 1.8rem;
+        --fontSize-smallParagraph: 1.5rem;
+        --fontSize-buttons: 1.8rem;
+    }
+}
+
+@media (max-width: 460px) {
+    :root {
+        --fontSize-Title: 3rem;
+        --fontSize-subTitle: 2rem;
+        --fontSize-paragraph: 1.6rem;
+        --fontSize-buttons: 1.6rem;
     }
 }
 
