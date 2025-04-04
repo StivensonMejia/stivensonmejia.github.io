@@ -64,33 +64,36 @@ const content = {
         text_project_TricbysART: "Desarrollé una web para exhibir mis ilustraciones, tanto digitales como tradicionales. Para su creación, aprendí maquetación, diseño web y animaciones, logrando una presentación atractiva y funcional. También incluye enlaces a mis redes y contacto.",
         button1_project_TricbysART: "VISITAR WEB",
         button2_project_TricbysART: "VER CÓDIGO",
-        //HABILIDADES
-        title_skillSection:"HABILIDADES",
         //SOBRE MI
         title_aboutMeSection:"SOBRE MI",
-        paragraph1_1: "!H",
-        paragraph1_2: "ola de nuevo! Mi nombre es Stivenson pero",
-        paragraph1_3: "me puedes decir Tricby.",
-        paragraph1_4: "Mi incursión en el mundo de la programación comenzó no hace mucho, empezando con",
-        paragraph1_5: "creación de páginas web estáticas y luego adentrándome en la creación de videojuegos.",
-        paragraph1_6: "Mi interés por la tecnología ha estado conmigo desde la infancia, y finalmente pude darle rienda suelta gracias a la adquisición de una computadora.",
-        //
-        paragraph2_1: "A",
-        paragraph2_2: "ntes de adentrarme en el mundo de la programación,",
-        paragraph2_3: "me dedicaba al arte, creando ilustraciones,",
-        paragraph2_4: "dibujos tanto tradicionales como digitales, pinturas y esculturas. Además...",
-        paragraph2_5: "inicié un canal en YouTube",
-        paragraph2_6: "donde compartía videos de minecraft, recreaba pequeñas historias y construcciones.",
-        //
-        paragraph3_1: "A",
-        paragraph3_2: "ctualmente,",
-        paragraph3_3: "trabajo y estudio,",
-        paragraph3_4: "pero en mis momentos libres me involucro",
-        paragraph3_5: "en la programación y el desarrollo web.",
-        paragraph3_6: "También dedico tiempo al dibujo para mantener mi creatividad activa. y espero pronto encontrar oportunidades en la",
-        paragraph3_7: "industria tecnológica.",
-        //CONTACTAME
-        title_section5:"CONTÁCTAME",
+        inSecAM_textSubContainer:`
+            <div class="insSecAM-text">
+                <a class="relevantLetter">H</a>
+                <p>ola de nuevo! Mi nombre es Stivenson pero</p> 
+                <a class="highlightText">puedes llamarme Tricby.</a> 
+                <p>Mi incursión en el mundo de la programación comenzó hace poco, empezando con</p>  
+                <a class="highlightText">la creación de páginas web estáticas y luego adentrándome en la creación de videojuegos.</a>
+                <p>Mi interés por la tecnología ha estado conmigo desde la infancia, y finalmente pude darle rienda suelta gracias a la adquisición de una computadora.</p> 
+            </div>
+            <div class="insSecAM-text">
+                <a class="relevantLetter">A</a>
+                <p>ntes de entrar en el mundo de la programación,</p> 
+                <a class="highlightText">me dedicaba al arte, creando ilustraciones,</a> 
+                <p>tanto dibujos tradicionales como digitales, pinturas y esculturas. Además...</p>  
+                <a class="highlightText" target="_blank" href="https://www.youtube.com/channel/UCidwNTmcHwTklWF5R4WgcCw">inicié un canal de YouTube</a>
+                <p>donde compartía videos de Minecraft, recreaba pequeñas historias y construcciones.</p>
+            </div>
+            <div class="insSecAM-text">
+                <a class="relevantLetter">A</a>
+                <p>ctualmente,</p>
+                <a class="highlightText">trabajo y estudio,</a> 
+                <p>pero en mi tiempo libre me involucro en</p>  
+                <a class="highlightText">la programación y el desarrollo web.</a>
+                <p>También dedico tiempo a dibujar para mantener activa mi creatividad, y espero pronto encontrar oportunidades en </p>  
+                <a class="highlightText">la industria tecnológica.</a> 
+            </div>
+        `,
+
     },
     en: {
         //INTRO
@@ -112,33 +115,35 @@ const content = {
         text_project_TricbysART: "I developed a website to showcase my illustrations, both digital and traditional. Through this project, I learned layout design, web styling, and animations to create an appealing and functional display. It also includes links to my social media and contact information.",
         button1_project_TricbysART: "VISIT WEBSITE",
         button2_project_TricbysART: "VIEW CODE",
-        //HABILIDADES
-        title_skillSection:"SKILLS",
         //ABOUT ME
         title_aboutMeSection:"ABOUT ME",
-        paragraph1_1: "H",
-        paragraph1_2: "i again! My name is Stivenson but",
-        paragraph1_3: "can you tell me Tricby. ",
-        paragraph1_4: "My foray into the world of programming began not long ago, starting with",
-        paragraph1_5: "the creation of static web pages and then entering into the creation of video games.",
-        paragraph1_6: "My interest in technology has been with me since childhood, and I was finally able to give it free rein thanks to the acquisition of a computer.",
-        //
-        paragraph2_1: "B",
-        paragraph2_2: "efore entering the world of programming,",
-        paragraph2_3: "I was dedicated to art, creating illustrations,",
-        paragraph2_4: "both traditional and digital drawings, paintings and sculptures. Also...",
-        paragraph2_5: "I started a YouTube channel",
-        paragraph2_6: "where I shared Minecraft videos, recreated little stories and constructions.",
-        //
-        paragraph3_1: "C",
-        paragraph3_2: "urrently",
-        paragraph3_3: "I work and study,",
-        paragraph3_4: "but in my free time I get involved in the",
-        paragraph3_5: "programming and web development.",
-        paragraph3_6: "I also spend time drawing to keep my creativity active. and I hope to soon find opportunities in",
-        paragraph3_7: "the technology industry.",
-        //CONTACT ME
-        title_section5:"CONTACT ME",
+        inSecAM_textSubContainer:`
+            <div class="insSecAM-text">
+                <a class="relevantLetter">H</a>
+                <p>i again! My name is Stivenson but</p> 
+                <a class="highlightText">can you tell me Tricby. </a> 
+                <p>My foray into the world of programming began not long ago, starting with</p>  
+                <a class="highlightText">the creation of static web pages and then entering into the creation of video games.</a>
+                <p>My interest in technology has been with me since childhood, and I was finally able to give it free rein thanks to the acquisition of a computer.</p> 
+            </div>
+            <div class="insSecAM-text">
+                <a class="relevantLetter">B</a>
+                <p>efore entering the world of programming,</p> 
+                <a class="highlightText">I was dedicated to art, creating illustrations,</a> 
+                <p>both traditional and digital drawings, paintings and sculptures. Also...</p>  
+                <a class="highlightText" target="_blank" href="https://www.youtube.com/channel/UCidwNTmcHwTklWF5R4WgcCw">I started a YouTube channel</a>
+                <p>where I shared Minecraft videos, recreated little stories and constructions.</p>
+            </div>
+            <div class="insSecAM-text">
+                <a class="relevantLetter">C</a>
+                <p>urrently,</p>
+                <a class="highlightText">I work and study,</a> 
+                <p>but in my free time I get involved in the</p>  
+                <a class="highlightText">programming and web development.</a>
+                <p>I also spend time drawing to keep my creativity active. and I hope to soon find opportunities in </p>  
+                <a class="highlightText">the technology industry.</a> 
+            </div>
+        `,
     }
 };
 
@@ -154,7 +159,7 @@ function changeLanguage(language) {
         document.getElementById('third_self_subtitle').textContent = content[language].third_self_subtitle;
         document.getElementById('more_button').textContent = content[language].more_button;
         //PROJECTS
-        document.getElementById('title_projectSection').textContent = content[language].title_projectSection;
+        document.getElementById('title_projectSection').childNodes[0].nodeValue = content[language].title_projectSection;
         document.getElementById('text_project_ValorXHora').textContent = content[language].text_project_ValorXHora;
         document.getElementById('button1_project_ValorXHora').textContent = content[language].button1_project_ValorXHora;
         document.getElementById('button2_project_ValorXHora').textContent = content[language].button2_project_ValorXHora;
@@ -164,33 +169,9 @@ function changeLanguage(language) {
         document.getElementById('text_project_TricbysART').textContent = content[language].text_project_TricbysART;
         document.getElementById('button1_project_TricbysART').textContent = content[language].button1_project_TricbysART;
         document.getElementById('button2_project_TricbysART').textContent = content[language].button2_project_TricbysART;
-        //HABILIDADES
-        document.getElementById('title_skillSection').textContent = content[language].title_skillSection;
         //ABOUT ME
-        document.getElementById('title_aboutMeSection').textContent = content[language].title_aboutMeSection;
-        document.getElementById('paragraph1_1').textContent = content[language].paragraph1_1;
-        document.getElementById('paragraph1_2').textContent = content[language].paragraph1_2;
-        document.getElementById('paragraph1_3').textContent = content[language].paragraph1_3;
-        document.getElementById('paragraph1_4').textContent = content[language].paragraph1_4;
-        document.getElementById('paragraph1_5').textContent = content[language].paragraph1_5;
-        document.getElementById('paragraph1_6').textContent = content[language].paragraph1_6;
-        //
-        document.getElementById('paragraph2_1').textContent = content[language].paragraph2_1;
-        document.getElementById('paragraph2_2').textContent = content[language].paragraph2_2;
-        document.getElementById('paragraph2_3').textContent = content[language].paragraph2_3;
-        document.getElementById('paragraph2_4').textContent = content[language].paragraph2_4;
-        document.getElementById('paragraph2_5').textContent = content[language].paragraph2_5;
-        document.getElementById('paragraph2_6').textContent = content[language].paragraph2_6; 
-        //
-        document.getElementById('paragraph3_1').textContent = content[language].paragraph3_1;
-        document.getElementById('paragraph3_2').textContent = content[language].paragraph3_2;
-        document.getElementById('paragraph3_3').textContent = content[language].paragraph3_3;
-        document.getElementById('paragraph3_4').textContent = content[language].paragraph3_4;
-        document.getElementById('paragraph3_5').textContent = content[language].paragraph3_5;
-        document.getElementById('paragraph3_6').textContent = content[language].paragraph3_6;     
-        document.getElementById('paragraph3_7').textContent = content[language].paragraph3_7;  
-        //CONTACTAME
-        document.getElementById('title_section5').textContent = content[language].title_section5;   
+        document.getElementById('title_aboutMeSection').childNodes[0].nodeValue = content[language].title_aboutMeSection; 
+        document.querySelector('.inSecAM-textSubContainer').innerHTML = content[language].inSecAM_textSubContainer  
     } else {
         console.error("Idioma no encontrado:", language);
     }
