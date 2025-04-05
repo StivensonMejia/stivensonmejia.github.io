@@ -68,29 +68,34 @@ const content = {
         title_aboutMeSection:"SOBRE MI",
         inSecAM_textSubContainer:`
             <div class="insSecAM-text">
-                <a class="relevantLetter">H</a>
-                <p>ola de nuevo! Mi nombre es Stivenson pero</p> 
-                <a class="highlightText">puedes llamarme Tricby.</a> 
-                <p>Mi incursión en el mundo de la programación comenzó hace poco, empezando con</p>  
-                <a class="highlightText">la creación de páginas web estáticas y luego adentrándome en la creación de videojuegos.</a>
-                <p>Mi interés por la tecnología ha estado conmigo desde la infancia, y finalmente pude darle rienda suelta gracias a la adquisición de una computadora.</p> 
+            <p class="insSecAM-subTitle">¿QUIÉN SOY?</p><br>
+            <a class="relevantLetter">H</a>
+            <p>ola! Mi nombre es Stivenson, aunque muchas personas me conocen como</p> 
+            <a class="highlightText">Tricby. </a> 
+            <p>Soy una persona curiosa y creativa, con una gran afinidad por el </p>  
+            <a class="highlightText">arte y la tecnología.</a>
+            <p>En mis ratos libres suelo dedicarme a proyectos personales como ilustraciones, videos y otros hobbies que me permiten expresarme y seguir aprendiendo. </p>
+            <a class="highlightText" target="_blank" href="https://www.youtube.com/channel/UCidwNTmcHwTklWF5R4WgcCw"> MI CANAL DE YOUTUBE </a> 
             </div>
+
             <div class="insSecAM-text">
-                <a class="relevantLetter">A</a>
-                <p>ntes de entrar en el mundo de la programación,</p> 
-                <a class="highlightText">me dedicaba al arte, creando ilustraciones,</a> 
-                <p>tanto dibujos tradicionales como digitales, pinturas y esculturas. Además...</p>  
-                <a class="highlightText" target="_blank" href="https://www.youtube.com/channel/UCidwNTmcHwTklWF5R4WgcCw">inicié un canal de YouTube</a>
-                <p>donde compartía videos de Minecraft, recreaba pequeñas historias y construcciones.</p>
+            <p class="insSecAM-subTitle">MIS HABILIDADES</p><br>
+            <a class="relevantLetter">T</a>
+            <p>rabajo principalmente con HTML, CSS y JavaScript, enfocándome en el desarrollo</p> 
+            <a class="highlightText">Front-End</a> 
+            <p>de sitios web visuales, responsivos y funcionales. Mi proceso creativo es intuitivo: visualizo la estructura en mi mente y luego la traduzco en </p>  
+            <a class="highlightText">código,</a>
+            <p>dejando que las ideas fluyan y tomen forma naturalmente.</p>
             </div>
+
             <div class="insSecAM-text">
-                <a class="relevantLetter">A</a>
-                <p>ctualmente,</p>
-                <a class="highlightText">trabajo y estudio,</a> 
-                <p>pero en mi tiempo libre me involucro en</p>  
-                <a class="highlightText">la programación y el desarrollo web.</a>
-                <p>También dedico tiempo a dibujar para mantener activa mi creatividad, y espero pronto encontrar oportunidades en </p>  
-                <a class="highlightText">la industria tecnológica.</a> 
+            <p class="insSecAM-subTitle">¿QUÉ HAGO ACTUALMENTE?</p><br>
+            <a class="relevantLetter">A</a>
+            <p>ctualmente estoy desarrollando un nuevo juego en el que sigo</p>
+            <a class="highlightText">mejorando mis habilidades</a> 
+            <p>en lógica y diseño. También estoy estudiando el lenguaje Java, donde he aprendido bastante sobre programación orientada a objetos y he comenzado a explorar conceptos del</p>  
+            <a class="highlightText">backend.</a>
+            <p>Sigo aprendiendo y creciendo con cada proyecto, y estoy abierto a nuevas oportunidades laborales.</p>
             </div>
         `,
 
@@ -119,31 +124,36 @@ const content = {
         title_aboutMeSection:"ABOUT ME",
         inSecAM_textSubContainer:`
             <div class="insSecAM-text">
-                <a class="relevantLetter">H</a>
-                <p>i again! My name is Stivenson but</p> 
-                <a class="highlightText">can you tell me Tricby. </a> 
-                <p>My foray into the world of programming began not long ago, starting with</p>  
-                <a class="highlightText">the creation of static web pages and then entering into the creation of video games.</a>
-                <p>My interest in technology has been with me since childhood, and I was finally able to give it free rein thanks to the acquisition of a computer.</p> 
+            <p class="insSecAM-subTitle">WHO AM I?</p><br>
+            <a class="relevantLetter">H</a>
+            <p>i! My name is Stivenson, although many people know me as</p> 
+            <a class="highlightText">Tricby. </a> 
+            <p>I'm a curious and creative person with a strong affinity for </p>  
+            <a class="highlightText">art and technology.</a>
+            <p>In my free time, I enjoy working on personal projects such as illustrations, videos, and other hobbies that allow me to express myself and keep learning. </p>
+            <a class="highlightText" target="_blank" href="https://www.youtube.com/channel/UCidwNTmcHwTklWF5R4WgcCw"> MY YOUTUBE CHANNEL </a> 
             </div>
+
             <div class="insSecAM-text">
-                <a class="relevantLetter">B</a>
-                <p>efore entering the world of programming,</p> 
-                <a class="highlightText">I was dedicated to art, creating illustrations,</a> 
-                <p>both traditional and digital drawings, paintings and sculptures. Also...</p>  
-                <a class="highlightText" target="_blank" href="https://www.youtube.com/channel/UCidwNTmcHwTklWF5R4WgcCw">I started a YouTube channel</a>
-                <p>where I shared Minecraft videos, recreated little stories and constructions.</p>
+            <p class="insSecAM-subTitle">MY SKILLS</p><br>
+            <a class="relevantLetter">I </a>
+            <p>mainly work with HTML, CSS, and JavaScript, focusing on</p> 
+            <a class="highlightText">front-end development</a> 
+            <p>to build visual, responsive, and functional websites. My creative process is intuitive: I visualize the structure in my mind and then translate it into </p>  
+            <a class="highlightText">code,</a>
+            <p>letting the ideas flow and take shape naturally.</p>
             </div>
+
             <div class="insSecAM-text">
-                <a class="relevantLetter">C</a>
-                <p>urrently,</p>
-                <a class="highlightText">I work and study,</a> 
-                <p>but in my free time I get involved in the</p>  
-                <a class="highlightText">programming and web development.</a>
-                <p>I also spend time drawing to keep my creativity active. and I hope to soon find opportunities in </p>  
-                <a class="highlightText">the technology industry.</a> 
+            <p class="insSecAM-subTitle">WHAT AM I DOING NOW?</p><br>
+            <a class="relevantLetter">I</a>
+            <p>’m currently developing a new game where I continue</p>
+            <a class="highlightText">refining my skills</a> 
+            <p>in logic and design. I’m also studying the Java language, where I’ve learned a lot about object oriented programming and started exploring backend concepts.</p>  
+            <a class="highlightText">I’m always learning,</a>
+            <p>growing with each project, and open to new job opportunities.</p>
             </div>
-        `,
+            `,
     }
 };
 

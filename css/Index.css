@@ -364,7 +364,7 @@
         
         .titleSeparator {
             position: absolute;
-            width: 80%;
+            width: 70%;
             top: 40%;
             left: 50%; 
             transform: translate(-50%, -50%); 
@@ -495,6 +495,7 @@
         font-size: var(--fontSize-Title);
         color: var(--red);
         text-align: center;
+        font-weight: lighter;
         padding: 0 0 150px;
 
         animation: revealContent linear both;
@@ -503,7 +504,7 @@
 
         .titleSeparator {
             position: absolute;
-            width: 80%;
+            width: 70%;
             top: 40%;
             left: 50%; 
             transform: translate(-50%, -50%); 
@@ -513,6 +514,10 @@
         display: flex;
         flex-direction: row-reverse;
         gap: 60px;
+
+        animation: revealContent linear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 30%;
         .inSecAM-redesAndImgContainer {
             width: 30%;
             align-self: stretch;
@@ -563,7 +568,6 @@
                     width: 80%;
                     height: 50px;
                     font-size: 2rem;
-                    font-weight: bold;
                 }
             }
         }
@@ -591,6 +595,10 @@
                     }
                     .highlightText {
                         color: var(--red);
+                    }
+                    .insSecAM-subTitle {
+                        color: var(--red);
+                        padding-left: 40px;
                     }
                 }
                 div:nth-child(1) {
